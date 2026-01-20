@@ -1,18 +1,10 @@
 {
   "nav": {
-    "logistics": "Logistica",
-    "logisticsIntegral": "Logistica Integral",
-    "customs": "Aduana",
-    "warehouse": "Almacen",
-    "landTransport": "Transporte Terrestre",
-    "internationalCargo": "Carga Internacional",
-    "moving": "Mudanzas",
-    "cloverFile": "CloverFile",
-    "cloverTrack": "Clover-Track",
-    "wmsClients": "WMS Clientes",
-    "purchasePortal": "Portal Compras",
-    "aboutUs": "Nosotros",
-    "blog": "+Para ti",
+    "services": "Servicios",
+    "digitalManagement": "Gestion Digital",
+    "physicalManagement": "Gestion Fisica",
+    "aboutUs": "Quienes Somos",
+    "blog": "+ Para ti",
     "contact": "Contacto"
   },
   "common": {
@@ -540,16 +532,306 @@
     }
   },
   "footer": {
-    "tagline": "Mas de 50 anos ofreciendo soluciones de logistica integral en Venezuela.",
-    "copyright": "Clover Internacional, C.A. Todos los derechos reservados.",
+    "tagline": "Soluciones integrales de gestion documental. Seguridad, Tiempo, Espacio.",
+    "copyright": "Clover File, C.A. Todos los derechos reservados.",
     "termsAndConditions": "Terminos y Condiciones",
     "privacyPolicy": "Politica de Privacidad",
-    "cloverJobs": "Clover Empleos",
-    "blog": "+Para ti (Blog)"
+    "blog": "+ Para ti (Blog)"
   },
   "language": {
     "es": "Espanol",
     "en": "English",
     "switchTo": "Cambiar idioma"
+  },
+  "cloverFile": {
+    "siteName": "CloverFile",
+    "tagline": "Seguridad, Tiempo, Espacio",
+    "metaTitle": "CloverFile | Soluciones de Gestion Documental en Venezuela",
+    "metaDescription": "Soluciones de gestion y digitalizacion documental en Venezuela. Gestion digital y fisica de documentos, almacenamiento en la nube y almacenes seguros.",
+    "hero": {
+      "subtitle": "Te ofrecemos:",
+      "title": "Seguridad, Tiempo y Espacio",
+      "titlePart2": "en la gestion de tu informacion",
+      "description": "Soluciones integrales para la gestion y digitalizacion de documentos.",
+      "cta": "Solicitar Cotizacion",
+      "slide1": {
+        "subtitle": "Te ofrecemos:",
+        "title": "Seguridad, Tiempo y Espacio",
+        "description": "en la gestion de tu informacion."
+      },
+      "slide2": {
+        "title": "Gestion Digital",
+        "description": "Implementamos herramientas digitales de ultima generacion con las mejores practicas de seguridad en el manejo de la informacion."
+      },
+      "slide3": {
+        "title": "Gestion Fisica",
+        "description": "Administramos tu documentacion de manera estandarizada y segura en ambientes especializados para su preservacion."
+      }
+    },
+    "services": {
+      "label": "Nuestros Servicios",
+      "title": "Soluciones Integrales de Gestion Documental",
+      "subtitle": "Soluciones digitales y fisicas para todas sus necesidades de gestion documental.",
+      "viewService": "Ver servicio",
+      "digitalManagement": {
+        "title": "Gestion Digital",
+        "shortDescription": "Herramientas digitales de ultima generacion con las mejores practicas de seguridad."
+      },
+      "physicalManagement": {
+        "title": "Gestion Fisica",
+        "shortDescription": "Gestion documental estandarizada y segura en ambientes especializados."
+      }
+    },
+    "digitalManagement": {
+      "title": "Gestion Digital",
+      "metaTitle": "Gestion Digital | CloverFile",
+      "metaDescription": "Soluciones de gestion documental digital. Digitalizacion de documentos, automatizacion de flujos de trabajo, almacenamiento en la nube y software de gestion documental.",
+      "hero": {
+        "subtitle": "Gestion Digital",
+        "title": "Transforma la Gestion de tu Informacion",
+        "description": "Implementamos herramientas digitales de ultima generacion con las mejores practicas de seguridad en el manejo de la informacion."
+      },
+      "intro": {
+        "title": "Gestion de Informacion Digital",
+        "description": "La Gestion de Informacion Digital, en conjunto con la automatizacion de procesos, proporciona ventajas competitivas, ayuda en la toma de decisiones, identifica nuevas oportunidades y proporciona ahorros reales e inmediatos de costos y tiempo para tu organizacion."
+      },
+      "services": {
+        "title": "Servicios Digitales",
+        "subtitle": "Soluciones digitales integrales para tu organizacion.",
+        "scanning": {
+          "title": "Digitalizacion de Documentos, Planos y Libros",
+          "description": "Contamos con equipos de alta gama operados por profesionales que promueven altos estandares de calidad en todo el proceso de conversion de archivos fisicos a digitales. Ofrecemos el servicio a nivel nacional desde nuestros Centros de Digitalizacion y en sitio en las instalaciones del cliente para tu conveniencia.",
+          "features": ["Escaneo de alta resolucion", "Procesamiento OCR", "Multiples formatos de salida", "Aseguramiento de calidad"]
+        },
+        "documentManagement": {
+          "title": "Software de Gestion Documental",
+          "description": "Ofrecemos plataformas integrales de gestion documental disenadas para trabajar en entornos exigentes, flexibles y configurables que te permiten centralizar tu informacion con perfiles de acceso predefinidos, y ayudan a optimizar y gestionar documentos de alto valor para tu empresa.",
+          "features": ["Repositorio centralizado", "Control de acceso", "Control de versiones", "Trazabilidad de auditoria"]
+        },
+        "workflowAutomation": {
+          "title": "Automatizacion de Flujos de Trabajo",
+          "description": "Implementamos flujos de trabajo disenados a la medida con tecnologias innovadoras que reducen el trabajo manual, evitan errores humanos y aseguran transacciones fluidas y funcionales entre usuarios para tu organizacion.",
+          "features": ["Flujos personalizados", "Aprobaciones automatizadas", "Gestion de tareas", "Monitoreo de procesos"]
+        },
+        "cloudStorage": {
+          "title": "Almacenamiento en la Nube",
+          "description": "Respaldamos tu informacion en nuestro servicio Cloud, proporcionando acceso 24x7 a la informacion, con capacidad de almacenamiento adaptada a tus necesidades, costos accesibles y soporte en la migracion de informacion.",
+          "features": ["Disponibilidad 24/7", "Almacenamiento escalable", "Respaldo de datos", "Acceso seguro"]
+        }
+      },
+      "cta": {
+        "title": "Listo para digitalizar tus documentos?",
+        "description": "Contactanos y descubre como nuestras soluciones digitales pueden transformar tu organizacion."
+      }
+    },
+    "physicalManagement": {
+      "title": "Gestion Fisica",
+      "metaTitle": "Gestion Fisica | CloverFile",
+      "metaDescription": "Soluciones de gestion y almacenamiento de documentos fisicos. Almacenes especializados, cajas de documentos, organizacion, inventario y custodia segura.",
+      "hero": {
+        "subtitle": "Gestion Fisica",
+        "title": "Almacenamiento Seguro de Documentos",
+        "description": "Clasificacion, organizacion y gestion de los documentos de tu empresa sin limitar tu espacio."
+      },
+      "intro": {
+        "title": "Gestion de Documentos Fisicos",
+        "description": "Permite la clasificacion, organizacion y gestion de las actividades de tu empresa que requieren mantener en soporte fisico, sin limitar tu espacio y garantizando la recuperacion inmediata."
+      },
+      "services": {
+        "title": "Servicios de Gestion Fisica",
+        "subtitle": "Soluciones completas para la custodia y gestion de documentos fisicos.",
+        "boxes": {
+          "title": "Cajas",
+          "description": "Fabricadas con carton corrugado doble pared de alta calidad con dimensiones de 41cm de largo, 25cm de alto y 32cm de ancho, con acabado de superficie lisa y suave, previniendo el deterioro de los documentos.",
+          "features": ["Materiales de alta calidad", "Dimensiones estandar", "Capacidad de 25kg", "Vida util de 10 anos"],
+          "details": "Protege de manera efectiva contra cambios de temperatura, humedad, polvo y otros agentes contaminantes externos. Cuenta con pliegues que permiten su ensamblaje por presion, adaptandose a los formatos estandares de documentos. Diseno funcional que facilita el uso, la organizacion de los documentos y tiene resistencia para soportar apilamiento de maximo 5 cajas."
+        },
+        "warehouses": {
+          "title": "Almacenes",
+          "description": "En nuestros almacenes te garantizamos la confidencialidad, seguridad, integridad y custodia de tus archivos fisicos, documentos, planos, entre otros. Contamos con un sofisticado sistema computarizado que permite la consulta inmediata las 24 horas del dia.",
+          "features": ["Vigilancia 24/7", "Control de clima", "Sistema contra incendios", "Monitoreo CCTV"],
+          "details": "Contamos con adecuada infraestructura; sistema de iluminacion que evitan igniciones de fuego, sistema contra incendio, vigilancia las 24 horas, cerco electrico, circuito cerrado de television (CCTV), equipos para la movilizacion de las cajas con documentos y estanterias disenadas bajo estandares internacionales que contribuyen a la preservacion de tu informacion. Se mantiene controlada la humedad y temperatura de los almacenes y periodicamente se fumigan para prevenir la infestacion de los documentos por agentes microscopicos."
+        },
+        "organization": {
+          "title": "Organizacion, Inventario y Gestion de Archivos",
+          "description": "Nuestro personal experto esta a tu disposicion para brindarte asesoria en Gestion Documental, Inventarios e Indexacion de tus archivos fisicos y digitales, garantizando la confidencialidad y tiempos requeridos.",
+          "features": ["Personal experto", "Inventarios detallados", "Servicios de indexacion", "Disponible in-house"],
+          "details": "Levantamos inventarios de tus archivos con formularios detallados, sencillos y agiles que permiten la ubicacion rapida para tu consulta, digitalizacion y/o destruccion controlada. Recuperamos archivos contaminados y organizamos la documentacion de manera eficaz de acuerdo con la prioridad del area. Nuestro servicio esta disponible en nuestros almacenes o 'in house'."
+        },
+        "transfer": {
+          "title": "Traslado de Documentos y Medios Magneticos",
+          "description": "Trasladamos tu patrimonio documental y dispositivos de almacenamiento con un protocolo que garantiza la seguridad, organizacion y respectivos registros del origen y destino de tu informacion.",
+          "features": ["Monitoreo GPS", "Flota propia", "Cobertura nacional", "Protocolos de seguridad"],
+          "details": "Prestamos el servicio con vehiculos propios, monitoreados con GPS y adaptados al tipo de material a transportar, con cobertura nacional y tiempos que se adaptan a tus necesidades."
+        },
+        "loans": {
+          "title": "Prestamos y Reingresos",
+          "description": "Una vez tus documentos y medios magneticos esten almacenados en nuestros almacenes especializados, podras recuperar y consultar tu informacion en tiempo record. Nuestro sistema de almacenamiento con etiquetado de codigo de barras permite la recuperacion inmediata de la informacion.",
+          "features": ["Recuperacion rapida", "Sistema de codigo de barras", "Entrega digital/fisica", "Confidencialidad"],
+          "details": "Podemos enviarte archivos digitales y/o fisicos segun tus criterios de urgencia. Nuestro servicio de recuperacion de informacion cuenta con rigurosos procesos de confidencialidad, y solo personal autorizado de tu empresa puede solicitar documentacion."
+        },
+        "magneticVault": {
+          "title": "Boveda de Medios Magneticos",
+          "description": "Contamos con bovedas especializadas disenadas y construidas con las mejores practicas de almacenamiento, protegidas por sistema de CCTV, sistema de supresion de incendios, sistema computarizado de control de inventario y sistemas de seguridad biometricos para restringir el acceso.",
+          "features": ["Acceso biometrico", "Clima controlado", "Sistema CCTV", "Control de inventario"],
+          "details": "Nuestras instalaciones tienen clima controlado para asegurar la preservacion de tus cintas y medios magneticos."
+        }
+      },
+      "cta": {
+        "title": "Necesitas almacenamiento seguro de documentos?",
+        "description": "Contactanos y conoce nuestras soluciones de gestion fisica."
+      }
+    },
+    "whoWeAre": {
+      "title": "Quienes Somos",
+      "metaTitle": "Quienes Somos | CloverFile",
+      "metaDescription": "Conoce a CloverFile, lideres en soluciones de gestion y digitalizacion documental en Venezuela con decadas de experiencia.",
+      "hero": {
+        "subtitle": "Quienes Somos",
+        "title": "Tu Socio en Gestion Documental",
+        "description": "Somos especialistas en gestion documental integral, ofreciendo soluciones digitales y fisicas que transforman la manera en que manejas la informacion de tu empresa."
+      },
+      "intro": {
+        "title": "Sobre CloverFile",
+        "subtitle": "Parte del Grupo Clover",
+        "description": "CloverFile es parte del Grupo Clover, con mas de 50 anos de experiencia en Venezuela. Nos especializamos en proporcionar soluciones integrales de gestion documental, desde digitalizacion y almacenamiento en la nube hasta custodia fisica en almacenes especializados.",
+        "lead": "Estamos comprometidos a ayudar a las organizaciones a optimizar su gestion de informacion a traves de soluciones innovadoras y los mas altos estandares de calidad."
+      },
+      "mission": {
+        "title": "Nuestra Mision",
+        "description": "Proporcionar soluciones integrales de gestion documental que permitan a nuestros clientes optimizar el manejo de su informacion, reducir costos y mejorar la eficiencia operativa, garantizando la seguridad y confidencialidad de sus datos."
+      },
+      "vision": {
+        "title": "Nuestra Vision",
+        "description": "Ser la empresa lider en soluciones de gestion documental en Venezuela, reconocida por nuestra innovacion, calidad y compromiso con el exito de nuestros clientes."
+      },
+      "values": {
+        "title": "Nuestros Valores",
+        "subtitle": "Los principios que guian nuestro trabajo.",
+        "security": {
+          "title": "Seguridad",
+          "description": "Protegemos tu informacion con los mas altos estandares de seguridad y tecnologia de punta."
+        },
+        "confidentiality": {
+          "title": "Confidencialidad",
+          "description": "Garantizamos la privacidad de tus documentos y datos a traves de estrictos controles de acceso."
+        },
+        "efficiency": {
+          "title": "Eficiencia",
+          "description": "Optimizamos tus procesos de gestion documental para ahorrar tiempo y reducir costos."
+        },
+        "innovation": {
+          "title": "Innovacion",
+          "description": "Implementamos tecnologias de punta para proporcionar las mejores soluciones para tus necesidades."
+        },
+        "commitment": {
+          "title": "Compromiso",
+          "description": "Nos dedicamos a superar las expectativas de nuestros clientes en cada servicio que brindamos."
+        },
+        "excellence": {
+          "title": "Excelencia",
+          "description": "Buscamos la mas alta calidad en todos nuestros procesos y servicios."
+        }
+      },
+      "stats": {
+        "yearsExperience": "Anos de Experiencia",
+        "satisfiedClients": "Clientes Satisfechos",
+        "documentsProcessed": "Documentos Procesados",
+        "warehouseSpace": "m2 de Almacenes"
+      },
+      "cta": {
+        "title": "Listo para trabajar juntos?",
+        "description": "Contactanos y descubre como CloverFile puede transformar tu gestion documental."
+      }
+    },
+    "contact": {
+      "title": "Contacto",
+      "metaTitle": "Contacto | CloverFile",
+      "metaDescription": "Contacta a CloverFile para soluciones de gestion documental. Solicita informacion sobre digitalizacion, almacenamiento en la nube y custodia de documentos fisicos.",
+      "hero": {
+        "subtitle": "Contacto",
+        "title": "Estamos Aqui para Ayudarte",
+        "description": "Contactanos para recibir atencion personalizada y mas informacion sobre nuestras soluciones de gestion documental."
+      },
+      "form": {
+        "title": "Envianos un Mensaje",
+        "firstName": "Nombre",
+        "lastName": "Apellido",
+        "email": "Email",
+        "phone": "Telefono",
+        "company": "Empresa",
+        "serviceOfInterest": "Servicio de Interes",
+        "selectService": "Seleccione un servicio",
+        "digitalManagement": "Gestion Digital",
+        "physicalManagement": "Gestion Fisica",
+        "documentScanning": "Digitalizacion de Documentos",
+        "cloudStorage": "Almacenamiento en la Nube",
+        "documentCustody": "Custodia de Documentos",
+        "workflowAutomation": "Automatizacion de Flujos de Trabajo",
+        "documentManagementSoftware": "Software de Gestion Documental",
+        "other": "Otro",
+        "message": "Mensaje",
+        "messagePlaceholder": "Cuentanos sobre tus necesidades...",
+        "submit": "Enviar Mensaje",
+        "sending": "Enviando...",
+        "required": "*"
+      },
+      "success": {
+        "title": "Mensaje Enviado!",
+        "description": "Gracias por contactarnos. Uno de nuestros asesores se pondra en contacto contigo pronto.",
+        "sendAnother": "Enviar Otro Mensaje"
+      },
+      "info": {
+        "title": "Informacion de Contacto",
+        "lead": "Completa el formulario y uno de nuestros asesores se pondra en contacto contigo a la brevedad posible.",
+        "phone": "Telefono",
+        "phoneNumber": "+58 (212) 237-1111",
+        "email": "Email",
+        "emailAddress": "info@cloverfileve.com",
+        "address": "Direccion",
+        "addressLine1": "Av. Principal de los Ruices",
+        "addressLine2": "Edificio Clover, Caracas, Venezuela",
+        "schedule": "Horario de Atencion",
+        "scheduleInfo": "Lunes a Viernes: 8:00 AM - 5:00 PM"
+      },
+      "locations": {
+        "title": "Nuestras Ubicaciones",
+        "mainOffice": "Sede Principal",
+        "caracas": "Caracas, Venezuela"
+      }
+    },
+    "stats": {
+      "yearsExperience": "Anos de Experiencia",
+      "satisfiedClients": "Clientes Satisfechos",
+      "documentsProcessed": "Documentos Procesados",
+      "warehouseSpace": "m2 de Almacenes",
+      "supportAvailable": "Soporte Disponible"
+    },
+    "cta": {
+      "title": "Listo para Transformar tu Gestion Documental?",
+      "description": "Contactanos hoy y descubre como CloverFile puede ayudar a tu organizacion a optimizar el manejo de informacion.",
+      "button": "Solicitar Cotizacion",
+      "contactUs": "Contactanos"
+    },
+    "trust": {
+      "title": "Por que Elegir CloverFile?",
+      "subtitle": "Confia en nosotros para tus necesidades de gestion documental.",
+      "security": {
+        "title": "Maxima Seguridad",
+        "description": "Sistemas de seguridad de ultima generacion para proteger tu informacion."
+      },
+      "experience": {
+        "title": "50+ Anos de Experiencia",
+        "description": "Decadas de experiencia en gestion documental en Venezuela."
+      },
+      "technology": {
+        "title": "Tecnologia de Punta",
+        "description": "Utilizamos las ultimas tecnologias para digitalizacion y almacenamiento."
+      },
+      "support": {
+        "title": "Soporte Dedicado",
+        "description": "Nuestro equipo esta siempre disponible para asistirte."
+      }
+    }
   }
 }

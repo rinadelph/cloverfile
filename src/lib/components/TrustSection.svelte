@@ -4,23 +4,23 @@
   let isVisible = $state(false);
   let sectionRef = $state<HTMLElement | null>(null);
 
-  // Certifications and accreditations
+  // Security certifications
   const certifications = [
-    { name: 'ISO 9001:2015', description: 'Gestión de Calidad' },
-    { name: 'BASC', description: 'Seguridad en Comercio' },
-    { name: 'OEA', description: 'Operador Económico Autorizado' },
+    { name: 'ISO 27001', description: 'Seguridad de la Informacion' },
+    { name: 'Custodia Certificada', description: 'Proteccion Documental' },
+    { name: 'Confidencialidad', description: 'Protocolos de Acceso' },
   ];
 
-  // Key industries served - Clover specializes in oil, gas, energy, pharma
+  // Key industries served by CloverFile
   const industries = [
-    { name: 'Petróleo y Gas', primary: true },
-    { name: 'Energía', primary: true },
-    { name: 'Farmacéutico', primary: true },
-    { name: 'Alimentos y Bebidas', primary: false },
-    { name: 'Retail', primary: false },
-    { name: 'Manufactura', primary: false },
-    { name: 'Químico', primary: false },
-    { name: 'Minería', primary: false }
+    { name: 'Banca y Finanzas', primary: true },
+    { name: 'Seguros', primary: true },
+    { name: 'Farmaceutico', primary: true },
+    { name: 'Gobierno', primary: true },
+    { name: 'Telecomunicaciones', primary: false },
+    { name: 'Salud', primary: false },
+    { name: 'Legal', primary: false },
+    { name: 'Educacion', primary: false }
   ];
 
   onMount(() => {
@@ -48,15 +48,15 @@
     <!-- Why Choose Us -->
     <div class="why-section">
       <div class="why-content">
-        <span class="section-label">Nuestra Trayectoria</span>
+        <span class="section-label">Por que CloverFile</span>
         <h2 class="section-title">
-          Tres generaciones<br/>
-          <span class="title-accent">moviendo Venezuela</span>
+          Protegemos tu informacion<br/>
+          <span class="title-accent">con los mas altos estandares</span>
         </h2>
         <p class="section-description">
-          Desde 1964, operamos la infraestructura logística más extensa del país.
-          Especializados en petróleo, gas, energía y farmacéutico — los sectores
-          que definen la economía venezolana.
+          Desde 1984, somos lideres en gestion documental en Venezuela.
+          Nuestras instalaciones cuentan con la mas alta tecnologia en seguridad
+          para proteger la informacion mas sensible de tu empresa.
         </p>
 
         <div class="certifications">
@@ -72,16 +72,16 @@
       <div class="why-visual">
         <div class="visual-grid">
           <div class="grid-item large">
-            <img src="/images/Clover+almacen.png" alt="Instalaciones Clover" />
+            <img src="/images/almacen.jpg" alt="Almacenes CloverFile" />
             <div class="item-overlay">
-              <span class="overlay-text">70,000+ m² de almacenaje</span>
+              <span class="overlay-text">Almacenes especializados con control ambiental</span>
             </div>
           </div>
           <div class="grid-item">
-            <img src="/images/14.jpg" alt="Flota Clover" />
+            <img src="/images/informationsecurity.png" alt="Seguridad de informacion" />
           </div>
           <div class="grid-item">
-            <img src="/images/1.jpg" alt="Operaciones Clover" />
+            <img src="/images/logistica-sample-01.png" alt="Gestion documental" />
           </div>
         </div>
       </div>
@@ -90,7 +90,7 @@
     <!-- Industries -->
     <div class="industries-section">
       <div class="industries-header">
-        <h3>Sectores que confían en nosotros</h3>
+        <h3>Sectores que confian en nosotros</h3>
       </div>
       <div class="industries-list">
         {#each industries as industry, i}
@@ -107,8 +107,8 @@
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
           </svg>
         </div>
-        <h4>Seguridad garantizada</h4>
-        <p>Instalaciones con vigilancia 24/7, sistemas contra incendios y control de acceso biométrico.</p>
+        <h4>Seguridad total</h4>
+        <p>Instalaciones con vigilancia 24/7, sistemas contra incendios, control de humedad y acceso biometrico.</p>
       </div>
 
       <div class="value-card">
@@ -118,33 +118,33 @@
             <polyline points="12 6 12 12 16 14"/>
           </svg>
         </div>
-        <h4>Entregas a tiempo</h4>
-        <p>98% de cumplimiento en entregas programadas con rastreo en tiempo real de su mercancía.</p>
+        <h4>Acceso inmediato</h4>
+        <p>Recupera tu informacion cuando la necesites con tiempos de respuesta garantizados y sistema 24/7.</p>
       </div>
 
       <div class="value-card">
         <div class="value-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
           </svg>
         </div>
-        <h4>Equipo experto</h4>
-        <p>Personal capacitado y certificado con décadas de experiencia en logística integral.</p>
+        <h4>Confidencialidad</h4>
+        <p>Protocolos estrictos de seguridad y acceso. Solo personal autorizado puede solicitar documentacion.</p>
       </div>
 
       <div class="value-card">
         <div class="value-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-            <line x1="12" y1="22.08" x2="12" y2="12"/>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10 9 9 9 8 9"/>
           </svg>
         </div>
-        <h4>Tecnología integrada</h4>
-        <p>Sistema WMS de última generación para visibilidad total de su inventario.</p>
+        <h4>Gestion profesional</h4>
+        <p>Personal experto en archivologia y gestion documental con decadas de experiencia.</p>
       </div>
     </div>
   </div>
@@ -152,7 +152,7 @@
 
 <style>
   .trust {
-    padding: 120px 0;
+    padding: clamp(80px, 12vw, 120px) 0;
     background: var(--gray-50);
   }
 
@@ -180,9 +180,12 @@
   .section-label {
     display: inline-block;
     margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 67, 135, 0.08);
+    border-radius: 4px;
     font-size: 0.75rem;
     font-weight: 600;
-    color: var(--clover-green);
+    color: #004387;
     text-transform: uppercase;
     letter-spacing: 0.15em;
   }
@@ -197,7 +200,7 @@
   }
 
   .title-accent {
-    color: var(--clover-green);
+    color: #8BB019;
   }
 
   .section-description {
@@ -233,10 +236,15 @@
     transform: translateY(0);
   }
 
+  .cert-badge:hover {
+    border-color: #004387;
+    box-shadow: 0 4px 12px rgba(0, 67, 135, 0.08);
+  }
+
   .cert-name {
     font-size: 0.9375rem;
     font-weight: 600;
-    color: var(--gray-900);
+    color: #004387;
   }
 
   .cert-desc {
@@ -268,6 +276,7 @@
     position: relative;
     border-radius: 12px;
     overflow: hidden;
+    background: var(--gray-100);
   }
 
   .grid-item.large {
@@ -294,7 +303,7 @@
     left: 0;
     right: 0;
     padding: 1.25rem;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    background: linear-gradient(to top, rgba(0, 60, 117, 0.85), transparent);
   }
 
   .overlay-text {
@@ -351,36 +360,36 @@
   }
 
   .industry-tag.primary {
-    background: rgba(0, 166, 81, 0.08);
-    border-color: rgba(0, 166, 81, 0.25);
-    color: var(--clover-green);
+    background: rgba(0, 67, 135, 0.08);
+    border-color: rgba(0, 67, 135, 0.2);
+    color: #004387;
     font-weight: 600;
   }
 
   .industry-tag:hover {
-    border-color: var(--clover-green);
-    color: var(--clover-green);
+    border-color: #004387;
+    color: #004387;
   }
 
   /* Values Grid */
   .values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .value-card {
     padding: 2rem;
     background: var(--white);
-    border-radius: 6px;
+    border-radius: 12px;
     border: 1px solid var(--gray-200);
     transition: all 0.3s ease;
   }
 
   .value-card:hover {
-    border-color: var(--gray-300);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
-    transform: translateY(-2px);
+    border-color: #004387;
+    box-shadow: 0 12px 40px rgba(0, 67, 135, 0.08);
+    transform: translateY(-4px);
   }
 
   .value-icon {
@@ -389,14 +398,14 @@
     justify-content: center;
     width: 56px;
     height: 56px;
-    background: rgba(0, 166, 81, 0.12);
-    border-radius: 6px;
-    color: var(--clover-green);
+    background: rgba(139, 176, 25, 0.12);
+    border-radius: 12px;
+    color: #8BB019;
     margin-bottom: 1.25rem;
   }
 
   .value-card h4 {
-    font-size: 1.0625rem;
+    font-size: 1.125rem;
     font-weight: 600;
     color: var(--gray-900);
     margin-bottom: 0.5rem;
@@ -410,7 +419,7 @@
 
   @media (max-width: 768px) {
     .trust {
-      padding: 80px 0;
+      padding: 60px 0;
     }
 
     .why-section {
@@ -427,6 +436,10 @@
 
     .grid-item.large img {
       height: 220px;
+    }
+
+    .values-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>

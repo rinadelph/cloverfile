@@ -4,6 +4,7 @@
  */
 
 import type { Article, CaseStudy, BlogPost, Story } from './types';
+import { blogPosts as cloverFileBlogPosts } from '$lib/data/posts';
 
 export const mockCaseStudies: CaseStudy[] = [
   {
@@ -652,5 +653,6 @@ This certification translates to:
 export const mockArticles: Article[] = [
   ...mockCaseStudies,
   ...mockBlogPosts,
+  ...cloverFileBlogPosts,
   ...mockStories
 ];

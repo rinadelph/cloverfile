@@ -1,5 +1,11 @@
 <script lang="ts">
+  // Import shared Clover styles
+  import '$lib/styles/variables.css';
+  import '$lib/styles/base.css';
+  import '$lib/styles/components.css';
+  // Import app-specific overrides
   import '../app.css';
+
   import Header from '$lib/components/Header.svelte';
   import Footer from '$lib/components/Footer.svelte';
 

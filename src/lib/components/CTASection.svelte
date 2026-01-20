@@ -29,26 +29,29 @@
     <div class="cta-content">
       <span class="cta-label">Empecemos</span>
       <h2 class="cta-title">
-        ¿Listo para optimizar<br/>su cadena de suministro?
+        Listo para optimizar<br/>la gestion de tus documentos?
       </h2>
       <p class="cta-description">
-        Nuestro equipo de expertos está listo para diseñar una solución
-        logística personalizada para su negocio. Solicite una cotización
-        sin compromiso.
+        Nuestro equipo de expertos esta listo para disenar una solucion
+        de gestion documental personalizada para tu empresa. Solicita una
+        cotizacion sin compromiso.
       </p>
 
       <div class="cta-actions">
         <a href="/contacto" class="btn-primary">
-          Solicitar cotización
+          Solicitar cotizacion
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
         </a>
-        <a href="tel:+582122638081" class="btn-secondary">
+        <a href="https://servicioscloverfile.com/" class="btn-secondary" target="_blank">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            <line x1="9" y1="9" x2="15" y2="9"/>
+            <line x1="9" y1="13" x2="15" y2="13"/>
+            <line x1="9" y1="17" x2="12" y2="17"/>
           </svg>
-          Llamar ahora
+          Portal de solicitudes
         </a>
       </div>
 
@@ -58,7 +61,7 @@
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
           </svg>
-          <a href="mailto:info@cloverve.com">info@cloverve.com</a>
+          <a href="mailto:info@cloverfileve.com">info@cloverfileve.com</a>
         </div>
         <div class="contact-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -75,24 +78,45 @@
         <div class="card-header">
           <div class="card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-              <line x1="9" y1="9" x2="15" y2="9"/>
-              <line x1="9" y1="13" x2="15" y2="13"/>
-              <line x1="9" y1="17" x2="12" y2="17"/>
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
             </svg>
           </div>
-          <span>Respuesta en 24h</span>
+          <span>Respuesta rapida</span>
         </div>
         <div class="card-body">
           <div class="card-stat">
-            <span class="stat-value">500+</span>
-            <span class="stat-label">Cotizaciones este año</span>
+            <span class="stat-value">4M+</span>
+            <span class="stat-label">Cajas bajo custodia</span>
           </div>
-          <div class="card-progress">
-            <div class="progress-bar">
-              <div class="progress-fill"></div>
+          <div class="card-features">
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Digitalizacion profesional</span>
             </div>
-            <span class="progress-label">98% tasa de respuesta</span>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Acceso 24/7 a tu informacion</span>
+            </div>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Custodia fisica segura</span>
+            </div>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Software de gestion documental</span>
+            </div>
           </div>
         </div>
       </div>
@@ -102,7 +126,7 @@
 
 <style>
   .cta {
-    padding: 120px 0;
+    padding: clamp(80px, 12vw, 120px) 0;
     background: var(--white);
   }
 
@@ -136,9 +160,12 @@
   .cta-label {
     display: inline-block;
     margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 67, 135, 0.08);
+    border-radius: 4px;
     font-size: 0.75rem;
     font-weight: 600;
-    color: var(--clover-green);
+    color: #004387;
     text-transform: uppercase;
     letter-spacing: 0.15em;
   }
@@ -172,20 +199,20 @@
     align-items: center;
     gap: 0.625rem;
     padding: 1rem 1.75rem;
-    background: var(--clover-green);
+    background: #8BB019;
     color: var(--white);
     font-size: 0.9375rem;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 5px;
     text-decoration: none;
     transition: all 0.25s ease;
-    box-shadow: 0 4px 14px rgba(0, 166, 81, 0.25);
+    box-shadow: 0 4px 14px rgba(139, 176, 25, 0.25);
   }
 
   .btn-primary:hover {
-    background: var(--clover-green-dark);
+    background: #7A9C16;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 166, 81, 0.3);
+    box-shadow: 0 6px 20px rgba(139, 176, 25, 0.3);
   }
 
   .btn-primary svg {
@@ -202,18 +229,19 @@
     gap: 0.625rem;
     padding: 1rem 1.75rem;
     background: transparent;
-    color: var(--gray-700);
+    color: #004387;
     font-size: 0.9375rem;
     font-weight: 600;
-    border: 1.5px solid var(--gray-300);
-    border-radius: 8px;
+    border: 1.5px solid #004387;
+    border-radius: 5px;
     text-decoration: none;
     transition: all 0.25s ease;
   }
 
   .btn-secondary:hover {
-    border-color: var(--gray-900);
-    color: var(--gray-900);
+    background: rgba(0, 67, 135, 0.05);
+    border-color: #003C75;
+    color: #003C75;
   }
 
   .cta-contact {
@@ -233,7 +261,7 @@
   }
 
   .contact-item svg {
-    color: var(--gray-400);
+    color: #004387;
   }
 
   .contact-item a {
@@ -243,7 +271,7 @@
   }
 
   .contact-item a:hover {
-    color: var(--clover-green);
+    color: #004387;
   }
 
   /* Visual */
@@ -265,10 +293,10 @@
   }
 
   .visual-card {
-    background: var(--gray-50);
-    border: 1px solid var(--gray-200);
+    background: linear-gradient(135deg, #003C75 0%, #004387 100%);
     border-radius: 16px;
     padding: 2rem;
+    color: #ffffff;
   }
 
   .card-header {
@@ -277,7 +305,7 @@
     gap: 1rem;
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--gray-200);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
 
   .card-icon {
@@ -286,15 +314,15 @@
     justify-content: center;
     width: 48px;
     height: 48px;
-    background: rgba(0, 166, 81, 0.1);
+    background: rgba(139, 176, 25, 0.2);
     border-radius: 12px;
-    color: var(--clover-green);
+    color: #8BB019;
   }
 
   .card-header span {
     font-size: 0.9375rem;
     font-weight: 600;
-    color: var(--gray-700);
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .card-stat {
@@ -305,49 +333,38 @@
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--gray-900);
+    color: #ffffff;
     line-height: 1;
     margin-bottom: 0.25rem;
   }
 
   .card-stat .stat-label {
     font-size: 0.875rem;
-    color: var(--gray-500);
+    color: rgba(255, 255, 255, 0.7);
   }
 
-  .card-progress {
-    margin-bottom: 0;
+  .card-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
   }
 
-  .progress-bar {
-    height: 8px;
-    background: var(--gray-200);
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.85);
   }
 
-  .progress-fill {
-    width: 98%;
-    height: 100%;
-    background: var(--clover-green);
-    border-radius: 4px;
-    animation: progressFill 1.5s ease-out 0.5s both;
-  }
-
-  @keyframes progressFill {
-    from { width: 0; }
-    to { width: 98%; }
-  }
-
-  .progress-label {
-    font-size: 0.8125rem;
-    color: var(--gray-500);
+  .feature-item svg {
+    color: #8BB019;
+    flex-shrink: 0;
   }
 
   @media (max-width: 768px) {
     .cta {
-      padding: 80px 0;
+      padding: 60px 0;
     }
 
     .cta-actions {

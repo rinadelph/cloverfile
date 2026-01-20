@@ -1,18 +1,10 @@
 {
   "nav": {
-    "logistics": "Logistics",
-    "logisticsIntegral": "Integral Logistics",
-    "customs": "Customs",
-    "warehouse": "Warehouse",
-    "landTransport": "Land Transport",
-    "internationalCargo": "International Cargo",
-    "moving": "Moving Services",
-    "cloverFile": "CloverFile",
-    "cloverTrack": "Clover-Track",
-    "wmsClients": "WMS Clients",
-    "purchasePortal": "Purchase Portal",
+    "services": "Services",
+    "digitalManagement": "Digital Management",
+    "physicalManagement": "Physical Management",
     "aboutUs": "About Us",
-    "blog": "+For You",
+    "blog": "+ For You",
     "contact": "Contact"
   },
   "common": {
@@ -540,16 +532,306 @@
     }
   },
   "footer": {
-    "tagline": "More than 50 years offering integral logistics solutions in Venezuela.",
-    "copyright": "Clover Internacional, C.A. All rights reserved.",
+    "tagline": "Comprehensive document management solutions. Security, Time, Space.",
+    "copyright": "Clover File, C.A. All rights reserved.",
     "termsAndConditions": "Terms and Conditions",
     "privacyPolicy": "Privacy Policy",
-    "cloverJobs": "Clover Jobs",
-    "blog": "+For You (Blog)"
+    "blog": "+ For You (Blog)"
   },
   "language": {
     "es": "Spanish",
     "en": "English",
     "switchTo": "Switch language"
+  },
+  "cloverFile": {
+    "siteName": "CloverFile",
+    "tagline": "Security, Time, Space",
+    "metaTitle": "CloverFile | Document Management Solutions in Venezuela",
+    "metaDescription": "Document management and digitization solutions in Venezuela. Digital and physical document management, cloud storage, and secure warehouses.",
+    "hero": {
+      "subtitle": "We offer you:",
+      "title": "Security, Time, and Space",
+      "titlePart2": "in managing your information",
+      "description": "Comprehensive solutions for document management and digitization.",
+      "cta": "Request a Quote",
+      "slide1": {
+        "subtitle": "We offer you:",
+        "title": "Security, Time, and Space",
+        "description": "in managing your information."
+      },
+      "slide2": {
+        "title": "Digital Management",
+        "description": "We implement state-of-the-art digital tools with the best security practices in handling information."
+      },
+      "slide3": {
+        "title": "Physical Management",
+        "description": "We administer your documentation in a standardized and secure manner in specialized environments for preservation."
+      }
+    },
+    "services": {
+      "label": "Our Services",
+      "title": "Comprehensive Document Management Solutions",
+      "subtitle": "Digital and physical solutions for all your document management needs.",
+      "viewService": "View service",
+      "digitalManagement": {
+        "title": "Digital Management",
+        "shortDescription": "State-of-the-art digital tools with the best security practices."
+      },
+      "physicalManagement": {
+        "title": "Physical Management",
+        "shortDescription": "Standardized and secure documentation management in specialized environments."
+      }
+    },
+    "digitalManagement": {
+      "title": "Digital Management",
+      "metaTitle": "Digital Management | CloverFile",
+      "metaDescription": "Digital document management solutions. Document scanning, workflow automation, cloud storage and document management software.",
+      "hero": {
+        "subtitle": "Digital Management",
+        "title": "Transform Your Information Management",
+        "description": "We implement state-of-the-art digital tools with the best security practices in handling information."
+      },
+      "intro": {
+        "title": "Digital Information Management",
+        "description": "Digital Information Management, in conjunction with process automation, provides competitive advantages, aids in decision-making, identifies new opportunities, and provides real and immediate cost and time savings for your organization."
+      },
+      "services": {
+        "title": "Digital Services",
+        "subtitle": "Comprehensive digital solutions for your organization.",
+        "scanning": {
+          "title": "Document, Blueprint, and Book Scanning",
+          "description": "We have high-end equipment operated by professionals who promote high quality standards throughout the process of converting physical files to digital files. We offer the service nationwide from our Digitization Centers and on-site at the customer's facilities for your convenience.",
+          "features": ["High-resolution scanning", "OCR processing", "Multiple format output", "Quality assurance"]
+        },
+        "documentManagement": {
+          "title": "Document Management Software",
+          "description": "We offer comprehensive document management platforms designed to work in demanding, flexible, and configurable environments that allow you to centralize your information with pre-defined access profiles, and help optimize and manage high-value documents for your company.",
+          "features": ["Centralized document repository", "Access control", "Version control", "Audit trails"]
+        },
+        "workflowAutomation": {
+          "title": "Workflow Automation",
+          "description": "We implement custom-designed workflows with innovative technologies that reduce manual work, avoid human errors, and ensure smooth and functional transactions between users for your organization.",
+          "features": ["Custom workflows", "Automated approvals", "Task management", "Process monitoring"]
+        },
+        "cloudStorage": {
+          "title": "Cloud Storage",
+          "description": "We back up your data in our Cloud service, providing 24x7 access to information, with storage capacity tailored to your needs, accessible costs, and support in information migration.",
+          "features": ["24/7 availability", "Scalable storage", "Data backup", "Secure access"]
+        }
+      },
+      "cta": {
+        "title": "Ready to digitize your documents?",
+        "description": "Contact us and discover how our digital solutions can transform your organization."
+      }
+    },
+    "physicalManagement": {
+      "title": "Physical Management",
+      "metaTitle": "Physical Management | CloverFile",
+      "metaDescription": "Physical document management and storage solutions. Specialized warehouses, document boxes, organization, inventory and secure custody.",
+      "hero": {
+        "subtitle": "Physical Management",
+        "title": "Secure Document Storage",
+        "description": "Classification, organization, and management of your company's documents without limiting your space."
+      },
+      "intro": {
+        "title": "Physical Document Management",
+        "description": "It allows for the classification, organization, and management of your company's activities that require maintaining physical support, without limiting your space and ensuring immediate retrieval."
+      },
+      "services": {
+        "title": "Physical Management Services",
+        "subtitle": "Complete solutions for physical document custody and management.",
+        "boxes": {
+          "title": "Boxes",
+          "description": "Made with high-quality double-walled corrugated cardboard with dimensions of 41cm in length, 25cm in height, and 32cm in width, with a smooth and soft surface finish, preventing the deterioration of documents.",
+          "features": ["High-quality materials", "Standard dimensions", "25kg capacity", "10-year lifespan"],
+          "details": "Effectively protects against temperature changes, humidity, dust, and other external pollutants. It has folds that allow for pressure assembly, adapting to standard document formats. Functional design that facilitates use, document organization, and has resistance to withstand stacking of up to 5 boxes."
+        },
+        "warehouses": {
+          "title": "Warehouses",
+          "description": "In our warehouses, we guarantee the confidentiality, security, integrity, and custody of your physical files, documents, plans, and others. We have a sophisticated computerized system that allows for immediate consultation 24 hours a day.",
+          "features": ["24/7 surveillance", "Climate control", "Fire suppression", "CCTV monitoring"],
+          "details": "We have adequate infrastructure; lighting systems that prevent fire ignitions, fire suppression systems, 24-hour surveillance, electric fence, closed-circuit television (CCTV), equipment for the movement of boxes with documents, and shelves designed under international standards that contribute to the preservation of your information. Humidity and temperature in the warehouses are controlled, and periodic fumigation is carried out to prevent infestation of documents by microscopic agents."
+        },
+        "organization": {
+          "title": "Organization, Inventory, and File Management",
+          "description": "Our expert staff is at your disposal to provide advice on Document Management, Inventories, and Indexing of your physical and digital files, guaranteeing the required confidentiality and timelines.",
+          "features": ["Expert staff", "Detailed inventories", "Indexing services", "In-house available"],
+          "details": "We conduct inventories of your files with detailed, simple, and agile forms that allow for quick location for your consultation, digitization, and/or controlled destruction. We recover contaminated files and organize documentation efficiently according to the priority of the area. Our service is available in our warehouses or 'in-house'."
+        },
+        "transfer": {
+          "title": "Transfer of Documents and Magnetic Media",
+          "description": "We transfer your document heritage and storage devices with a protocol that guarantees the security, organization, and respective records of the origin and destination of your information.",
+          "features": ["GPS monitoring", "Own fleet", "National coverage", "Security protocols"],
+          "details": "We provide the service with our own vehicles, monitored with GPS and adapted to the type of material to be transported, with national coverage and times that adapt to your needs."
+        },
+        "loans": {
+          "title": "Loans and Reentries",
+          "description": "Once your documents and magnetic media are stored in our specialized warehouses, you can retrieve and consult your information in record time. Our storage system with barcode labeling allows for immediate retrieval of information.",
+          "features": ["Quick retrieval", "Barcode system", "Digital/physical delivery", "Confidentiality"],
+          "details": "We can send you digital and/or physical files based on your urgency criteria. Our information retrieval service has rigorous confidentiality processes, and only authorized personnel from your company can request documentation."
+        },
+        "magneticVault": {
+          "title": "Magnetic Media Vault",
+          "description": "We have specialized vaults designed and built with the best storage practices, protected by CCTV system, fire suppression system, computerized inventory control system, and biometric security systems to restrict access.",
+          "features": ["Biometric access", "Climate controlled", "CCTV system", "Inventory control"],
+          "details": "Our facilities are climate-controlled to ensure the preservation of your tapes and magnetic media."
+        }
+      },
+      "cta": {
+        "title": "Need secure document storage?",
+        "description": "Contact us and learn about our physical management solutions."
+      }
+    },
+    "whoWeAre": {
+      "title": "Who We Are",
+      "metaTitle": "Who We Are | CloverFile",
+      "metaDescription": "Learn about CloverFile, leaders in document management and digitization solutions in Venezuela with decades of experience.",
+      "hero": {
+        "subtitle": "Who We Are",
+        "title": "Your Document Management Partner",
+        "description": "We are specialists in comprehensive document management, offering digital and physical solutions that transform the way you handle your company's information."
+      },
+      "intro": {
+        "title": "About CloverFile",
+        "subtitle": "Part of the Clover Group",
+        "description": "CloverFile is part of the Clover Group, with more than 50 years of experience in Venezuela. We specialize in providing comprehensive document management solutions, from digitization and cloud storage to physical custody in specialized warehouses.",
+        "lead": "We are committed to helping organizations optimize their information management through innovative solutions and the highest quality standards."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "description": "To provide comprehensive document management solutions that allow our clients to optimize their information handling, reduce costs, and improve operational efficiency, while ensuring the security and confidentiality of their data."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To be the leading company in document management solutions in Venezuela, recognized for our innovation, quality, and commitment to our clients' success."
+      },
+      "values": {
+        "title": "Our Values",
+        "subtitle": "The principles that guide our work.",
+        "security": {
+          "title": "Security",
+          "description": "We protect your information with the highest security standards and cutting-edge technology."
+        },
+        "confidentiality": {
+          "title": "Confidentiality",
+          "description": "We guarantee the privacy of your documents and data through strict access controls."
+        },
+        "efficiency": {
+          "title": "Efficiency",
+          "description": "We optimize your document management processes to save time and reduce costs."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We implement cutting-edge technologies to provide the best solutions for your needs."
+        },
+        "commitment": {
+          "title": "Commitment",
+          "description": "We are dedicated to exceeding our clients' expectations in every service we provide."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "We strive for the highest quality in all our processes and services."
+        }
+      },
+      "stats": {
+        "yearsExperience": "Years of Experience",
+        "satisfiedClients": "Satisfied Clients",
+        "documentsProcessed": "Documents Processed",
+        "warehouseSpace": "sqm of Warehouses"
+      },
+      "cta": {
+        "title": "Ready to work together?",
+        "description": "Contact us and discover how CloverFile can transform your document management."
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "metaTitle": "Contact | CloverFile",
+      "metaDescription": "Contact CloverFile for document management solutions. Request information about digitization, cloud storage, and physical document custody.",
+      "hero": {
+        "subtitle": "Contact",
+        "title": "We're Here to Help",
+        "description": "Contact us for personalized attention and more information about our document management solutions."
+      },
+      "form": {
+        "title": "Send Us a Message",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "company": "Company",
+        "serviceOfInterest": "Service of Interest",
+        "selectService": "Select a service",
+        "digitalManagement": "Digital Management",
+        "physicalManagement": "Physical Management",
+        "documentScanning": "Document Scanning",
+        "cloudStorage": "Cloud Storage",
+        "documentCustody": "Document Custody",
+        "workflowAutomation": "Workflow Automation",
+        "documentManagementSoftware": "Document Management Software",
+        "other": "Other",
+        "message": "Message",
+        "messagePlaceholder": "Tell us about your needs...",
+        "submit": "Send Message",
+        "sending": "Sending...",
+        "required": "*"
+      },
+      "success": {
+        "title": "Message Sent!",
+        "description": "Thank you for contacting us. One of our advisors will get in touch with you soon.",
+        "sendAnother": "Send Another Message"
+      },
+      "info": {
+        "title": "Contact Information",
+        "lead": "Complete the form and one of our advisors will contact you as soon as possible.",
+        "phone": "Phone",
+        "phoneNumber": "+58 (212) 237-1111",
+        "email": "Email",
+        "emailAddress": "info@cloverfileve.com",
+        "address": "Address",
+        "addressLine1": "Av. Principal de los Ruices",
+        "addressLine2": "Clover Building, Caracas, Venezuela",
+        "schedule": "Business Hours",
+        "scheduleInfo": "Monday to Friday: 8:00 AM - 5:00 PM"
+      },
+      "locations": {
+        "title": "Our Locations",
+        "mainOffice": "Main Office",
+        "caracas": "Caracas, Venezuela"
+      }
+    },
+    "stats": {
+      "yearsExperience": "Years of Experience",
+      "satisfiedClients": "Satisfied Clients",
+      "documentsProcessed": "Documents Processed",
+      "warehouseSpace": "sqm of Warehouses",
+      "supportAvailable": "Support Available"
+    },
+    "cta": {
+      "title": "Ready to Transform Your Document Management?",
+      "description": "Contact us today and discover how CloverFile can help your organization optimize information handling.",
+      "button": "Request a Quote",
+      "contactUs": "Contact Us"
+    },
+    "trust": {
+      "title": "Why Choose CloverFile?",
+      "subtitle": "Trust us with your document management needs.",
+      "security": {
+        "title": "Maximum Security",
+        "description": "State-of-the-art security systems to protect your information."
+      },
+      "experience": {
+        "title": "50+ Years of Experience",
+        "description": "Decades of experience in document management in Venezuela."
+      },
+      "technology": {
+        "title": "Cutting-edge Technology",
+        "description": "We use the latest technologies for digitization and storage."
+      },
+      "support": {
+        "title": "Dedicated Support",
+        "description": "Our team is always available to assist you."
+      }
+    }
   }
 }

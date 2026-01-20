@@ -11,31 +11,27 @@
     return unsubscribe;
   });
 
+  // Use currentLocale dependency to make these reactive when language changes
   const services = $derived([
-    { label: t('nav.logisticsIntegral'), href: '/logistica-integral-venezuela' },
-    { label: t('nav.customs'), href: '/aduana' },
-    { label: t('nav.warehouse'), href: '/almacen' },
-    { label: t('nav.landTransport'), href: '/logistica-transporte-terrestre' },
-    { label: t('nav.internationalCargo'), href: '/impot' },
+    { label: t('nav.digitalManagement', currentLocale), href: '/gestion-digital' },
+    { label: t('nav.physicalManagement', currentLocale), href: '/gestion-fisica' },
   ]);
 
   const company = $derived([
-    { label: t('nav.aboutUs'), href: '/nosotros' },
-    { label: t('common.contact'), href: '/contacto' },
-    { label: t('footer.blog'), href: '/blog' },
-    { label: t('footer.cloverJobs'), href: 'https://www.cloverempleos.com/', external: true },
+    { label: t('nav.aboutUs', currentLocale), href: '/quienes-somos' },
+    { label: t('common.contact', currentLocale), href: '/contacto' },
+    { label: t('footer.blog', currentLocale), href: '/para-ti' },
   ]);
 
   const platforms = [
+    { label: 'Clover Venezuela', href: 'https://www.cloverve.com', external: true },
     { label: 'Clover Mudanzas', href: 'https://www.clovermudanzas.com', external: true },
-    { label: 'CloverFile', href: 'https://www.cloverfileve.com', external: true },
-    { label: 'Clover-Track', href: 'https://clover-track.com/app/', external: true },
-    { label: 'WMS Clientes', href: 'https://wmscliente.com/sesion', external: true },
+    { label: 'Portal de Solicitudes', href: 'https://servicioscloverfile.com/', external: true },
   ];
 
   const social = [
-    { name: 'Instagram', href: 'https://instagram.com/clover.logistica' },
-    { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=100092613104079' },
+    { name: 'Instagram', href: 'https://instagram.com/cloverfile' },
+    { name: 'Facebook', href: 'https://www.facebook.com/cloverfile' },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/company/clovervzla/' },
   ];
 </script>
@@ -46,10 +42,10 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="/" class="footer-logo">
-            <img src="/images/LOGO_CLOVER_VENEZUELA-04.png" alt="Clover Venezuela" />
+            <img src="/images/logo-3.png" alt="Clover File" />
           </a>
           <p class="footer-tagline">
-            {t('footer.tagline')}
+            {t('footer.tagline', currentLocale)}
           </p>
           <div class="footer-social">
             {#each social as item}
@@ -77,7 +73,7 @@
         </div>
 
         <div class="footer-links">
-          <h4>{t('common.services')}</h4>
+          <h4>{t('common.services', currentLocale)}</h4>
           <ul>
             {#each services as item}
               <li><a href={item.href}>{item.label}</a></li>
@@ -86,7 +82,7 @@
         </div>
 
         <div class="footer-links">
-          <h4>{t('common.company')}</h4>
+          <h4>{t('common.company', currentLocale)}</h4>
           <ul>
             {#each company as item}
               <li>
@@ -103,7 +99,7 @@
         </div>
 
         <div class="footer-links">
-          <h4>{t('common.platforms')}</h4>
+          <h4>{t('common.platforms', currentLocale)}</h4>
           <ul>
             {#each platforms as item}
               <li>

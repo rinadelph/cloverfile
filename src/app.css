@@ -1,9 +1,19 @@
+/* ================================
+   CLOVER FILE - GESTION DOCUMENTAL EN VENEZUELA
+   Brand-specific styles for cloverfileve.com
+   ================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Brand - Green used sparingly as accent */
+  /* Clover File Brand Colors - Uses standard Clover green as primary */
   --clover-green: #00A651;
   --clover-green-dark: #008744;
+  --clover-green-light: #4DC47D;
+
+  /* Document Management Accent - Subtle blue for file/document related elements */
+  --clover-file-accent: #0066CC;
+  --clover-file-accent-dark: #004C99;
 
   /* Primary Palette - Professional neutrals */
   --white: #FFFFFF;
@@ -520,6 +530,51 @@ button {
   background: rgba(0, 166, 81, 0.08);
   border-color: rgba(0, 166, 81, 0.25);
   color: var(--clover-green);
+}
+
+/* ================================
+   CLOVER FILE SPECIFIC COMPONENTS
+   ================================ */
+
+/* Document Icon Styling */
+.doc-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: rgba(0, 102, 204, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--clover-file-accent);
+}
+
+/* File Type Badges */
+.file-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 166, 81, 0.1);
+  color: var(--clover-green);
+}
+
+.file-badge--archive {
+  background: rgba(0, 102, 204, 0.1);
+  color: var(--clover-file-accent);
+}
+
+/* Document Management Card Variant */
+.card--document {
+  border-left: 3px solid var(--clover-green);
+}
+
+.card--document:hover {
+  border-left-color: var(--clover-green-dark);
 }
 
 /* Responsive utilities */

@@ -1,6 +1,6 @@
 import type { RequestHandler } from './$types';
 
-const SITE_URL = 'https://www.cloverve.com';
+const SITE_URL = 'https://www.cloverfileve.com';
 
 interface SitemapEntry {
   url: string;
@@ -14,29 +14,16 @@ const staticPages: SitemapEntry[] = [
   // Homepage - highest priority
   { url: '/', priority: 1.0, changefreq: 'weekly' },
 
-  // Service pages - high priority
-  { url: '/logistica-integral-venezuela', priority: 0.9, changefreq: 'monthly' },
-  { url: '/almacen', priority: 0.9, changefreq: 'monthly' },
-  { url: '/logistica-transporte-terrestre', priority: 0.9, changefreq: 'monthly' },
-  { url: '/aduana', priority: 0.9, changefreq: 'monthly' },
-  { url: '/impot', priority: 0.9, changefreq: 'monthly' },
-  { url: '/cloverpack', priority: 0.9, changefreq: 'monthly' },
-
-  // Info pages - medium-high priority
-  { url: '/nosotros', priority: 0.8, changefreq: 'monthly' },
+  // Main pages - high priority
+  { url: '/quienes-somos', priority: 0.9, changefreq: 'monthly' },
+  { url: '/servicios', priority: 0.9, changefreq: 'monthly' },
   { url: '/contacto', priority: 0.8, changefreq: 'monthly' },
 
-  // Blog and case studies - medium priority
-  { url: '/blog', priority: 0.7, changefreq: 'weekly' },
-  { url: '/casos-de-exito', priority: 0.7, changefreq: 'monthly' },
-
-  // Location pages - medium priority
-  { url: '/ubicaciones/caracas', priority: 0.7, changefreq: 'monthly' },
-  { url: '/ubicaciones/valencia', priority: 0.7, changefreq: 'monthly' },
-  { url: '/ubicaciones/puerto-cabello', priority: 0.7, changefreq: 'monthly' },
-  { url: '/ubicaciones/maiquetia', priority: 0.7, changefreq: 'monthly' },
-  { url: '/ubicaciones/barcelona', priority: 0.7, changefreq: 'monthly' },
-  { url: '/ubicaciones/maracaibo', priority: 0.7, changefreq: 'monthly' },
+  // Service pages - high priority
+  { url: '/servicios/digitalizacion', priority: 0.9, changefreq: 'monthly' },
+  { url: '/servicios/custodia', priority: 0.9, changefreq: 'monthly' },
+  { url: '/servicios/almacenamiento', priority: 0.9, changefreq: 'monthly' },
+  { url: '/servicios/workflows', priority: 0.9, changefreq: 'monthly' },
 
   // Legal pages - low priority
   { url: '/privacy-policy', priority: 0.3, changefreq: 'yearly' },

@@ -5,7 +5,7 @@
 
   let scrolled = $state(false);
   let mobileMenuOpen = $state(false);
-  let logisticaOpen = $state(false);
+  let serviciosOpen = $state(false);
   let currentLocale = $state<Locale>('es');
 
   $effect(() => {
@@ -15,22 +15,15 @@
     return unsubscribe;
   });
 
-  const logisticaServices = $derived([
-    { label: t('nav.logisticsIntegral'), href: '/logistica-integral-venezuela' },
-    { label: t('nav.customs'), href: '/aduana' },
-    { label: t('nav.warehouse'), href: '/almacen' },
-    { label: t('nav.landTransport'), href: '/logistica-transporte-terrestre' },
-    { label: t('nav.internationalCargo'), href: '/impot' },
+  // Use currentLocale dependency to make these reactive when language changes
+  const serviciosItems = $derived([
+    { label: t('nav.digitalManagement', currentLocale), href: '/gestion-digital' },
+    { label: t('nav.physicalManagement', currentLocale), href: '/gestion-fisica' },
   ]);
 
   const navItems = $derived([
-    { label: t('nav.moving'), href: 'https://www.clovermudanzas.com', external: true },
-    { label: t('nav.cloverFile'), href: 'https://www.cloverfileve.com', external: true },
-    { label: t('nav.cloverTrack'), href: 'https://clover-track.com/app/', external: true },
-    { label: t('nav.wmsClients'), href: 'https://wmscliente.com/sesion', external: true },
-    { label: t('nav.purchasePortal'), href: 'https://licitacionescloverve.com/login.php', external: true },
-    { label: t('nav.aboutUs'), href: '/nosotros' },
-    { label: t('nav.blog'), href: '/blog' },
+    { label: t('nav.aboutUs', currentLocale), href: '/quienes-somos' },
+    { label: t('nav.blog', currentLocale), href: '/para-ti' },
   ]);
 
   onMount(() => {
@@ -50,30 +43,30 @@
 <header class="header" class:scrolled class:menu-open={mobileMenuOpen}>
   <div class="header-container">
     <a href="/" class="logo">
-      <img src="/images/LOGO_CLOVER_VENEZUELA-04.png" alt="Clover Venezuela" />
+      <img src="/images/logo-3.png" alt="Clover File" />
     </a>
 
     <nav class="nav-desktop">
-      <!-- Logistica Dropdown -->
+      <!-- Servicios Dropdown -->
       <div
         class="nav-dropdown"
-        onmouseenter={() => logisticaOpen = true}
-        onmouseleave={() => logisticaOpen = false}
+        onmouseenter={() => serviciosOpen = true}
+        onmouseleave={() => serviciosOpen = false}
       >
         <button
           class="nav-link"
-          aria-expanded={logisticaOpen}
-          onclick={() => logisticaOpen = !logisticaOpen}
+          aria-expanded={serviciosOpen}
+          onclick={() => serviciosOpen = !serviciosOpen}
         >
-          {t('nav.logistics')}
+          {t('nav.services', currentLocale)}
           <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
             <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </button>
-        {#if logisticaOpen}
+        {#if serviciosOpen}
           <div class="dropdown-menu">
-            {#each logisticaServices as item}
-              <a href={item.href} class="dropdown-item" onclick={() => logisticaOpen = false}>{item.label}</a>
+            {#each serviciosItems as item}
+              <a href={item.href} class="dropdown-item" onclick={() => serviciosOpen = false}>{item.label}</a>
             {/each}
           </div>
         {/if}
@@ -83,8 +76,6 @@
         <a
           href={item.href}
           class="nav-link"
-          target={item.external ? '_blank' : undefined}
-          rel={item.external ? 'noopener' : undefined}
         >
           {item.label}
         </a>
@@ -93,9 +84,9 @@
 
     <div class="header-actions">
       <LanguageSwitcher />
-      <a href="/contacto" class="btn-contact">{t('common.contact')}</a>
+      <a href="/contacto" class="btn-contact">{t('common.contact', currentLocale)}</a>
 
-      <button class="menu-toggle" onclick={toggleMenu} aria-label={t('common.menu')}>
+      <button class="menu-toggle" onclick={toggleMenu} aria-label={t('common.menu', currentLocale)}>
         <span class="hamburger" class:open={mobileMenuOpen}>
           <span></span>
           <span></span>
@@ -109,8 +100,8 @@
     <div class="mobile-menu">
       <nav class="mobile-nav">
         <div class="mobile-section">
-          <span class="mobile-label">{t('nav.logistics')}</span>
-          {#each logisticaServices as item}
+          <span class="mobile-label">{t('nav.services', currentLocale)}</span>
+          {#each serviciosItems as item}
             <a href={item.href} class="mobile-link" onclick={toggleMenu}>{item.label}</a>
           {/each}
         </div>
@@ -119,14 +110,13 @@
             <a
               href={item.href}
               class="mobile-link"
-              target={item.external ? '_blank' : undefined}
               onclick={toggleMenu}
             >
               {item.label}
             </a>
           {/each}
         </div>
-        <a href="/contacto" class="mobile-cta" onclick={toggleMenu}>{t('common.contact')}</a>
+        <a href="/contacto" class="mobile-cta" onclick={toggleMenu}>{t('common.contact', currentLocale)}</a>
       </nav>
     </div>
   {/if}

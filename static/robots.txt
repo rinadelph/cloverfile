@@ -1,5 +1,5 @@
-# Robots.txt for Clover Venezuela
-# https://www.cloverve.com
+# Robots.txt for Clover File
+# https://www.cloverfileve.com
 
 # Allow all crawlers
 User-agent: *
@@ -15,4 +15,4 @@ Disallow: /_app/
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://www.cloverve.com/sitemap.xml
+Sitemap: https://www.cloverfileve.com/sitemap.xml

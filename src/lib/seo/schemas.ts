@@ -1,16 +1,16 @@
-// JSON-LD Schema generators for Clover Venezuela SEO
+// JSON-LD Schema generators for CloverFile SEO
 
-const SITE_URL = 'https://www.cloverve.com';
-const LOGO_URL = `${SITE_URL}/images/logo.png`;
+const SITE_URL = 'https://www.cloverfileve.com';
+const LOGO_URL = `${SITE_URL}/images/1502852123.png`;
 
 // Organization Schema
 export function getOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': 'ProfessionalService',
     '@id': `${SITE_URL}/#organization`,
-    name: 'Clover Venezuela',
-    alternateName: 'Clover Logística',
+    name: 'CloverFile',
+    alternateName: 'Clover File Venezuela',
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
@@ -18,256 +18,115 @@ export function getOrganizationSchema() {
       width: 200,
       height: 60
     },
-    foundingDate: '1964',
-    description: 'Empresa de logística integral con más de 60 años de experiencia en Venezuela. Ofrecemos servicios de almacenamiento, transporte terrestre, aduanas y carga internacional.',
-    slogan: '+60 Años de Experiencia Logística',
+    foundingDate: '1984',
+    description: 'Empresa lider en gestion documental en Venezuela. Mas de 40 anos de experiencia ofreciendo servicios de digitalizacion, software de gestion, automatizacion, almacenamiento en nube y custodia fisica de documentos.',
+    slogan: 'Seguridad, Tiempo, Espacio',
     numberOfEmployees: {
       '@type': 'QuantitativeValue',
-      minValue: 200,
-      maxValue: 500
+      minValue: 50,
+      maxValue: 200
     },
-    areaServed: {
-      '@type': 'Country',
-      name: 'Venezuela'
-    },
+    areaServed: [
+      {
+        '@type': 'Country',
+        name: 'Venezuela'
+      }
+    ],
     contactPoint: [
       {
         '@type': 'ContactPoint',
         telephone: '+58-212-8191152',
         contactType: 'customer service',
         areaServed: 'VE',
-        availableLanguage: ['Spanish']
-      },
-      {
-        '@type': 'ContactPoint',
-        email: 'clover@cloverve.com',
-        contactType: 'customer service'
+        availableLanguage: ['Spanish', 'English']
       }
     ],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Calle Paris, Edificio Clover',
+      streetAddress: 'Av. Luis de Camoens, Centro Clover, P.3',
       addressLocality: 'La Trinidad',
       addressRegion: 'Caracas',
       addressCountry: 'VE'
     },
     sameAs: [
-      'https://instagram.com/clover.logistica',
-      'https://www.facebook.com/profile.php?id=100092613104079',
-      'https://www.linkedin.com/company/clovervzla/'
-    ]
-  };
-}
-
-// Location data for all 8 locations
-export const locations = [
-  {
-    id: 'la-trinidad',
-    name: 'Clover Venezuela - La Trinidad (Sede Principal)',
-    shortName: 'La Trinidad',
-    isHeadquarters: true,
-    address: {
-      streetAddress: 'Calle Paris, Edificio Clover',
-      addressLocality: 'La Trinidad',
-      addressRegion: 'Caracas',
-      postalCode: '1080',
-      addressCountry: 'VE'
-    },
-    geo: {
-      latitude: 10.4396,
-      longitude: -66.8511
-    },
-    phone: '+58-212-8191152',
-    email: 'clover@cloverve.com',
-    openingHours: ['Mo-Fr 08:00-17:00'],
-    services: ['Logística Integral', 'Almacenamiento', 'Aduanas', 'Transporte']
-  },
-  {
-    id: 'macarao',
-    name: 'Clover Venezuela - Macarao',
-    shortName: 'Macarao',
-    isHeadquarters: false,
-    address: {
-      streetAddress: 'Zona Industrial Macarao',
-      addressLocality: 'Macarao',
-      addressRegion: 'Caracas',
-      postalCode: '1090',
-      addressCountry: 'VE'
-    },
-    geo: {
-      latitude: 10.4567,
-      longitude: -66.9789
-    },
-    phone: '+58-212-8191152',
-    openingHours: ['Mo-Fr 08:00-17:00'],
-    services: ['Almacenamiento', 'Distribución']
-  },
-  {
-    id: 'la-yaguara',
-    name: 'Clover Venezuela - La Yaguara',
-    shortName: 'La Yaguara',
-    isHeadquarters: false,
-    address: {
-      streetAddress: 'Zona Industrial La Yaguara',
-      addressLocality: 'La Yaguara',
-      addressRegion: 'Caracas',
-      postalCode: '1070',
-      addressCountry: 'VE'
-    },
-    geo: {
-      latitude: 10.4789,
-      longitude: -66.9456
-    },
-    phone: '+58-212-8191152',
-    openingHours: ['Mo-Fr 08:00-17:00'],
-    services: ['Almacenamiento', 'Distribución']
-  },
-  {
-    id: 'maiquetia',
-    name: 'Clover Venezuela - Maiquetía',
-    shortName: 'Maiquetía',
-    isHeadquarters: false,
-    address: {
-      streetAddress: 'Aeropuerto Internacional Simón Bolívar',
-      addressLocality: 'Maiquetía',
-      addressRegion: 'Vargas',
-      postalCode: '1160',
-      addressCountry: 'VE'
-    },
-    geo: {
-      latitude: 10.6012,
-      longitude: -66.9912
-    },
-    phone: '+58-212-8191152',
-    openingHours: ['Mo-Fr 08:00-17:00'],
-    services: ['Carga Aérea', 'Aduanas', 'Carga Internacional']
-  },
-  {
-    id: 'valencia',
-    name: 'Clover Venezuela - Valencia',
-    shortName: 'Valencia',
-    isHeadquarters: false,
-    address: {
-      streetAddress: 'Zona Industrial Valencia',
-      addressLocality: 'Valencia',
-      addressRegion: 'Carabobo',
-      postalCode: '2001',
-      addressCountry: 'VE'
-    },
-    geo: {
-      latitude: 10.1579,
-      longitude: -67.9967
-    },
-    phone: '+58-212-8191152',
-    openingHours: ['Mo-Fr 08:00-17:00'],
-    services: ['Almacenamiento', 'Transporte', 'Distribución']
-  },
-  {
-    id: 'puerto-cabello',
-    name: 'Clover Venezuela - Puerto Cabello',
-    shortName: 'Puerto Cabello',
-    isHeadquarters: false,
-    address: {
-      streetAddress: 'Zona Portuaria',
-      addressLocality: 'Puerto Cabello',
-      addressRegion: 'Carabobo',
-      postalCode: '2050',
-      addressCountry: 'VE'
-    },
-    geo: {
-      latitude: 10.4731,
-      longitude: -68.0119
-    },
-    phone: '+58-212-8191152',
-    openingHours: ['Mo-Fr 08:00-17:00'],
-    services: ['Carga Marítima', 'Aduanas', 'Almacenamiento Portuario']
-  },
-  {
-    id: 'barcelona',
-    name: 'Clover Venezuela - Barcelona',
-    shortName: 'Barcelona',
-    isHeadquarters: false,
-    address: {
-      streetAddress: 'Zona Industrial Barcelona',
-      addressLocality: 'Barcelona',
-      addressRegion: 'Anzoátegui',
-      postalCode: '6001',
-      addressCountry: 'VE'
-    },
-    geo: {
-      latitude: 10.1136,
-      longitude: -64.6878
-    },
-    phone: '+58-212-8191152',
-    openingHours: ['Mo-Fr 08:00-17:00'],
-    services: ['Almacenamiento', 'Transporte', 'Distribución']
-  },
-  {
-    id: 'maracaibo',
-    name: 'Clover Venezuela - Maracaibo',
-    shortName: 'Maracaibo',
-    isHeadquarters: false,
-    address: {
-      streetAddress: 'Zona Industrial Maracaibo',
-      addressLocality: 'Maracaibo',
-      addressRegion: 'Zulia',
-      postalCode: '4001',
-      addressCountry: 'VE'
-    },
-    geo: {
-      latitude: 10.6544,
-      longitude: -71.6398
-    },
-    phone: '+58-212-8191152',
-    openingHours: ['Mo-Fr 08:00-17:00'],
-    services: ['Almacenamiento', 'Transporte', 'Distribución']
-  }
-];
-
-// LocalBusiness Schema for a single location
-export function getLocalBusinessSchema(locationId: string) {
-  const location = locations.find(l => l.id === locationId);
-  if (!location) return null;
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': `${SITE_URL}/ubicaciones/${location.id}/#localbusiness`,
-    name: location.name,
-    image: LOGO_URL,
-    url: `${SITE_URL}/ubicaciones/${location.id}`,
-    telephone: location.phone,
-    email: location.email || 'clover@cloverve.com',
-    address: {
-      '@type': 'PostalAddress',
-      ...location.address
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: location.geo.latitude,
-      longitude: location.geo.longitude
-    },
-    openingHoursSpecification: location.openingHours.map(hours => {
-      const [days, time] = hours.split(' ');
-      const [opens, closes] = time.split('-');
-      return {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: days === 'Mo-Fr' ? ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'] : [days],
-        opens,
-        closes
-      };
-    }),
-    priceRange: '$$',
+      'https://www.instagram.com/cloverfileve/',
+      'https://www.facebook.com/cloverfileve'
+    ],
     parentOrganization: {
-      '@id': `${SITE_URL}/#organization`
+      '@type': 'Organization',
+      name: 'Grupo Clover Venezuela',
+      url: 'https://www.cloverve.com'
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Servicios de Gestion Documental',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Digitalizacion de Documentos'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Software de Gestion Documental'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Custodia Fisica de Documentos'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Almacenamiento en Nube'
+          }
+        }
+      ]
     }
   };
 }
 
-// All LocalBusiness schemas combined
-export function getAllLocalBusinessSchemas() {
-  return locations.map(location => getLocalBusinessSchema(location.id));
-}
+// Services list for CloverFile
+export const services = [
+  {
+    name: 'Digitalizacion de Documentos',
+    description: 'Servicios profesionales de digitalizacion con equipos de alta gama. Escaneo de documentos, planos y libros con OCR integrado.',
+    url: '/servicios/digitalizacion'
+  },
+  {
+    name: 'Software de Gestion Documental',
+    description: 'Plataformas integrales de gestion documental parametrizables y flexibles para entornos de alta exigencia.',
+    url: '/servicios/software-gestion'
+  },
+  {
+    name: 'Automatizacion de Procesos',
+    description: 'Implementacion de flujos de trabajo digitales con tecnologias innovadoras para reducir trabajo manual.',
+    url: '/servicios/automatizacion'
+  },
+  {
+    name: 'Almacenamiento en Nube',
+    description: 'Respaldo de datos en la nube con acceso 24/7 y capacidad adaptada a tus necesidades.',
+    url: '/servicios/nube'
+  },
+  {
+    name: 'Custodia Fisica',
+    description: 'Almacenamiento seguro de documentos fisicos en instalaciones con vigilancia 24/7 y control ambiental.',
+    url: '/servicios/custodia'
+  },
+  {
+    name: 'Organizacion e Inventario',
+    description: 'Asesoria experta en gestion documental, inventarios e indexacion de archivos fisicos y digitales.',
+    url: '/servicios/inventario'
+  }
+];
 
 // Service Schema
 export interface ServiceSchemaProps {
@@ -295,8 +154,13 @@ export function getServiceSchema(service: ServiceSchemaProps) {
       '@type': 'Country',
       name: service.areaServed || 'Venezuela'
     },
-    serviceType: 'Logistics'
+    serviceType: 'Document Management Services'
   };
+}
+
+// Get all services schemas
+export function getAllServicesSchemas() {
+  return services.map(service => getServiceSchema(service));
 }
 
 // Article Schema for blog posts
@@ -328,7 +192,7 @@ export function getArticleSchema(article: ArticleSchemaProps) {
     author: {
       '@type': 'Organization',
       '@id': `${SITE_URL}/#organization`,
-      name: article.author || 'Clover Venezuela'
+      name: article.author || 'CloverFile'
     },
     publisher: {
       '@id': `${SITE_URL}/#organization`
@@ -337,7 +201,7 @@ export function getArticleSchema(article: ArticleSchemaProps) {
       '@type': 'WebPage',
       '@id': `${SITE_URL}${article.url}`
     },
-    articleSection: article.section || 'Logística'
+    articleSection: article.section || 'Gestion Documental'
   };
 }
 
@@ -388,8 +252,8 @@ export function getWebSiteSchema() {
     '@type': 'WebSite',
     '@id': `${SITE_URL}/#website`,
     url: SITE_URL,
-    name: 'Clover Venezuela',
-    description: 'Soluciones logísticas integrales en Venezuela',
+    name: 'CloverFile',
+    description: 'Gestion documental digital y fisica en Venezuela. Mas de 40 anos de experiencia protegiendo la informacion de empresas.',
     publisher: {
       '@id': `${SITE_URL}/#organization`
     },
@@ -433,10 +297,10 @@ export function getContactPageSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    '@id': `${SITE_URL}/contacto/#contactpage`,
-    url: `${SITE_URL}/contacto`,
-    name: 'Contacto - Clover Venezuela',
-    description: 'Contacta a Clover Venezuela. 8 ubicaciones estratégicas en todo el país.',
+    '@id': `${SITE_URL}/contactenos/#contactpage`,
+    url: `${SITE_URL}/contactenos`,
+    name: 'Contactenos - Clover Mudanzas Venezuela',
+    description: 'Contacta a Clover Mudanzas. Av. Luis de Camoens, Centro Clover, La Trinidad, Caracas. Tel: +58-212-8191100. Mudanzas nacionales e internacionales.',
     mainEntity: {
       '@id': `${SITE_URL}/#organization`
     }
@@ -450,49 +314,139 @@ export function getAboutPageSchema() {
     '@type': 'AboutPage',
     '@id': `${SITE_URL}/nosotros/#aboutpage`,
     url: `${SITE_URL}/nosotros`,
-    name: 'Nosotros - Clover Venezuela',
-    description: 'Conoce la historia de Clover Venezuela, más de 60 años de experiencia en logística integral.',
+    name: 'Nosotros - Clover Mudanzas Venezuela',
+    description: 'Conoce Clover Mudanzas: mas de 60 anos de experiencia en mudanzas nacionales e internacionales. Pioneros en servicios logisticos integrados desde 1964.',
     mainEntity: {
       '@id': `${SITE_URL}/#organization`
     }
   };
 }
 
-// Services collection for homepage
-export const services = [
-  {
-    name: 'Logística Integral',
-    description: 'Soluciones 3PL completas para optimizar su cadena de suministro en Venezuela.',
-    url: '/logistica-integral-venezuela'
-  },
-  {
-    name: 'Almacenamiento',
-    description: 'Más de 70,000 m² de almacenes estratégicamente ubicados en Venezuela.',
-    url: '/almacen'
-  },
-  {
-    name: 'Transporte Terrestre',
-    description: 'Flota propia con GPS tracking para distribución segura en todo Venezuela.',
-    url: '/logistica-transporte-terrestre'
-  },
-  {
-    name: 'Servicios Aduaneros',
-    description: 'Agenciamiento aduanal certificado OEA para importaciones y exportaciones.',
-    url: '/aduana'
-  },
-  {
-    name: 'Carga Internacional',
-    description: 'Transporte de carga aérea, marítima FCL y LCL desde cualquier origen.',
-    url: '/impot'
-  },
-  {
-    name: 'CloverPack',
-    description: 'Servicios de embalaje industrial y profesional para proteger su mercancía.',
-    url: '/cloverpack'
-  }
-];
+// LocalBusiness Schema for location pages
+export function getLocalBusinessSchema(locationSlug: string) {
+  const locationData: Record<string, { name: string; address: string; city: string; phone: string }> = {
+    caracas: {
+      name: 'Clover Mudanzas Caracas',
+      address: 'Av. Luis de Camoens, Centro Clover, P.3, La Trinidad',
+      city: 'Caracas',
+      phone: '+58-212-8191100'
+    },
+    valencia: {
+      name: 'Clover Mudanzas Valencia',
+      address: 'Zona Industrial Valencia',
+      city: 'Valencia, Carabobo',
+      phone: '+58-212-8191100'
+    },
+    maracaibo: {
+      name: 'Clover Mudanzas Maracaibo',
+      address: 'Zona Industrial Maracaibo',
+      city: 'Maracaibo, Zulia',
+      phone: '+58-212-8191100'
+    },
+    'puerto-cabello': {
+      name: 'Clover Mudanzas Puerto Cabello',
+      address: 'Zona Portuaria Puerto Cabello',
+      city: 'Puerto Cabello, Carabobo',
+      phone: '+58-212-8191100'
+    },
+    barcelona: {
+      name: 'Clover Mudanzas Barcelona',
+      address: 'Zona Industrial Barcelona',
+      city: 'Barcelona, Anzoategui',
+      phone: '+58-212-8191100'
+    },
+    maiquetia: {
+      name: 'Clover Mudanzas Maiquetia',
+      address: 'Aeropuerto Internacional Simon Bolivar',
+      city: 'Maiquetia, Vargas',
+      phone: '+58-212-8191100'
+    }
+  };
 
-// Get all services schemas
-export function getAllServicesSchemas() {
-  return services.map(service => getServiceSchema(service));
+  const location = locationData[locationSlug] || locationData['caracas'];
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'MovingCompany',
+    '@id': `${SITE_URL}/ubicaciones/${locationSlug}/#localbusiness`,
+    name: location.name,
+    image: LOGO_URL,
+    url: `${SITE_URL}/ubicaciones/${locationSlug}`,
+    telephone: location.phone,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: location.address,
+      addressLocality: location.city,
+      addressCountry: 'VE'
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '08:00',
+      closes: '17:00'
+    },
+    priceRange: '$$',
+    parentOrganization: {
+      '@id': `${SITE_URL}/#organization`
+    }
+  };
+}
+
+// CloverFile Organization Schema
+export function getCloverFileOrganizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    '@id': `${SITE_URL}/#organization`,
+    name: 'CloverFile',
+    alternateName: 'Clover File Venezuela',
+    url: SITE_URL,
+    logo: {
+      '@type': 'ImageObject',
+      url: LOGO_URL,
+      width: 200,
+      height: 60
+    },
+    foundingDate: '1984',
+    description: 'Empresa de gestion documental con mas de 40 anos de experiencia en Venezuela. Parte del Grupo Clover, pioneros en servicios logisticos integrados.',
+    slogan: 'Seguridad, Tiempo, Espacio',
+    areaServed: [
+      {
+        '@type': 'Country',
+        name: 'Venezuela'
+      }
+    ],
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        telephone: '+58-212-8191152',
+        contactType: 'customer service',
+        areaServed: 'VE',
+        availableLanguage: ['Spanish', 'English']
+      }
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Av. Luis de Camoens, Centro Clover, P.3',
+      addressLocality: 'La Trinidad',
+      addressRegion: 'Caracas',
+      addressCountry: 'VE'
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '08:00',
+      closes: '17:00'
+    },
+    sameAs: [
+      'https://www.instagram.com/cloverfileve/',
+      'https://www.facebook.com/cloverfileve',
+      'https://servicioscloverfile.com/'
+    ],
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'Grupo Clover Venezuela',
+      url: 'https://www.cloverve.com/'
+    }
+  };
 }

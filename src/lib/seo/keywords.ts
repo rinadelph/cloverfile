@@ -1,4 +1,4 @@
-// SEO Keywords and Meta Data for Clover Venezuela pages
+// SEO Keywords and Meta Data for Clover Mudanzas pages
 
 export interface PageSEO {
   title: string;
@@ -9,300 +9,287 @@ export interface PageSEO {
 
 export const pageSEO: Record<string, PageSEO> = {
   home: {
-    title: 'Clover Venezuela - Logística Integral | +60 Años de Experiencia',
-    description: 'Soluciones logísticas integrales en Venezuela. Almacenamiento, transporte terrestre, aduanas y carga internacional. Más de 60 años de experiencia y 500+ clientes satisfechos.',
+    title: 'Clover Mudanzas - Mudanzas Nacionales e Internacionales | +60 Anos de Experiencia',
+    description: 'Servicios de mudanzas nacionales e internacionales en Venezuela. Embalaje profesional, traslado seguro de bienes personales y corporativos. Mas de 60 anos de experiencia.',
     keywords: [
-      'logística Venezuela',
-      'logística integral Venezuela',
-      'operador logístico Venezuela',
-      '3PL Venezuela',
-      'almacén Venezuela',
-      'transporte Venezuela'
+      'mudanzas Venezuela',
+      'mudanzas internacionales Venezuela',
+      'mudanzas nacionales Venezuela',
+      'empresa de mudanzas Caracas',
+      'mudanzas corporativas',
+      'embalaje profesional Venezuela',
+      'traslado de bienes Venezuela'
+    ],
+    image: '/images/og-mudanzas.jpg'
+  },
+
+  'mudanzas-nacionales': {
+    title: 'Mudanzas Nacionales Venezuela | Traslados a Todo el Pais',
+    description: 'Servicios de mudanzas nacionales en Venezuela. Embalaje, transporte y almacenaje de bienes personales y corporativos a cualquier destino nacional.',
+    keywords: [
+      'mudanzas nacionales Venezuela',
+      'mudanzas Caracas',
+      'traslado nacional Venezuela',
+      'mudanzas residenciales Venezuela',
+      'mudanzas a todo el pais'
     ]
   },
 
-  'logistica-integral-venezuela': {
-    title: 'Logística Integral Venezuela | Operador 3PL Certificado',
-    description: 'Servicios de logística integral 3PL en Venezuela. Optimizamos su cadena de suministro con almacenamiento, transporte y distribución. +60 años de experiencia.',
+  'mudanzas-internacionales': {
+    title: 'Mudanzas Internacionales desde Venezuela | Servicio Puerta a Puerta',
+    description: 'Mudanzas internacionales desde Venezuela a cualquier destino. Gestion aduanal, embalaje de exportacion, seguro a todo riesgo. Servicio puerta a puerta.',
     keywords: [
-      'logística integral Venezuela',
-      '3PL Venezuela',
-      'operador logístico Venezuela',
-      'cadena de suministro Venezuela',
-      'outsourcing logístico',
-      'gestión logística'
+      'mudanzas internacionales Venezuela',
+      'mudanzas desde Venezuela',
+      'mudanzas al exterior',
+      'relocation Venezuela',
+      'mudanzas puerta a puerta',
+      'mudanzas aereas Venezuela',
+      'mudanzas maritimas Venezuela'
     ]
   },
 
-  almacen: {
-    title: 'Almacén Logístico Venezuela | 70,000 m² de Almacenamiento',
-    description: 'Almacenamiento logístico en Venezuela con más de 70,000 m² en 8 ubicaciones estratégicas. Gestión de inventario, picking, packing y distribución.',
+  'mudanzas-oficinas': {
+    title: 'Mudanzas de Oficinas Venezuela | Traslados Corporativos',
+    description: 'Servicios de mudanzas de oficinas y traslados corporativos en Venezuela. Minimo impacto en sus operaciones. Embalaje y traslado de mobiliario y equipos.',
     keywords: [
-      'almacén logístico Venezuela',
-      'almacenamiento Caracas',
-      'almacén 70000 m²',
-      'bodega Venezuela',
-      'almacén refrigerado',
-      'gestión de inventario'
+      'mudanzas de oficinas Venezuela',
+      'mudanzas corporativas Caracas',
+      'traslado de oficinas',
+      'mudanzas empresariales',
+      'mudanzas comerciales Venezuela'
     ]
   },
 
-  'logistica-transporte-terrestre': {
-    title: 'Transporte Terrestre Venezuela | Flota Propia con GPS',
-    description: 'Transporte terrestre de carga en Venezuela con flota propia y rastreo GPS en tiempo real. Distribución segura a nivel nacional.',
+  'clover-pack': {
+    title: 'Clover Pack | Embalaje Profesional para Mudanzas',
+    description: 'Servicios de embalaje profesional para mudanzas. Materiales de alta calidad, tecnicas especializadas para proteger sus pertenencias durante el traslado.',
     keywords: [
-      'transporte terrestre Venezuela',
-      'transporte de carga Venezuela',
-      'flota propia Venezuela',
-      'GPS tracking carga',
-      'distribución nacional',
-      'camiones Venezuela'
-    ]
-  },
-
-  aduana: {
-    title: 'Agencia Aduanal Venezuela | Servicios OEA Certificados',
-    description: 'Agenciamiento aduanal en Venezuela. Nacionalización de mercancías, clasificación arancelaria, certificación OEA. Agilizamos sus importaciones y exportaciones.',
-    keywords: [
-      'agencia aduanal Venezuela',
-      'nacionalización Venezuela',
-      'OEA Venezuela',
-      'importación Venezuela',
-      'exportación Venezuela',
-      'clasificación arancelaria',
-      'SENIAT'
-    ]
-  },
-
-  impot: {
-    title: 'Carga Internacional Venezuela | Aérea, Marítima FCL/LCL',
-    description: 'Servicios de carga internacional hacia Venezuela. Transporte aéreo, marítimo FCL y LCL. Consolidación y desconsolidación de carga.',
-    keywords: [
-      'carga internacional Venezuela',
-      'carga aérea Venezuela',
-      'carga marítima Venezuela',
-      'FCL Venezuela',
-      'LCL Venezuela',
-      'freight forwarder Venezuela'
-    ]
-  },
-
-  cloverpack: {
-    title: 'Embalaje Industrial Venezuela | CloverPack Profesional',
-    description: 'Servicios de embalaje industrial y profesional en Venezuela. Protección de mercancía, paletizado y acondicionamiento para transporte.',
-    keywords: [
-      'embalaje industrial Venezuela',
+      'embalaje mudanzas Venezuela',
       'embalaje profesional',
-      'paletizado Venezuela',
-      'empaque industrial',
-      'protección de carga',
-      'CloverPack'
+      'materiales de embalaje',
+      'proteccion de bienes mudanza',
+      'Clover Pack'
     ]
   },
 
   contacto: {
-    title: 'Contacto | Clover Venezuela - 8 Ubicaciones Estratégicas',
-    description: 'Contacta a Clover Venezuela. 8 ubicaciones estratégicas: Caracas, Valencia, Puerto Cabello, Maiquetía, Barcelona, Maracaibo. Tel: +58-212-8191152',
+    title: 'Contacto | Clover Mudanzas - Solicite su Presupuesto',
+    description: 'Contacte a Clover Mudanzas para solicitar presupuesto sin compromiso. Mudanzas nacionales e internacionales. Tel: +58-212-8191152',
     keywords: [
-      'contacto Clover Venezuela',
-      'ubicaciones Clover',
-      'teléfono Clover Venezuela',
-      'email logística Venezuela'
+      'contacto Clover Mudanzas',
+      'presupuesto mudanza Venezuela',
+      'cotizacion mudanza',
+      'telefono mudanzas Venezuela'
     ]
   },
 
   nosotros: {
-    title: 'Nosotros | Clover Venezuela - +60 Años de Historia',
-    description: 'Conoce Clover Venezuela: +60 años de experiencia en logística integral. Nuestra historia, misión, visión y valores. Líder en soluciones logísticas.',
+    title: 'Nosotros | Clover Mudanzas - +60 Anos de Experiencia',
+    description: 'Conozca Clover Mudanzas: mas de 60 anos de experiencia en mudanzas nacionales e internacionales. Parte del Grupo Clover Venezuela.',
     keywords: [
-      'historia Clover Venezuela',
-      'sobre nosotros logística',
-      'empresa logística Venezuela',
-      'valores Clover'
+      'historia Clover Mudanzas',
+      'sobre nosotros mudanzas',
+      'empresa mudanzas Venezuela',
+      'Grupo Clover'
     ]
   },
 
   blog: {
-    title: 'Blog | Clover Venezuela - Noticias y Tendencias Logísticas',
-    description: 'Blog de logística y cadena de suministro en Venezuela. Artículos sobre tendencias, mejores prácticas y novedades del sector logístico.',
+    title: 'Blog | Clover Mudanzas - Consejos y Guias para tu Mudanza',
+    description: 'Blog de consejos para mudanzas. Guias practicas, tips de embalaje y todo lo que necesitas saber para una mudanza exitosa.',
     keywords: [
-      'blog logística Venezuela',
-      'noticias logística',
-      'tendencias cadena de suministro',
-      'artículos logística'
+      'blog mudanzas',
+      'consejos mudanza',
+      'tips embalaje',
+      'guia mudanza internacional'
     ]
   },
 
-  'casos-de-exito': {
-    title: 'Casos de Éxito | Clover Venezuela - Historias de Clientes',
-    description: 'Descubre cómo Clover Venezuela ha transformado la logística de empresas líderes. Casos de éxito y testimonios de clientes satisfechos.',
+  'para-ti': {
+    title: 'Para Ti | Blog CloverFile Venezuela - Gestion Documental y Tecnologia',
+    description: 'Articulos, noticias y consejos sobre gestion documental, digitalizacion de documentos, seguridad en la nube y soluciones tecnologicas para empresas venezolanas.',
     keywords: [
-      'casos de éxito logística',
-      'testimonios clientes',
-      'historias de éxito',
-      'clientes Clover Venezuela'
+      'blog gestion documental',
+      'articulos digitalizacion',
+      'noticias tecnologia Venezuela',
+      'consejos almacenamiento nube',
+      'gestion de archivos empresariales',
+      'seguridad documental',
+      'WMS almacenes Venezuela'
+    ]
+  },
+
+  'gestion-digital': {
+    title: 'Gestion Digital de Documentos | Clover File Venezuela',
+    description: 'Servicios de digitalizacion de documentos, software de gestion documental, automatizacion de flujos de trabajo y almacenamiento en nube. Transformamos tu archivo fisico en digital.',
+    keywords: [
+      'gestion digital documentos Venezuela',
+      'digitalizacion de documentos',
+      'escaneo de documentos',
+      'software gestion documental',
+      'automatizacion workflows',
+      'almacenamiento en nube documentos',
+      'OCR reconocimiento texto',
+      'archivo digital empresarial',
+      'digitalizacion planos libros',
+      'flujos de trabajo documental'
+    ]
+  },
+
+  'gestion-fisica': {
+    title: 'Gestion Fisica de Documentos | Clover File Venezuela',
+    description: 'Custodia y almacenamiento seguro de documentos fisicos en Venezuela. Cajas de archivo, almacenes especializados, boveda de medios magneticos y servicio de prestamos.',
+    keywords: [
+      'gestion fisica documentos Venezuela',
+      'custodia de archivos',
+      'almacenamiento documentos fisicos',
+      'cajas de archivo',
+      'boveda medios magneticos',
+      'prestamo documentos',
+      'inventario documental',
+      'traslado de documentos',
+      'archivo empresarial',
+      'custodia segura documentos'
+    ]
+  },
+
+  almacen: {
+    title: 'Almacenamiento Logistico | Clover Venezuela - 70,000+ m2',
+    description: 'Servicios de almacenamiento en Venezuela con mas de 70,000 m2 de capacidad. Cadena de frio, picking & packing, cross docking y gestion de inventarios WMS.',
+    keywords: [
+      'almacenamiento Venezuela',
+      'almacen logistico',
+      'cadena de frio',
+      'picking packing',
+      'cross docking',
+      'WMS Venezuela',
+      'gestion inventarios'
     ]
   }
 };
 
-// Location-specific SEO
+// Location-specific SEO (for ubicaciones page)
 export const locationSEO: Record<string, PageSEO> = {
   caracas: {
-    title: 'Logística en Caracas | Clover Venezuela - 3 Ubicaciones',
-    description: 'Servicios logísticos en Caracas: La Trinidad, Macarao y La Yaguara. Almacenamiento, transporte y distribución en la capital.',
+    title: 'Mudanzas en Caracas | Clover Mudanzas Venezuela',
+    description: 'Servicios de mudanzas en Caracas. Mudanzas residenciales y corporativas en La Trinidad, Chacao, Altamira, Las Mercedes y toda el area metropolitana.',
     keywords: [
-      'logística Caracas',
-      'almacén Caracas',
-      'transporte Caracas',
-      'La Trinidad logística',
-      'distribución Caracas'
+      'mudanzas Caracas',
+      'mudanzas La Trinidad',
+      'empresa mudanzas Caracas',
+      'mudanzas residenciales Caracas'
     ]
   },
-
   valencia: {
-    title: 'Logística en Valencia | Clover Venezuela - Estado Carabobo',
-    description: 'Centro logístico en Valencia, Estado Carabobo. Almacenamiento y distribución para la zona central de Venezuela.',
+    title: 'Mudanzas en Valencia | Clover Mudanzas Carabobo',
+    description: 'Servicios de mudanzas en Valencia, Estado Carabobo. Mudanzas residenciales y empresariales en la zona centro-occidental de Venezuela.',
     keywords: [
-      'logística Valencia Venezuela',
-      'almacén Valencia',
-      'transporte Carabobo',
-      'distribución Valencia'
+      'mudanzas Valencia Venezuela',
+      'mudanzas Carabobo',
+      'empresa mudanzas Valencia'
     ]
   },
-
-  'puerto-cabello': {
-    title: 'Logística Portuaria Puerto Cabello | Clover Venezuela',
-    description: 'Servicios logísticos en Puerto Cabello. Operaciones portuarias, almacenamiento de carga marítima y servicios aduanales.',
-    keywords: [
-      'logística Puerto Cabello',
-      'puerto Puerto Cabello',
-      'carga marítima Venezuela',
-      'almacén portuario'
-    ]
-  },
-
-  maiquetia: {
-    title: 'Logística Aeroportuaria Maiquetía | Clover Venezuela',
-    description: 'Servicios logísticos en Aeropuerto de Maiquetía. Carga aérea internacional, aduanas y almacenamiento aeroportuario.',
-    keywords: [
-      'logística Maiquetía',
-      'carga aérea Venezuela',
-      'aeropuerto Maiquetía',
-      'aduana aeroportuaria'
-    ]
-  },
-
-  barcelona: {
-    title: 'Logística en Barcelona | Clover Venezuela - Anzoátegui',
-    description: 'Centro logístico en Barcelona, Estado Anzoátegui. Almacenamiento y distribución para el oriente venezolano.',
-    keywords: [
-      'logística Barcelona Venezuela',
-      'almacén Anzoátegui',
-      'transporte oriente Venezuela'
-    ]
-  },
-
   maracaibo: {
-    title: 'Logística en Maracaibo | Clover Venezuela - Zulia',
-    description: 'Centro logístico en Maracaibo, Estado Zulia. Almacenamiento y distribución para el occidente venezolano.',
+    title: 'Mudanzas en Maracaibo | Clover Mudanzas Zulia',
+    description: 'Servicios de mudanzas en Maracaibo, Estado Zulia. Mudanzas locales, nacionales e internacionales desde el occidente del pais.',
     keywords: [
-      'logística Maracaibo',
-      'almacén Zulia',
-      'transporte occidente Venezuela',
-      'distribución Maracaibo'
+      'mudanzas Maracaibo',
+      'mudanzas Zulia',
+      'empresa mudanzas Maracaibo'
+    ]
+  },
+  'puerto-cabello': {
+    title: 'Mudanzas Puerto Cabello | Clover Mudanzas',
+    description: 'Servicios de mudanzas y embalaje en Puerto Cabello. Conexion portuaria para mudanzas internacionales.',
+    keywords: [
+      'mudanzas Puerto Cabello',
+      'mudanzas portuarias Venezuela'
+    ]
+  },
+  barcelona: {
+    title: 'Mudanzas en Barcelona | Clover Mudanzas Anzoategui',
+    description: 'Servicios de mudanzas en Barcelona y Puerto La Cruz, Estado Anzoategui. Mudanzas para el oriente venezolano.',
+    keywords: [
+      'mudanzas Barcelona Venezuela',
+      'mudanzas Anzoategui',
+      'mudanzas Puerto La Cruz'
+    ]
+  },
+  maiquetia: {
+    title: 'Mudanzas Aereas Maiquetia | Clover Mudanzas',
+    description: 'Servicios de mudanzas aereas desde el Aeropuerto de Maiquetia. Conexion internacional rapida para sus pertenencias.',
+    keywords: [
+      'mudanzas aereas Venezuela',
+      'mudanzas Maiquetia',
+      'carga aerea mudanzas'
     ]
   }
 };
 
-// FAQ content for service pages
+// Service-specific FAQs
 export const serviceFAQs: Record<string, Array<{ question: string; answer: string }>> = {
-  'logistica-integral-venezuela': [
+  'mudanzas-nacionales': [
     {
-      question: '¿Qué es la logística integral 3PL?',
-      answer: 'La logística integral 3PL (Third Party Logistics) es un modelo donde una empresa externa gestiona todas las operaciones logísticas: almacenamiento, inventario, transporte y distribución, permitiendo a las empresas enfocarse en su negocio principal.'
+      question: 'Que incluye el servicio de mudanza nacional?',
+      answer: 'Nuestro servicio incluye: embalaje profesional de todos sus bienes, carga y descarga, transporte seguro, almacenaje temporal si es necesario, e instalacion en el destino final.'
     },
     {
-      question: '¿Cuáles son las ventajas de tercerizar la logística?',
-      answer: 'Las principales ventajas incluyen: reducción de costos operativos, acceso a infraestructura especializada, flexibilidad para escalar operaciones, tecnología avanzada de gestión y experiencia profesional en cadena de suministro.'
+      question: 'A que destinos realizan mudanzas nacionales?',
+      answer: 'Realizamos mudanzas a cualquier destino dentro de Venezuela, incluyendo Caracas, Valencia, Maracaibo, Barquisimeto, Barcelona, Puerto La Cruz, Merida, y todas las ciudades del pais.'
     },
     {
-      question: '¿Clover Venezuela está certificado como operador logístico?',
-      answer: 'Sí, Clover Venezuela cuenta con más de 60 años de experiencia y certificaciones que garantizan la calidad de nuestros servicios logísticos, incluyendo certificación OEA (Operador Económico Autorizado).'
+      question: 'Cuanto tiempo toma una mudanza nacional?',
+      answer: 'El tiempo depende de la distancia y el volumen. Mudanzas dentro de la misma ciudad pueden completarse en 1-2 dias. Mudanzas a otras ciudades pueden tomar de 3-7 dias incluyendo embalaje y traslado.'
     }
   ],
 
-  almacen: [
+  'mudanzas-internacionales': [
     {
-      question: '¿Cuánto espacio de almacenamiento tiene Clover Venezuela?',
-      answer: 'Contamos con más de 70,000 m² de almacenes distribuidos en 8 ubicaciones estratégicas en Venezuela: Caracas (La Trinidad, Macarao, La Yaguara), Valencia, Puerto Cabello, Maiquetía, Barcelona y Maracaibo.'
+      question: 'Que necesito para hacer una mudanza internacional?',
+      answer: 'Necesitara: pasaporte vigente, visa o permiso de residencia del pais destino, inventario detallado de bienes, y documentos que acrediten propiedad de items de alto valor. Nosotros gestionamos toda la documentacion aduanal.'
     },
     {
-      question: '¿Ofrecen almacenamiento refrigerado?',
-      answer: 'Sí, disponemos de instalaciones con almacenamiento refrigerado y climatizado para productos que requieren control de temperatura, garantizando la cadena de frío.'
+      question: 'Cuanto tiempo toma una mudanza internacional?',
+      answer: 'Por via maritima: 4-8 semanas dependiendo del destino. Por via aerea: 1-2 semanas. Incluye tiempo de embalaje, transito y despacho aduanal en origen y destino.'
     },
     {
-      question: '¿Cómo se gestiona el inventario?',
-      answer: 'Utilizamos sistemas WMS (Warehouse Management System) para control de inventario en tiempo real, con trazabilidad completa de su mercancía desde la recepción hasta el despacho.'
+      question: 'Ofrecen seguro para mudanzas internacionales?',
+      answer: 'Si, ofrecemos seguro a todo riesgo que cubre sus bienes durante todo el proceso: embalaje, transporte, almacenaje y entrega. El seguro protege contra danos, perdida y robo.'
+    },
+    {
+      question: 'Que paises manejan para mudanzas internacionales?',
+      answer: 'Realizamos mudanzas a cualquier destino mundial. Los destinos mas frecuentes incluyen: Estados Unidos, Espana, Panama, Colombia, Chile, Argentina, Portugal, y otros paises de America y Europa.'
     }
   ],
 
-  'logistica-transporte-terrestre': [
+  'mudanzas-oficinas': [
     {
-      question: '¿Clover Venezuela tiene flota propia?',
-      answer: 'Sí, contamos con flota propia de vehículos de diferentes capacidades, todos equipados con GPS para rastreo en tiempo real, garantizando seguridad y puntualidad en las entregas.'
+      question: 'Como minimizan el impacto en las operaciones de la empresa?',
+      answer: 'Planificamos cuidadosamente cada fase, trabajamos en horarios extendidos o fines de semana, y coordinamos la mudanza por etapas para minimizar el tiempo de inactividad de su empresa.'
     },
     {
-      question: '¿Qué cobertura tiene el transporte terrestre?',
-      answer: 'Ofrecemos cobertura a nivel nacional en Venezuela, con operaciones desde nuestras 8 ubicaciones estratégicas que nos permiten llegar a cualquier punto del país.'
+      question: 'Manejan equipos de computacion y tecnologia?',
+      answer: 'Si, contamos con experiencia en el traslado de equipos de TI, servidores, y tecnologia. Utilizamos embalaje especializado y personal capacitado para el manejo de equipos sensibles.'
     },
     {
-      question: '¿Puedo rastrear mi carga en tiempo real?',
-      answer: 'Sí, todos nuestros vehículos cuentan con sistema GPS que permite el seguimiento en tiempo real de su carga, brindando visibilidad completa de sus envíos.'
+      question: 'Ofrecen servicio de instalacion en el nuevo espacio?',
+      answer: 'Si, nuestro servicio incluye la instalacion de mobiliario y equipos en la nueva ubicacion, siguiendo el plano de distribucion acordado con su empresa.'
     }
   ],
 
-  aduana: [
+  'clover-pack': [
     {
-      question: '¿Qué es la certificación OEA?',
-      answer: 'OEA (Operador Económico Autorizado) es una certificación que otorga el SENIAT a empresas que cumplen estándares de seguridad y cumplimiento aduanero, permitiendo procesos más ágiles y beneficios en sus operaciones de comercio exterior.'
+      question: 'Que materiales utilizan para el embalaje?',
+      answer: 'Utilizamos materiales de alta calidad: cajas reforzadas de diferentes tamanos, papel kraft, burbujas de aire, foam, esquineros, cinta de embalaje industrial, y materiales especiales para items fragiles.'
     },
     {
-      question: '¿Qué servicios aduanales ofrece Clover Venezuela?',
-      answer: 'Ofrecemos: nacionalización de mercancías, clasificación arancelaria, liquidación de impuestos, gestión de permisos y certificados, regímenes especiales y asesoría en comercio exterior.'
+      question: 'Ofrecen embalaje para articulos especiales?',
+      answer: 'Si, tenemos experiencia en embalaje de obras de arte, pianos, antiguedades, cristaleria fina, electrodomesticos grandes, y cualquier articulo que requiera cuidado especial.'
     },
     {
-      question: '¿En qué puertos y aeropuertos operan?',
-      answer: 'Operamos en los principales puntos de entrada del país: Puerto Cabello, La Guaira, Aeropuerto de Maiquetía, y tenemos capacidad de gestionar operaciones en cualquier aduana de Venezuela.'
-    }
-  ],
-
-  impot: [
-    {
-      question: '¿Qué es carga FCL y LCL?',
-      answer: 'FCL (Full Container Load) es cuando su carga ocupa un contenedor completo. LCL (Less than Container Load) es cuando su carga se consolida con otras cargas en un mismo contenedor, siendo ideal para volúmenes menores.'
-    },
-    {
-      question: '¿Desde qué países pueden importar carga?',
-      answer: 'Gestionamos carga internacional desde cualquier origen: Estados Unidos, Europa, Asia (China, especialmente), y América Latina. Contamos con una red global de agentes y corresponsales.'
-    },
-    {
-      question: '¿Ofrecen servicio de carga aérea?',
-      answer: 'Sí, manejamos carga aérea para envíos urgentes o mercancía de alto valor. Operamos desde el Aeropuerto de Maiquetía con servicios de consolidación y desconsolidación.'
-    }
-  ],
-
-  cloverpack: [
-    {
-      question: '¿Qué tipo de embalaje ofrecen?',
-      answer: 'Ofrecemos embalaje industrial para maquinaria, equipos y productos especiales; embalaje comercial para productos de consumo; paletizado y retractilado; y soluciones personalizadas según las necesidades de su mercancía.'
-    },
-    {
-      question: '¿El embalaje protege contra la humedad?',
-      answer: 'Sí, utilizamos materiales y técnicas especializadas para protección contra humedad, incluyendo barreras de vapor, desecantes y embalaje hermético cuando sea necesario.'
-    },
-    {
-      question: '¿Pueden embalar mercancía para exportación?',
-      answer: 'Sí, realizamos embalaje que cumple con normativas internacionales para exportación, incluyendo tratamiento fitosanitario de madera (NIMF-15) cuando se requiere.'
+      question: 'El embalaje cumple con normas internacionales?',
+      answer: 'Si, nuestro embalaje para mudanzas internacionales cumple con todas las normas de exportacion, incluyendo tratamiento fitosanitario de madera (NIMF-15) cuando es requerido.'
     }
   ]
 };

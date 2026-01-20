@@ -29,8 +29,8 @@
     jsonLd
   }: Props = $props();
 
-  const SITE_NAME = 'Clover Venezuela';
-  const SITE_URL = 'https://www.cloverve.com';
+  const SITE_NAME = 'Clover Mudanzas';
+  const SITE_URL = 'https://www.clovermudanzas.com';
   const DEFAULT_LOCALE = 'es_VE';
 
   // Truncate description to 160 chars

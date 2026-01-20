@@ -1,15 +1,11 @@
 <script lang="ts">
-  // Strategic hero for Venezuela's rebuilding moment
+  // CloverFile Hero - Document Management Services
 </script>
 
 <section class="hero">
   <!-- Background -->
   <div class="hero-media">
-    <img
-      src="/images/1.jpg"
-      alt="Puerto de contenedores Venezuela"
-      class="hero-image"
-    />
+    <div class="hero-pattern"></div>
     <div class="hero-overlay"></div>
   </div>
 
@@ -17,67 +13,53 @@
     <div class="hero-container">
       <!-- Logo Display -->
       <div class="hero-logo">
-        <img src="/images/LOGO_CLOVER_VENEZUELA-04.png" alt="Grupo Clover" />
+        <img src="/images/1502852123.png" alt="CloverFile" />
       </div>
 
       <!-- Main Message -->
       <h1 class="hero-headline">
-        Logística integral<br/>
-        <span class="headline-accent">para Venezuela y el mundo</span>
+        Seguridad, Tiempo, Espacio<br/>
+        <span class="headline-accent">en el manejo de tu informacion</span>
       </h1>
 
       <p class="hero-description">
-        Almacenaje, transporte, aduanas, carga internacional, gestión documental
-        y mudanzas corporativas. <strong>70,000 m² de infraestructura</strong> y
-        presencia en 6 países al servicio de los sectores más exigentes.
+        Gestion documental integral para empresas. <strong>Digitalizacion, software de gestion,
+        automatizacion de procesos y almacenamiento en la nube.</strong> Custodia fisica segura
+        con +40 anos de experiencia protegiendo la informacion de Venezuela.
       </p>
 
       <!-- CTA Row -->
       <div class="hero-cta">
         <a href="/contacto" class="cta-primary">
-          Solicitar cotización
+          Solicitar cotizacion
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
         </a>
-        <a href="https://clover-track.com/app/" class="cta-secondary" target="_blank">
-          Rastrear envío
+        <a href="https://servicioscloverfile.com/" class="cta-secondary" target="_blank">
+          Portal de solicitudes
         </a>
       </div>
 
-      <!-- Quick Links - The Ecosystem -->
-      <div class="hero-ecosystem">
-        <span class="ecosystem-label">El ecosistema Clover:</span>
-        <div class="ecosystem-links">
-          <a href="/logistica-integral-venezuela" class="eco-link">
-            <span class="eco-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="1" y="3" width="15" height="13" rx="2"/>
-                <path d="M16 8h4l3 3v5h-7V8z"/>
-                <circle cx="5.5" cy="18.5" r="2.5"/>
-                <circle cx="18.5" cy="18.5" r="2.5"/>
-              </svg>
-            </span>
-            Logística Integral
-          </a>
-          <a href="https://www.cloverfileve.com" class="eco-link" target="_blank">
-            <span class="eco-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-              </svg>
-            </span>
-            CloverFile
-          </a>
-          <a href="https://www.clovermudanzas.com" class="eco-link" target="_blank">
-            <span class="eco-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
-            </span>
-            Mudanzas
-          </a>
+      <!-- Service Categories -->
+      <div class="hero-services">
+        <div class="service-category">
+          <span class="category-label">Gestion Digital</span>
+          <div class="category-items">
+            <span class="category-item">Digitalizacion</span>
+            <span class="category-item">Software</span>
+            <span class="category-item">Automatizacion</span>
+            <span class="category-item">Nube</span>
+          </div>
+        </div>
+        <div class="service-category">
+          <span class="category-label">Gestion Fisica</span>
+          <div class="category-items">
+            <span class="category-item">Cajas</span>
+            <span class="category-item">Almacenes</span>
+            <span class="category-item">Inventario</span>
+            <span class="category-item">Traslado</span>
+          </div>
         </div>
       </div>
     </div>
@@ -87,35 +69,24 @@
   <div class="hero-stats">
     <div class="stats-container">
       <div class="stat-item">
-        <span class="stat-number">1964</span>
-        <span class="stat-label">Fundación</span>
+        <span class="stat-number">40+</span>
+        <span class="stat-label">Anos de experiencia</span>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
-        <span class="stat-number">70,000</span>
-        <span class="stat-label">m² de infraestructura</span>
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Acceso a informacion</span>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
-        <span class="stat-number">6</span>
-        <span class="stat-label">Países</span>
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Confidencialidad</span>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
-        <span class="stat-number">3</span>
-        <span class="stat-label">Generaciones</span>
+        <span class="stat-number">ISO</span>
+        <span class="stat-label">Estandares de calidad</span>
       </div>
-    </div>
-  </div>
-
-  <!-- Credentials -->
-  <div class="hero-creds">
-    <span class="creds-label">Certificaciones:</span>
-    <div class="creds-list">
-      <span class="cred">ISO 9001</span>
-      <span class="cred">C-TPAT</span>
-      <span class="cred">BASC</span>
-      <span class="cred">OEA</span>
     </div>
   </div>
 </section>
@@ -126,33 +97,32 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #0a0a0a;
+    background: linear-gradient(135deg, #003C75 0%, #004387 50%, #0066CC 100%);
     overflow: hidden;
   }
 
-  /* Background */
+  /* Background Pattern */
   .hero-media {
     position: absolute;
     inset: 0;
     z-index: 1;
   }
 
-  .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: 0.5;
+  .hero-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 80%, rgba(136, 176, 39, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
   }
 
   .hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(
-      135deg,
-      rgba(0, 0, 0, 0.95) 0%,
-      rgba(0, 0, 0, 0.8) 40%,
-      rgba(0, 0, 0, 0.6) 100%
+      180deg,
+      rgba(0, 60, 117, 0.3) 0%,
+      rgba(0, 67, 135, 0.5) 100%
     );
   }
 
@@ -191,37 +161,36 @@
   }
 
   .hero-logo img {
-    height: 80px;
+    height: 70px;
     width: auto;
-    filter: brightness(0) invert(1);
   }
 
   @media (min-width: 768px) {
     .hero-logo img {
-      height: 100px;
+      height: 90px;
     }
   }
 
   /* Headline */
   .hero-headline {
-    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-size: clamp(2.25rem, 7vw, 4rem);
     font-weight: 700;
     line-height: 1.1;
     color: #ffffff;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     margin-bottom: 1.5rem;
   }
 
   .headline-accent {
-    color: #00A651;
+    color: #8BB019;
   }
 
   /* Description */
   .hero-description {
     font-size: clamp(1rem, 1.5vw, 1.125rem);
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.7);
-    max-width: 580px;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 620px;
     margin-bottom: 2.5rem;
   }
 
@@ -243,18 +212,19 @@
     align-items: center;
     gap: 0.75rem;
     padding: 1rem 2rem;
-    background: #00A651;
+    background: #8BB019;
     color: #ffffff;
     font-size: 0.9375rem;
     font-weight: 600;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: all 0.3s ease;
+    text-decoration: none;
   }
 
   .cta-primary:hover {
-    background: #008744;
+    background: #7A9C16;
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0, 166, 81, 0.4);
+    box-shadow: 0 8px 30px rgba(139, 176, 25, 0.4);
   }
 
   .cta-primary svg {
@@ -273,68 +243,65 @@
     color: #ffffff;
     font-size: 0.9375rem;
     font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
     transition: all 0.3s ease;
+    text-decoration: none;
   }
 
   .cta-secondary:hover {
     background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.5);
   }
 
-  /* Ecosystem Links */
-  .hero-ecosystem {
+  /* Service Categories */
+  .hero-services {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .hero-services {
+      flex-direction: row;
+      gap: 3rem;
+    }
+  }
+
+  .service-category {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
   }
 
-  @media (min-width: 640px) {
-    .hero-ecosystem {
-      flex-direction: row;
-      align-items: center;
-      gap: 1.5rem;
-    }
-  }
-
-  .ecosystem-label {
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.4);
+  .category-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: #8BB019;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
   }
 
-  .ecosystem-links {
+  .category-items {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
   }
 
-  .eco-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+  .category-item {
     padding: 0.5rem 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
     font-size: 0.8125rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     transition: all 0.2s ease;
   }
 
-  .eco-link:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-  }
-
-  .eco-icon {
-    display: flex;
-    color: #00A651;
+  .category-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
   }
 
   /* Stats Bar */
@@ -352,7 +319,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
   }
 
   .stat-item {
@@ -371,7 +338,7 @@
 
   .stat-label {
     font-size: 0.6875rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
@@ -379,52 +346,13 @@
   .stat-divider {
     width: 1px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.2);
     align-self: center;
-  }
-
-  /* Credentials */
-  .hero-creds {
-    position: absolute;
-    bottom: 2rem;
-    right: clamp(1.5rem, 5vw, 4rem);
-    z-index: 20;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    animation: fadeUp 0.8s ease-out 0.5s both;
-  }
-
-  .creds-label {
-    font-size: 0.625rem;
-    color: rgba(255, 255, 255, 0.4);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
-  .creds-list {
-    display: flex;
-    gap: 0.375rem;
-  }
-
-  .cred {
-    padding: 0.25rem 0.625rem;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 4px;
-    font-size: 0.625rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
-    letter-spacing: 0.03em;
   }
 
   /* Responsive */
   @media (max-width: 1024px) {
     .stat-divider {
-      display: none;
-    }
-
-    .hero-creds {
       display: none;
     }
   }
