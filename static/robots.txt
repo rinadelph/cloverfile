@@ -1,0 +1,18 @@
+# Robots.txt for Clover Venezuela
+# https://www.cloverve.com
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin and private routes
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_app/
+
+# Crawl delay for rate limiting (optional, respected by some bots)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.cloverve.com/sitemap.xml

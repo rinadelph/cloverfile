@@ -1,0 +1,555 @@
+{
+  "nav": {
+    "logistics": "Logistica",
+    "logisticsIntegral": "Logistica Integral",
+    "customs": "Aduana",
+    "warehouse": "Almacen",
+    "landTransport": "Transporte Terrestre",
+    "internationalCargo": "Carga Internacional",
+    "moving": "Mudanzas",
+    "cloverFile": "CloverFile",
+    "cloverTrack": "Clover-Track",
+    "wmsClients": "WMS Clientes",
+    "purchasePortal": "Portal Compras",
+    "aboutUs": "Nosotros",
+    "blog": "+Para ti",
+    "contact": "Contacto"
+  },
+  "common": {
+    "contact": "Contacto",
+    "requestQuote": "Solicitar cotizacion",
+    "learnMore": "Ver mas",
+    "contactNow": "Contactar ahora",
+    "sendMessage": "Enviar mensaje",
+    "sending": "Enviando...",
+    "sendAnother": "Enviar otro mensaje",
+    "followUs": "Siguenos",
+    "scroll": "Scroll",
+    "menu": "Menu",
+    "yearsExperience": "Anos de experiencia",
+    "satisfiedClients": "Clientes satisfechos",
+    "supportAvailable": "Soporte disponible",
+    "commitment": "Compromiso",
+    "services": "Servicios",
+    "company": "Empresa",
+    "platforms": "Plataformas",
+    "relatedServices": "Servicios Relacionados",
+    "ourServices": "Nuestros Servicios",
+    "goToSlide": "Ir a slide"
+  },
+  "home": {
+    "title": "Clover Venezuela - Logistica Integral | +50 Anos de Experiencia",
+    "hero": {
+      "slide1": {
+        "subtitle": "Que hacemos?",
+        "title": "+Alcance",
+        "description": "Ofrecemos una vasta cartera de soluciones de logistica, almacenamiento, digitalizacion, mudanzas y mas. Con + de 50 anos de experiencia, somos expertos en ofrecer soluciones unicas a nuestros clientes.",
+        "cta": "+Experiencia"
+      },
+      "slide2": {
+        "subtitle": "Almacenamiento",
+        "title": "+Capacidad",
+        "description": "Contamos con instalaciones de almacenamiento de ultima generacion, incluyendo almacenamiento refrigerado para mercancia sensible.",
+        "cta": "+Informacion"
+      },
+      "slide3": {
+        "subtitle": "Transporte",
+        "title": "+Conexion",
+        "description": "Red de transporte terrestre con cobertura nacional e internacional para garantizar la entrega segura de su mercancia.",
+        "cta": "+Servicios"
+      }
+    },
+    "services": {
+      "label": "Nuestros Servicios",
+      "title": "Soluciones de logistica integral",
+      "subtitle": "Mas de 50 anos de experiencia nos respaldan como lideres en soluciones logisticas en Venezuela.",
+      "logisticsIntegral": {
+        "title": "Logistica Integral",
+        "description": "Soluciones completas de logistica adaptadas a las necesidades de su empresa."
+      },
+      "customs": {
+        "title": "Aduana",
+        "description": "Asesoria y gestion de tramites aduaneros para importacion y exportacion."
+      },
+      "warehouse": {
+        "title": "Almacen",
+        "description": "Almacenamiento fisico y refrigerado con tecnologia de punta."
+      },
+      "landTransport": {
+        "title": "Transporte Terrestre",
+        "description": "Red de transporte con cobertura nacional para su mercancia."
+      },
+      "internationalCargo": {
+        "title": "Carga Internacional",
+        "description": "Servicios de importacion y exportacion via maritima y aerea."
+      }
+    },
+    "additionalServices": {
+      "title": "+Soluciones",
+      "subtitle": "Servicios adicionales para cubrir todas sus necesidades",
+      "moving": {
+        "title": "Mudanzas",
+        "description": "Servicios de mudanza residencial y corporativa."
+      },
+      "cloverFile": {
+        "title": "CloverFile",
+        "description": "Digitalizacion y almacenamiento de documentos en la nube."
+      },
+      "cloverPack": {
+        "title": "CloverPack",
+        "description": "Soluciones de embalaje profesional."
+      }
+    },
+    "cta": {
+      "title": "Listo para optimizar su logistica?",
+      "description": "Contactenos hoy y descubra como podemos ayudar a su empresa a crecer."
+    }
+  },
+  "aboutUs": {
+    "title": "Sobre Nosotros | Clover Venezuela",
+    "metaDescription": "Somos mas que un prestador de servicios, somos un aliado comercial preocupado por aportar soluciones que maximicen la relacion costo-beneficio de su empresa. Creamos posibilidades que se mueven.",
+    "hero": {
+      "subtitle": "Sobre Nosotros",
+      "title": "+Experiencia +Compromiso",
+      "description": "Somos mas que un prestador de servicios, somos un aliado comercial preocupado por aportar soluciones que maximicen la relacion costo-beneficio de su empresa."
+    },
+    "intro": {
+      "since": "Desde 1964",
+      "title": "Creamos posibilidades que se mueven",
+      "lead": "Con mas de 55 anos de experiencia en el mercado venezolano, Clover Internacional se ha consolidado como lider en soluciones logisticas integrales 3PL. Nuestra trayectoria nos respalda como un aliado estrategico para empresas nacionales e internacionales.",
+      "description": "Nos dedicamos a brindar servicios de logistica que van mas alla del simple transporte de mercancias. Entendemos que cada cliente tiene necesidades unicas, por lo que desarrollamos soluciones personalizadas que optimizan su cadena de suministro."
+    },
+    "history": {
+      "title": "Nuestra Historia",
+      "subtitle": "Mas de cinco decadas construyendo confianza.",
+      "timeline": {
+        "1964": {
+          "title": "Fundacion",
+          "description": "Iniciamos operaciones en Venezuela como agentes de carga con vision de futuro."
+        },
+        "1980": {
+          "title": "Expansion",
+          "description": "Ampliamos nuestros servicios a transporte terrestre y almacenamiento."
+        },
+        "2000": {
+          "title": "Modernizacion",
+          "description": "Implementamos tecnologia de punta para gestion y seguimiento de carga."
+        },
+        "today": {
+          "year": "Hoy",
+          "title": "Lideres 3PL",
+          "description": "Somos referentes en logistica integral con cobertura nacional e internacional."
+        }
+      }
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "subtitle": "Los principios que guian cada una de nuestras acciones.",
+      "commitment": {
+        "title": "Compromiso",
+        "description": "Nos comprometemos con cada cliente a entregar resultados que superen sus expectativas."
+      },
+      "teamwork": {
+        "title": "Trabajo en Equipo",
+        "description": "Creemos en la colaboracion como base para alcanzar objetivos comunes."
+      },
+      "innovation": {
+        "title": "Innovacion",
+        "description": "Buscamos constantemente nuevas formas de mejorar nuestros servicios y procesos."
+      },
+      "punctuality": {
+        "title": "Puntualidad",
+        "description": "Respetamos los tiempos acordados porque sabemos que su negocio no espera."
+      }
+    },
+    "stats": {
+      "yearsExperience": "Anos de experiencia",
+      "satisfiedClients": "Clientes satisfechos",
+      "warehouseSpace": "m2 de almacenes",
+      "supportAvailable": "Soporte disponible"
+    },
+    "servicesOverview": {
+      "title": "Nuestros Servicios",
+      "subtitle": "Soluciones logisticas integrales para todas sus necesidades.",
+      "logisticsIntegral": {
+        "title": "Logistica Integral",
+        "description": "Soluciones 3PL completas para su cadena de suministro."
+      },
+      "customs": {
+        "title": "Aduana",
+        "description": "Gestion aduanera experta y asesoria especializada."
+      },
+      "warehouse": {
+        "title": "Almacen",
+        "description": "Almacenamiento y gestion de inventarios."
+      },
+      "landTransport": {
+        "title": "Transporte Terrestre",
+        "description": "Distribucion nacional segura y eficiente."
+      },
+      "internationalCargo": {
+        "title": "Carga Internacional",
+        "description": "Importacion y exportacion via maritima y aerea."
+      }
+    },
+    "cta": {
+      "title": "Listo para trabajar juntos?",
+      "description": "Contactenos y descubra como podemos ayudar a optimizar su logistica."
+    }
+  },
+  "contact": {
+    "title": "Contacto | Clover Venezuela",
+    "metaDescription": "Contactanos para recibir atencion personalizada y obtener mas informacion sobre nuestras soluciones logisticas.",
+    "hero": {
+      "subtitle": "Contacto",
+      "title": "+Conectados contigo",
+      "description": "Contactanos para recibir atencion personalizada y obtener mas informacion sobre nuestras soluciones."
+    },
+    "info": {
+      "title": "Estamos para servirle",
+      "lead": "Complete el formulario y uno de nuestros asesores se pondra en contacto con usted a la brevedad posible.",
+      "granCaracas": "Gran Caracas",
+      "carabobo": "Carabobo",
+      "phone": "Telefono",
+      "email": "Email",
+      "address1": "Av. Principal de los Ruices, Edif. Clover, Caracas",
+      "address2": "Zona Industrial Valencia, Estado Carabobo"
+    },
+    "form": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Email",
+      "phone": "Telefono",
+      "company": "Empresa",
+      "serviceOfInterest": "Servicio de interes",
+      "selectService": "Seleccione un servicio",
+      "logisticsIntegral": "Logistica Integral",
+      "customs": "Aduana",
+      "warehouse": "Almacen",
+      "landTransport": "Transporte Terrestre",
+      "internationalCargo": "Carga Internacional",
+      "other": "Otro",
+      "message": "Mensaje",
+      "required": "*"
+    },
+    "success": {
+      "title": "Mensaje enviado",
+      "description": "Gracias por contactarnos. Uno de nuestros asesores se comunicara con usted pronto."
+    },
+    "locations": {
+      "title": "Nuestras Ubicaciones",
+      "mainOffice": "Sede Principal",
+      "caracas": "Caracas, Venezuela",
+      "caraboboState": "Estado Carabobo, Venezuela"
+    }
+  },
+  "customs": {
+    "title": "Servicios Aduaneros en Venezuela | Clover Venezuela",
+    "metaDescription": "Gestion aduanera experta en Venezuela. Clasificacion arancelaria, valoracion aduanera, regimenes especiales y asesoria integral para importacion y exportacion.",
+    "hero": {
+      "subtitle": "Servicios Aduaneros",
+      "title": "+Soluciones para ti",
+      "description": "Te ayudamos con tus gestiones de aduana para que sigas enfocado en tus prioridades."
+    },
+    "intro": {
+      "title": "+Cerca +Gestiones efectivas",
+      "lead": "Gestionamos tus procesos aduaneros de forma expedita y eficiente; de manera que tu mercancia pueda continuar por las etapas de la cadena de suministros sin contratiempos ni que sea necesario incurrir en gastos adicionales.",
+      "description": "Somos expertos en regimenes aduaneros capaces de resolver tus necesidades mediante soluciones +innovadoras e integrales que resulten en una nacionalizacion expedita.",
+      "compliance": "Cumplimiento normativo"
+    },
+    "services": {
+      "title": "Servicios Aduaneros",
+      "subtitle": "Ofrecemos una gama completa de servicios para facilitar sus operaciones de comercio exterior.",
+      "tariffClassification": {
+        "title": "Clasificacion Arancelaria y Valoracion Aduanera",
+        "description": "Determinamos correctamente la partida arancelaria de su mercancia y su valor en aduana para evitar contingencias fiscales."
+      },
+      "customsRepresentation": {
+        "title": "Representacion ante la Aduana",
+        "description": "Representamos sus intereses y resolvemos discrepancias ante las autoridades aduaneras con profesionalismo y experiencia."
+      },
+      "customsConsulting": {
+        "title": "Consultoria Aduanera",
+        "description": "Asesoria experta en importacion, exportacion, transito y regulacion aduanera vigente en Venezuela."
+      },
+      "currentTariff": {
+        "title": "Arancel de Aduanas Vigente",
+        "description": "Aplicacion correcta del arancel de aduanas y demas leyes aplicables en materia aduanera para su operacion."
+      },
+      "specialRegimes": {
+        "title": "Regimenes Especiales",
+        "description": "Solicitud y tramitacion de regimenes de liberacion, suspension y otros regimenes aduaneros especiales segun su necesidad."
+      }
+    },
+    "expertise": {
+      "badge": "Expertos en regimenes aduaneros",
+      "title": "Te ofrecemos el mejor tiempo junto a los mejores costos",
+      "description": "Nuestra experiencia nos permite identificar las mejores opciones para su operacion, optimizando tiempos de nacionalizacion y reduciendo costos operativos sin comprometer el cumplimiento normativo.",
+      "cta": "Consultar ahora"
+    }
+  },
+  "warehouse": {
+    "title": "Almacen en Venezuela | Clover Venezuela",
+    "metaDescription": "Almacenaje de mercancia en Venezuela. Tanto para su distribucion como custodia. Almacenamos productos de todo tipo: desde refrigerados hasta documentos fisicos.",
+    "hero": {
+      "subtitle": "Almacen",
+      "title": "+Custodiamos realidades",
+      "description": "Aseguramos tu mercancia en condiciones optimas segun sean tus necesidades de distribucion o custodia."
+    },
+    "intro": {
+      "title": "Servicios de almacen en Venezuela",
+      "lead": "Ofrecemos soluciones integrales en operaciones logisticas de almacenaje. Nuestro servicio es ideal para todo tipo de carga y mercancia. Tenemos la capacidad de encargarnos tanto de su distribucion como de su custodia.",
+      "description": "Ponemos a tu disposicion los mejores equipos, instalaciones modernas y sistemas actualizados para garantizar la seguridad y el manejo eficiente de tus activos."
+    },
+    "services": {
+      "title": "Soluciones de almacenamiento",
+      "subtitle": "Adaptamos nuestras capacidades a tus necesidades de manera +inteligente y personalizada.",
+      "pickingPacking": {
+        "title": "Picking & Packing",
+        "description": "Seleccion y empaque de productos con precision para optimizar su distribucion y reducir tiempos de entrega."
+      },
+      "crossDocking": {
+        "title": "Cross Docking",
+        "description": "Consolidacion y desconsolidacion de carga para distribucion directa sin almacenamiento prolongado."
+      },
+      "coldChain": {
+        "title": "Cadena de Frio",
+        "description": "Mantenimiento y distribucion de productos refrigerados y congelados garantizando la continuidad de la cadena de frio."
+      },
+      "maquilas": {
+        "title": "Maquilas",
+        "description": "Servicios de etiquetado, re-empaque y preparacion de productos segun especificaciones del cliente."
+      },
+      "inventoryManagement": {
+        "title": "Gestion de Inventarios",
+        "description": "Control y administracion de inventarios en tiempo real con tecnologia de ultima generacion."
+      },
+      "secureCustody": {
+        "title": "Custodia Segura",
+        "description": "Almacenamiento seguro de mercancia con sistemas de vigilancia las 24 horas y control de acceso."
+      }
+    },
+    "features": {
+      "storageSpace": "m2 de almacenamiento",
+      "surveillance": "Vigilancia y monitoreo",
+      "inventoryControl": "Control de inventario",
+      "yearsExperience": "Anos de experiencia"
+    },
+    "cta": {
+      "title": "Necesita almacenamiento para su mercancia?",
+      "description": "Contactenos y conozca nuestras soluciones de almacenaje personalizadas."
+    }
+  },
+  "logisticsIntegral": {
+    "title": "Logistica Integral Venezuela | Clover Venezuela - 3PL",
+    "metaDescription": "Soluciones de logistica integral 3PL en Venezuela. Mas de 55 anos de experiencia en transporte, almacenamiento, aduana y carga internacional.",
+    "hero": {
+      "subtitle": "Logistica Integral",
+      "title": "+Experiencia a tu lado",
+      "description": "Manejamos con sencillez toda la complejidad de tu carga a traves de una sola empresa."
+    },
+    "intro": {
+      "title": "Movemos + posibilidades",
+      "lead": "Garantizamos el control de tu carga desde el origen hasta el destino final. Aseguramos una administracion tecnologica e integral de tus mercancias a traves de modernos sistemas de almacenamiento y nuestra infraestructura tecnologica de ultima generacion.",
+      "description1": "Para mercancia de cualquier tipo, tamano o peso, les brindamos toda una gama de servicios maritimos (FCL y LCL), aereos y terrestres, desde o hacia cualquier lugar del mundo.",
+      "description2": "Contamos con alianzas estrategicas con diferentes empresas de logistica mundial. Esto nos permite brindar excelente relacion costo-beneficio e itinerarios acordes a sus necesidades."
+    },
+    "capabilities": {
+      "title": "Capacidades 3PL de clase mundial",
+      "subtitle": "Tenemos la capacidad de fletar carga de cualquier tamano y peso, incluyendo sobredimensionada, carga indivisible y extra pesada.",
+      "doorToDoor": {
+        "title": "Seguro Puerta a Puerta",
+        "description": "Proteccion completa de su mercancia durante todo el trayecto desde origen hasta destino final."
+      },
+      "oversizedCargo": {
+        "title": "Carga Sobredimensionada",
+        "description": "Experiencia en manejo de carga indivisible, extra pesada y de dimensiones especiales."
+      },
+      "globalCoverage": {
+        "title": "Cobertura Global",
+        "description": "Servicios maritimos, aereos y terrestres desde o hacia cualquier lugar del mundo."
+      },
+      "hazardousMaterials": {
+        "title": "Mercancia Peligrosa",
+        "description": "Certificacion y experiencia en manejo de materiales peligrosos segun normativas internacionales."
+      },
+      "handCarrier": {
+        "title": "Hand Carrier Aereo",
+        "description": "Servicio de courier dedicado para envios urgentes y de alto valor."
+      },
+      "technology": {
+        "title": "Tecnologia de Punta",
+        "description": "Sistemas de tracking y gestion de inventarios en tiempo real para control total de su cadena de suministro."
+      }
+    },
+    "experience": {
+      "title": "Nuestra experiencia, su garantia",
+      "lead": "Nuestro conocimiento y peritaje en el manejo logistico de carga garantizan la eficiencia de nuestras soluciones para toda tu cadena de suministros.",
+      "description": "Nuestros servicios estan disenados para proveer soluciones que te ayuden a maximizar tanto la efectividad como la eficiencia de la cadena de suministro de tu empresa. Tenemos mas de 55 anos de operaciones en Venezuela ofreciendo un servicio de calidad y personalizado segun tus necesidades."
+    },
+    "cta": {
+      "title": "Listo para optimizar su cadena de suministro?",
+      "description": "Contactenos y descubra como nuestras soluciones 3PL pueden transformar su logistica."
+    }
+  },
+  "landTransport": {
+    "title": "Transporte Terrestre en Venezuela | Clover Venezuela",
+    "metaDescription": "Servicio de transporte terrestre seguro en Venezuela. Distribucion nacional con flota moderna y sistemas de seguridad especializados para su mercancia.",
+    "hero": {
+      "subtitle": "Transporte Terrestre",
+      "title": "+Seguro +Rapido +Experto",
+      "description": "Transporte terrestre seguro en Venezuela con la mayor experiencia y flota especializada."
+    },
+    "intro": {
+      "title": "+Cuidado sobre ruedas",
+      "lead": "Nuestro servicio de transporte terrestre en Venezuela cuenta con una solida plataforma de distribucion, infraestructura e innovacion en recursos.",
+      "description": "Adicionalmente, nuestra flota cuenta con sistemas especializados de resguardo para su seguridad en todo el recorrido. Somos capaces de solventar todos los tramites engranando tus procesos con nuestra logistica integrada.",
+      "gpsMonitoring": "Monitoreo GPS"
+    },
+    "features": {
+      "title": "Caracteristicas de Nuestro Servicio",
+      "subtitle": "Ofrecemos una solucion completa de transporte terrestre con las mejores garantias.",
+      "guaranteedSecurity": {
+        "title": "Seguridad Garantizada",
+        "description": "Sistemas de resguardo especializados y vigilancia continua durante todo el trayecto de su mercancia."
+      },
+      "realTimeTracking": {
+        "title": "Rastreo en Tiempo Real",
+        "description": "Monitoreo GPS las 24 horas para conocer la ubicacion exacta de su carga en cualquier momento."
+      },
+      "punctuality": {
+        "title": "Puntualidad",
+        "description": "Cumplimiento de tiempos de entrega con planificacion optimizada de rutas y recursos."
+      },
+      "modernFleet": {
+        "title": "Flota Moderna",
+        "description": "Vehiculos en optimas condiciones con capacidad para diferentes tipos y volumenes de carga."
+      },
+      "cargoInsurance": {
+        "title": "Seguro de Carga",
+        "description": "Proteccion completa de su mercancia con cobertura durante todo el trayecto."
+      },
+      "integratedLogistics": {
+        "title": "Logistica Integrada",
+        "description": "Coordinacion con nuestros servicios de almacen y aduana para una solucion completa."
+      }
+    },
+    "coverage": {
+      "title": "Cobertura Nacional",
+      "lead": "Llegamos a todos los rincones de Venezuela con nuestra red de distribucion terrestre. Desde las principales ciudades hasta zonas industriales y comerciales en todo el pais.",
+      "granCaracas": {
+        "title": "Gran Caracas",
+        "description": "Centro de operaciones principal"
+      },
+      "centralRegion": {
+        "title": "Region Central",
+        "description": "Carabobo, Aragua, Miranda"
+      },
+      "west": {
+        "title": "Occidente",
+        "description": "Zulia, Lara, Falcon"
+      },
+      "east": {
+        "title": "Oriente",
+        "description": "Anzoategui, Bolivar, Monagas"
+      }
+    },
+    "cta": {
+      "title": "Necesita transportar su mercancia?",
+      "description": "Contactenos y obtenga una cotizacion personalizada para su distribucion terrestre."
+    }
+  },
+  "internationalCargo": {
+    "title": "Carga Internacional | Clover Venezuela",
+    "metaDescription": "Transportamos mercancia de cualquier tamano por aire, mar o tierra desde y hacia todo el mundo a traves de alianzas estrategicas establecidas desde Venezuela.",
+    "hero": {
+      "subtitle": "Carga Internacional",
+      "title": "+Conexiones globales",
+      "description": "Transportamos mercancia de cualquier tamano por aire, mar o tierra desde y hacia todo el mundo."
+    },
+    "intro": {
+      "title": "Conectamos Venezuela con el mundo",
+      "lead": "Para mercancia de cualquier tipo, tamano o peso, brindamos toda una gama de servicios maritimos (FCL y LCL), aereos y terrestres, desde o hacia cualquier lugar del mundo.",
+      "description": "Contamos con alianzas estrategicas con diferentes empresas de logistica mundial. Esto nos permite brindar excelente relacion costo-beneficio e itinerarios acordes a sus necesidades."
+    },
+    "services": {
+      "title": "Modalidades de Carga",
+      "subtitle": "Ofrecemos multiples opciones de transporte internacional adaptadas a sus necesidades.",
+      "fcl": {
+        "title": "Carga Maritima FCL",
+        "description": "Contenedor completo para grandes volumenes de mercancia. Maximo control y seguridad de su carga.",
+        "features": ["Contenedores 20' y 40'", "High Cube disponibles", "Refrigerados (Reefer)"]
+      },
+      "lcl": {
+        "title": "Carga Maritima LCL",
+        "description": "Consolidacion de carga para volumenes menores. Comparta contenedor y optimice costos.",
+        "features": ["Sin minimo de volumen", "Consolidacion semanal", "Multiples destinos"]
+      },
+      "air": {
+        "title": "Carga Aerea",
+        "description": "Transporte rapido para envios urgentes o mercancia de alto valor.",
+        "features": ["Servicio express", "Carga general", "Hand Carrier disponible"]
+      }
+    },
+    "capabilities": {
+      "title": "Capacidades Especiales",
+      "subtitle": "Tenemos experiencia en manejo de todo tipo de carga.",
+      "oversized": {
+        "title": "Carga Sobredimensionada",
+        "description": "Manejo de mercancia de dimensiones especiales y cargas indivisibles."
+      },
+      "hazardous": {
+        "title": "Mercancia Peligrosa",
+        "description": "Certificacion y experiencia en manejo de materiales peligrosos segun normativas."
+      },
+      "refrigerated": {
+        "title": "Carga Refrigerada",
+        "description": "Transporte con temperatura controlada para productos perecederos."
+      },
+      "insurance": {
+        "title": "Seguro de Carga",
+        "description": "Proteccion completa puerta a puerta durante todo el trayecto internacional."
+      }
+    },
+    "process": {
+      "title": "Nuestro Proceso",
+      "quote": {
+        "title": "Cotizacion",
+        "description": "Analisis de sus necesidades y propuesta personalizada."
+      },
+      "coordination": {
+        "title": "Coordinacion",
+        "description": "Gestion de documentos y coordinacion con proveedores."
+      },
+      "shipment": {
+        "title": "Embarque",
+        "description": "Recogida y embarque de su mercancia en origen."
+      },
+      "tracking": {
+        "title": "Seguimiento",
+        "description": "Monitoreo en tiempo real durante el transito."
+      },
+      "delivery": {
+        "title": "Entrega",
+        "description": "Nacionalizacion y entrega en destino final."
+      }
+    },
+    "cta": {
+      "title": "Listo para importar o exportar?",
+      "description": "Contactenos y obtenga una cotizacion para su carga internacional."
+    }
+  },
+  "footer": {
+    "tagline": "Mas de 50 anos ofreciendo soluciones de logistica integral en Venezuela.",
+    "copyright": "Clover Internacional, C.A. Todos los derechos reservados.",
+    "termsAndConditions": "Terminos y Condiciones",
+    "privacyPolicy": "Politica de Privacidad",
+    "cloverJobs": "Clover Empleos",
+    "blog": "+Para ti (Blog)"
+  },
+  "language": {
+    "es": "Espanol",
+    "en": "English",
+    "switchTo": "Cambiar idioma"
+  }
+}

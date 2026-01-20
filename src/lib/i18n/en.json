@@ -1,0 +1,555 @@
+{
+  "nav": {
+    "logistics": "Logistics",
+    "logisticsIntegral": "Integral Logistics",
+    "customs": "Customs",
+    "warehouse": "Warehouse",
+    "landTransport": "Land Transport",
+    "internationalCargo": "International Cargo",
+    "moving": "Moving Services",
+    "cloverFile": "CloverFile",
+    "cloverTrack": "Clover-Track",
+    "wmsClients": "WMS Clients",
+    "purchasePortal": "Purchase Portal",
+    "aboutUs": "About Us",
+    "blog": "+For You",
+    "contact": "Contact"
+  },
+  "common": {
+    "contact": "Contact",
+    "requestQuote": "Request Quote",
+    "learnMore": "Learn More",
+    "contactNow": "Contact Now",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "sendAnother": "Send Another Message",
+    "followUs": "Follow Us",
+    "scroll": "Scroll",
+    "menu": "Menu",
+    "yearsExperience": "Years of Experience",
+    "satisfiedClients": "Satisfied Clients",
+    "supportAvailable": "Support Available",
+    "commitment": "Commitment",
+    "services": "Services",
+    "company": "Company",
+    "platforms": "Platforms",
+    "relatedServices": "Related Services",
+    "ourServices": "Our Services",
+    "goToSlide": "Go to slide"
+  },
+  "home": {
+    "title": "Clover Venezuela - Integral Logistics | +50 Years of Experience",
+    "hero": {
+      "slide1": {
+        "subtitle": "What do we do?",
+        "title": "+Reach",
+        "description": "We offer a vast portfolio of logistics, storage, digitization, moving and more solutions. With +50 years of experience, we are experts in offering unique solutions to our clients.",
+        "cta": "+Experience"
+      },
+      "slide2": {
+        "subtitle": "Storage",
+        "title": "+Capacity",
+        "description": "We have state-of-the-art storage facilities, including refrigerated storage for sensitive goods.",
+        "cta": "+Information"
+      },
+      "slide3": {
+        "subtitle": "Transportation",
+        "title": "+Connection",
+        "description": "Land transportation network with national and international coverage to guarantee the safe delivery of your merchandise.",
+        "cta": "+Services"
+      }
+    },
+    "services": {
+      "label": "Our Services",
+      "title": "Integral Logistics Solutions",
+      "subtitle": "More than 50 years of experience back us as leaders in logistics solutions in Venezuela.",
+      "logisticsIntegral": {
+        "title": "Integral Logistics",
+        "description": "Complete logistics solutions tailored to your company's needs."
+      },
+      "customs": {
+        "title": "Customs",
+        "description": "Advisory and management of customs procedures for import and export."
+      },
+      "warehouse": {
+        "title": "Warehouse",
+        "description": "Physical and refrigerated storage with cutting-edge technology."
+      },
+      "landTransport": {
+        "title": "Land Transport",
+        "description": "Transportation network with national coverage for your merchandise."
+      },
+      "internationalCargo": {
+        "title": "International Cargo",
+        "description": "Import and export services via sea and air."
+      }
+    },
+    "additionalServices": {
+      "title": "+Solutions",
+      "subtitle": "Additional services to cover all your needs",
+      "moving": {
+        "title": "Moving Services",
+        "description": "Residential and corporate moving services."
+      },
+      "cloverFile": {
+        "title": "CloverFile",
+        "description": "Document digitization and cloud storage."
+      },
+      "cloverPack": {
+        "title": "CloverPack",
+        "description": "Professional packaging solutions."
+      }
+    },
+    "cta": {
+      "title": "Ready to optimize your logistics?",
+      "description": "Contact us today and discover how we can help your company grow."
+    }
+  },
+  "aboutUs": {
+    "title": "About Us | Clover Venezuela",
+    "metaDescription": "We are more than a service provider, we are a commercial ally concerned with providing solutions that maximize your company's cost-benefit ratio. We create possibilities that move.",
+    "hero": {
+      "subtitle": "About Us",
+      "title": "+Experience +Commitment",
+      "description": "We are more than a service provider, we are a commercial ally concerned with providing solutions that maximize your company's cost-benefit ratio."
+    },
+    "intro": {
+      "since": "Since 1964",
+      "title": "We create possibilities that move",
+      "lead": "With more than 55 years of experience in the Venezuelan market, Clover Internacional has established itself as a leader in integral 3PL logistics solutions. Our track record supports us as a strategic ally for national and international companies.",
+      "description": "We are dedicated to providing logistics services that go beyond simple goods transportation. We understand that each client has unique needs, so we develop customized solutions that optimize your supply chain."
+    },
+    "history": {
+      "title": "Our History",
+      "subtitle": "More than five decades building trust.",
+      "timeline": {
+        "1964": {
+          "title": "Foundation",
+          "description": "We began operations in Venezuela as freight agents with a vision for the future."
+        },
+        "1980": {
+          "title": "Expansion",
+          "description": "We expanded our services to land transportation and storage."
+        },
+        "2000": {
+          "title": "Modernization",
+          "description": "We implemented cutting-edge technology for cargo management and tracking."
+        },
+        "today": {
+          "year": "Today",
+          "title": "3PL Leaders",
+          "description": "We are leaders in integral logistics with national and international coverage."
+        }
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The principles that guide each of our actions.",
+      "commitment": {
+        "title": "Commitment",
+        "description": "We commit to each client to deliver results that exceed their expectations."
+      },
+      "teamwork": {
+        "title": "Teamwork",
+        "description": "We believe in collaboration as the foundation for achieving common goals."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly seek new ways to improve our services and processes."
+      },
+      "punctuality": {
+        "title": "Punctuality",
+        "description": "We respect agreed-upon times because we know your business doesn't wait."
+      }
+    },
+    "stats": {
+      "yearsExperience": "Years of Experience",
+      "satisfiedClients": "Satisfied Clients",
+      "warehouseSpace": "sqm of Warehouses",
+      "supportAvailable": "Support Available"
+    },
+    "servicesOverview": {
+      "title": "Our Services",
+      "subtitle": "Integral logistics solutions for all your needs.",
+      "logisticsIntegral": {
+        "title": "Integral Logistics",
+        "description": "Complete 3PL solutions for your supply chain."
+      },
+      "customs": {
+        "title": "Customs",
+        "description": "Expert customs management and specialized advisory."
+      },
+      "warehouse": {
+        "title": "Warehouse",
+        "description": "Storage and inventory management."
+      },
+      "landTransport": {
+        "title": "Land Transport",
+        "description": "Safe and efficient national distribution."
+      },
+      "internationalCargo": {
+        "title": "International Cargo",
+        "description": "Import and export via sea and air."
+      }
+    },
+    "cta": {
+      "title": "Ready to work together?",
+      "description": "Contact us and discover how we can help optimize your logistics."
+    }
+  },
+  "contact": {
+    "title": "Contact | Clover Venezuela",
+    "metaDescription": "Contact us for personalized attention and more information about our logistics solutions.",
+    "hero": {
+      "subtitle": "Contact",
+      "title": "+Connected with you",
+      "description": "Contact us for personalized attention and more information about our solutions."
+    },
+    "info": {
+      "title": "We are here to serve you",
+      "lead": "Complete the form and one of our advisors will contact you as soon as possible.",
+      "granCaracas": "Greater Caracas",
+      "carabobo": "Carabobo",
+      "phone": "Phone",
+      "email": "Email",
+      "address1": "Av. Principal de los Ruices, Clover Building, Caracas",
+      "address2": "Valencia Industrial Zone, Carabobo State"
+    },
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "serviceOfInterest": "Service of Interest",
+      "selectService": "Select a service",
+      "logisticsIntegral": "Integral Logistics",
+      "customs": "Customs",
+      "warehouse": "Warehouse",
+      "landTransport": "Land Transport",
+      "internationalCargo": "International Cargo",
+      "other": "Other",
+      "message": "Message",
+      "required": "*"
+    },
+    "success": {
+      "title": "Message Sent",
+      "description": "Thank you for contacting us. One of our advisors will get in touch with you soon."
+    },
+    "locations": {
+      "title": "Our Locations",
+      "mainOffice": "Main Office",
+      "caracas": "Caracas, Venezuela",
+      "caraboboState": "Carabobo State, Venezuela"
+    }
+  },
+  "customs": {
+    "title": "Customs Services in Venezuela | Clover Venezuela",
+    "metaDescription": "Expert customs management in Venezuela. Tariff classification, customs valuation, special regimes and comprehensive advisory for import and export.",
+    "hero": {
+      "subtitle": "Customs Services",
+      "title": "+Solutions for you",
+      "description": "We help you with your customs procedures so you can stay focused on your priorities."
+    },
+    "intro": {
+      "title": "+Close +Effective management",
+      "lead": "We manage your customs processes expeditiously and efficiently; so that your merchandise can continue through the supply chain stages without setbacks or additional expenses.",
+      "description": "We are experts in customs regimes capable of solving your needs through +innovative and comprehensive solutions that result in expeditious nationalization.",
+      "compliance": "Regulatory Compliance"
+    },
+    "services": {
+      "title": "Customs Services",
+      "subtitle": "We offer a complete range of services to facilitate your foreign trade operations.",
+      "tariffClassification": {
+        "title": "Tariff Classification and Customs Valuation",
+        "description": "We correctly determine the tariff heading of your merchandise and its customs value to avoid tax contingencies."
+      },
+      "customsRepresentation": {
+        "title": "Customs Representation",
+        "description": "We represent your interests and resolve discrepancies with customs authorities with professionalism and experience."
+      },
+      "customsConsulting": {
+        "title": "Customs Consulting",
+        "description": "Expert advisory on import, export, transit and current customs regulations in Venezuela."
+      },
+      "currentTariff": {
+        "title": "Current Customs Tariff",
+        "description": "Correct application of the customs tariff and other applicable laws in customs matters for your operation."
+      },
+      "specialRegimes": {
+        "title": "Special Regimes",
+        "description": "Request and processing of liberation, suspension and other special customs regimes according to your needs."
+      }
+    },
+    "expertise": {
+      "badge": "Experts in customs regimes",
+      "title": "We offer you the best time along with the best costs",
+      "description": "Our experience allows us to identify the best options for your operation, optimizing nationalization times and reducing operational costs without compromising regulatory compliance.",
+      "cta": "Consult Now"
+    }
+  },
+  "warehouse": {
+    "title": "Warehouse in Venezuela | Clover Venezuela",
+    "metaDescription": "Merchandise storage in Venezuela. Both for distribution and custody. We store all types of products: from refrigerated to physical documents.",
+    "hero": {
+      "subtitle": "Warehouse",
+      "title": "+We safeguard realities",
+      "description": "We secure your merchandise in optimal conditions according to your distribution or custody needs."
+    },
+    "intro": {
+      "title": "Warehouse services in Venezuela",
+      "lead": "We offer comprehensive solutions in storage logistics operations. Our service is ideal for all types of cargo and merchandise. We have the capacity to handle both distribution and custody.",
+      "description": "We provide you with the best equipment, modern facilities and updated systems to guarantee the security and efficient handling of your assets."
+    },
+    "services": {
+      "title": "Storage Solutions",
+      "subtitle": "We adapt our capabilities to your needs in a +smart and personalized way.",
+      "pickingPacking": {
+        "title": "Picking & Packing",
+        "description": "Precise product selection and packaging to optimize distribution and reduce delivery times."
+      },
+      "crossDocking": {
+        "title": "Cross Docking",
+        "description": "Cargo consolidation and deconsolidation for direct distribution without prolonged storage."
+      },
+      "coldChain": {
+        "title": "Cold Chain",
+        "description": "Maintenance and distribution of refrigerated and frozen products guaranteeing cold chain continuity."
+      },
+      "maquilas": {
+        "title": "Maquilas",
+        "description": "Labeling, repackaging and product preparation services according to client specifications."
+      },
+      "inventoryManagement": {
+        "title": "Inventory Management",
+        "description": "Real-time inventory control and management with state-of-the-art technology."
+      },
+      "secureCustody": {
+        "title": "Secure Custody",
+        "description": "Secure merchandise storage with 24-hour surveillance systems and access control."
+      }
+    },
+    "features": {
+      "storageSpace": "sqm of storage",
+      "surveillance": "Surveillance and monitoring",
+      "inventoryControl": "Inventory control",
+      "yearsExperience": "Years of experience"
+    },
+    "cta": {
+      "title": "Need storage for your merchandise?",
+      "description": "Contact us and learn about our personalized storage solutions."
+    }
+  },
+  "logisticsIntegral": {
+    "title": "Integral Logistics Venezuela | Clover Venezuela - 3PL",
+    "metaDescription": "Integral 3PL logistics solutions in Venezuela. More than 55 years of experience in transportation, storage, customs and international cargo.",
+    "hero": {
+      "subtitle": "Integral Logistics",
+      "title": "+Experience by your side",
+      "description": "We handle all the complexity of your cargo with simplicity through a single company."
+    },
+    "intro": {
+      "title": "We move + possibilities",
+      "lead": "We guarantee control of your cargo from origin to final destination. We ensure technological and comprehensive management of your merchandise through modern storage systems and our state-of-the-art technological infrastructure.",
+      "description1": "For merchandise of any type, size or weight, we provide a full range of maritime (FCL and LCL), air and land services, from or to anywhere in the world.",
+      "description2": "We have strategic alliances with different global logistics companies. This allows us to provide excellent cost-benefit ratio and itineraries according to your needs."
+    },
+    "capabilities": {
+      "title": "World-class 3PL capabilities",
+      "subtitle": "We have the capacity to freight cargo of any size and weight, including oversized, indivisible and extra heavy cargo.",
+      "doorToDoor": {
+        "title": "Door-to-Door Insurance",
+        "description": "Complete protection of your merchandise throughout the journey from origin to final destination."
+      },
+      "oversizedCargo": {
+        "title": "Oversized Cargo",
+        "description": "Experience in handling indivisible, extra heavy and special dimension cargo."
+      },
+      "globalCoverage": {
+        "title": "Global Coverage",
+        "description": "Maritime, air and land services from or to anywhere in the world."
+      },
+      "hazardousMaterials": {
+        "title": "Hazardous Materials",
+        "description": "Certification and experience in handling hazardous materials according to international regulations."
+      },
+      "handCarrier": {
+        "title": "Air Hand Carrier",
+        "description": "Dedicated courier service for urgent and high-value shipments."
+      },
+      "technology": {
+        "title": "Cutting-edge Technology",
+        "description": "Real-time tracking and inventory management systems for total control of your supply chain."
+      }
+    },
+    "experience": {
+      "title": "Our experience, your guarantee",
+      "lead": "Our knowledge and expertise in cargo logistics management guarantee the efficiency of our solutions for your entire supply chain.",
+      "description": "Our services are designed to provide solutions that help you maximize both the effectiveness and efficiency of your company's supply chain. We have more than 55 years of operations in Venezuela offering quality and personalized service according to your needs."
+    },
+    "cta": {
+      "title": "Ready to optimize your supply chain?",
+      "description": "Contact us and discover how our 3PL solutions can transform your logistics."
+    }
+  },
+  "landTransport": {
+    "title": "Land Transport in Venezuela | Clover Venezuela",
+    "metaDescription": "Secure land transport service in Venezuela. National distribution with modern fleet and specialized security systems for your merchandise.",
+    "hero": {
+      "subtitle": "Land Transport",
+      "title": "+Safe +Fast +Expert",
+      "description": "Secure land transport in Venezuela with the most experience and specialized fleet."
+    },
+    "intro": {
+      "title": "+Care on wheels",
+      "lead": "Our land transport service in Venezuela has a solid distribution platform, infrastructure and resource innovation.",
+      "description": "Additionally, our fleet has specialized security systems for your safety throughout the journey. We are able to handle all procedures by integrating your processes with our integrated logistics.",
+      "gpsMonitoring": "GPS Monitoring"
+    },
+    "features": {
+      "title": "Our Service Features",
+      "subtitle": "We offer a complete land transport solution with the best guarantees.",
+      "guaranteedSecurity": {
+        "title": "Guaranteed Security",
+        "description": "Specialized security systems and continuous surveillance throughout your merchandise's journey."
+      },
+      "realTimeTracking": {
+        "title": "Real-time Tracking",
+        "description": "24-hour GPS monitoring to know the exact location of your cargo at any time."
+      },
+      "punctuality": {
+        "title": "Punctuality",
+        "description": "Delivery time compliance with optimized route and resource planning."
+      },
+      "modernFleet": {
+        "title": "Modern Fleet",
+        "description": "Vehicles in optimal condition with capacity for different types and volumes of cargo."
+      },
+      "cargoInsurance": {
+        "title": "Cargo Insurance",
+        "description": "Complete protection of your merchandise with coverage throughout the journey."
+      },
+      "integratedLogistics": {
+        "title": "Integrated Logistics",
+        "description": "Coordination with our warehouse and customs services for a complete solution."
+      }
+    },
+    "coverage": {
+      "title": "National Coverage",
+      "lead": "We reach every corner of Venezuela with our land distribution network. From major cities to industrial and commercial areas throughout the country.",
+      "granCaracas": {
+        "title": "Greater Caracas",
+        "description": "Main operations center"
+      },
+      "centralRegion": {
+        "title": "Central Region",
+        "description": "Carabobo, Aragua, Miranda"
+      },
+      "west": {
+        "title": "West",
+        "description": "Zulia, Lara, Falcon"
+      },
+      "east": {
+        "title": "East",
+        "description": "Anzoategui, Bolivar, Monagas"
+      }
+    },
+    "cta": {
+      "title": "Need to transport your merchandise?",
+      "description": "Contact us and get a personalized quote for your land distribution."
+    }
+  },
+  "internationalCargo": {
+    "title": "International Cargo | Clover Venezuela",
+    "metaDescription": "We transport merchandise of any size by air, sea or land from and to anywhere in the world through strategic alliances established from Venezuela.",
+    "hero": {
+      "subtitle": "International Cargo",
+      "title": "+Global connections",
+      "description": "We transport merchandise of any size by air, sea or land from and to anywhere in the world."
+    },
+    "intro": {
+      "title": "We connect Venezuela with the world",
+      "lead": "For merchandise of any type, size or weight, we provide a full range of maritime (FCL and LCL), air and land services, from or to anywhere in the world.",
+      "description": "We have strategic alliances with different global logistics companies. This allows us to provide excellent cost-benefit ratio and itineraries according to your needs."
+    },
+    "services": {
+      "title": "Cargo Modalities",
+      "subtitle": "We offer multiple international transport options adapted to your needs.",
+      "fcl": {
+        "title": "FCL Maritime Cargo",
+        "description": "Full container for large merchandise volumes. Maximum control and security of your cargo.",
+        "features": ["20' and 40' Containers", "High Cube available", "Refrigerated (Reefer)"]
+      },
+      "lcl": {
+        "title": "LCL Maritime Cargo",
+        "description": "Cargo consolidation for smaller volumes. Share container and optimize costs.",
+        "features": ["No minimum volume", "Weekly consolidation", "Multiple destinations"]
+      },
+      "air": {
+        "title": "Air Cargo",
+        "description": "Fast transport for urgent shipments or high-value merchandise.",
+        "features": ["Express service", "General cargo", "Hand Carrier available"]
+      }
+    },
+    "capabilities": {
+      "title": "Special Capabilities",
+      "subtitle": "We have experience handling all types of cargo.",
+      "oversized": {
+        "title": "Oversized Cargo",
+        "description": "Handling of special dimension merchandise and indivisible loads."
+      },
+      "hazardous": {
+        "title": "Hazardous Materials",
+        "description": "Certification and experience in handling hazardous materials according to regulations."
+      },
+      "refrigerated": {
+        "title": "Refrigerated Cargo",
+        "description": "Temperature-controlled transport for perishable products."
+      },
+      "insurance": {
+        "title": "Cargo Insurance",
+        "description": "Complete door-to-door protection throughout the international journey."
+      }
+    },
+    "process": {
+      "title": "Our Process",
+      "quote": {
+        "title": "Quote",
+        "description": "Analysis of your needs and personalized proposal."
+      },
+      "coordination": {
+        "title": "Coordination",
+        "description": "Document management and coordination with suppliers."
+      },
+      "shipment": {
+        "title": "Shipment",
+        "description": "Collection and shipment of your merchandise at origin."
+      },
+      "tracking": {
+        "title": "Tracking",
+        "description": "Real-time monitoring during transit."
+      },
+      "delivery": {
+        "title": "Delivery",
+        "description": "Nationalization and delivery at final destination."
+      }
+    },
+    "cta": {
+      "title": "Ready to import or export?",
+      "description": "Contact us and get a quote for your international cargo."
+    }
+  },
+  "footer": {
+    "tagline": "More than 50 years offering integral logistics solutions in Venezuela.",
+    "copyright": "Clover Internacional, C.A. All rights reserved.",
+    "termsAndConditions": "Terms and Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "cloverJobs": "Clover Jobs",
+    "blog": "+For You (Blog)"
+  },
+  "language": {
+    "es": "Spanish",
+    "en": "English",
+    "switchTo": "Switch language"
+  }
+}
