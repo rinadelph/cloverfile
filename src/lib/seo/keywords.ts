@@ -269,3 +269,32 @@ export const serviceFAQs: Record<string, Array<{ question: string; answer: strin
     }
   ]
 };
+
+// Location-specific SEO (for ubicaciones page)
+export const locationSEO: Record<string, PageSEO> = {
+  caracas: {
+    title: 'Gestion Documental en Caracas | CloverFile Venezuela',
+    description: 'Servicios de gestion documental en Caracas. Digitalizacion, custodia de archivos y almacenamiento seguro para empresas en la capital.',
+    keywords: [
+      'gestion documental Caracas',
+      'custodia archivos Caracas',
+      'digitalizacion Caracas'
+    ]
+  },
+  valencia: {
+    title: 'Gestion Documental en Valencia | CloverFile Carabobo',
+    description: 'Servicios de gestion documental en Valencia, Estado Carabobo. Digitalizacion y custodia de archivos para empresas.',
+    keywords: [
+      'gestion documental Valencia Venezuela',
+      'custodia archivos Carabobo'
+    ]
+  },
+  maracaibo: {
+    title: 'Gestion Documental en Maracaibo | CloverFile Zulia',
+    description: 'Servicios de gestion documental en Maracaibo, Estado Zulia. Digitalizacion y almacenamiento seguro de documentos.',
+    keywords: [
+      'gestion documental Maracaibo',
+      'custodia archivos Zulia'
+    ]
+  }
+};

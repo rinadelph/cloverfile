@@ -281,3 +281,179 @@ export function getAboutPageSchema() {
     }
   };
 }
+
+// Location data for CloverFile locations
+export const locations = [
+  {
+    id: 'el-rosal',
+    name: 'CloverFile - El Rosal (Oficina Principal)',
+    shortName: 'El Rosal',
+    isHeadquarters: true,
+    address: {
+      streetAddress: 'Avenida Venezuela, Torre El Saman, Piso 3, Oficina 3-1',
+      addressLocality: 'El Rosal, Municipio Chacao',
+      addressRegion: 'Caracas',
+      postalCode: '1060',
+      addressCountry: 'VE'
+    },
+    geo: { latitude: 10.4883, longitude: -66.8574 },
+    phone: '+58-414-4708354',
+    email: 'atc.cloverfile@cloverve.com',
+    openingHours: ['Mo-Fr 08:00-17:00'],
+    services: ['Gestion Documental', 'Consultoria', 'Atencion al Cliente']
+  },
+  {
+    id: 'macarao',
+    name: 'CloverFile - Almacen Macarao',
+    shortName: 'Macarao',
+    isHeadquarters: false,
+    address: {
+      streetAddress: 'Urbanizacion Industrial La Fe',
+      addressLocality: 'Parroquia Macarao, Municipio Libertador',
+      addressRegion: 'Caracas, Distrito Capital',
+      postalCode: '1090',
+      addressCountry: 'VE'
+    },
+    geo: { latitude: 10.4567, longitude: -66.9789 },
+    phone: '+58-414-4708354',
+    openingHours: ['Mo-Fr 08:00-17:00'],
+    services: ['Almacenamiento de Archivos', 'Custodia Documental']
+  },
+  {
+    id: 'valencia',
+    name: 'CloverFile - Almacen Valencia',
+    shortName: 'Valencia',
+    isHeadquarters: false,
+    address: {
+      streetAddress: 'Urbanizacion Parque Comercio Industrial Castillito',
+      addressLocality: 'Municipio San Diego',
+      addressRegion: 'Estado Carabobo',
+      postalCode: '2006',
+      addressCountry: 'VE'
+    },
+    geo: { latitude: 10.1579, longitude: -67.9967 },
+    phone: '+58-414-4708354',
+    openingHours: ['Mo-Fr 08:00-17:00'],
+    services: ['Almacenamiento de Archivos', 'Custodia Documental']
+  },
+  {
+    id: 'barcelona',
+    name: 'CloverFile - Almacen Barcelona',
+    shortName: 'Barcelona',
+    isHeadquarters: false,
+    address: {
+      streetAddress: 'Zona Industrial Los Montones, Calle F, Parcela 45',
+      addressLocality: 'Barcelona',
+      addressRegion: 'Estado Anzoategui',
+      postalCode: '6001',
+      addressCountry: 'VE'
+    },
+    geo: { latitude: 10.1136, longitude: -64.6878 },
+    phone: '+58-414-4708354',
+    openingHours: ['Mo-Fr 08:00-17:00'],
+    services: ['Almacenamiento de Archivos', 'Custodia Documental']
+  },
+  {
+    id: 'maracaibo',
+    name: 'CloverFile - Almacen Maracaibo',
+    shortName: 'Maracaibo',
+    isHeadquarters: false,
+    address: {
+      streetAddress: 'Avenida 50, entre 61C y calle 148',
+      addressLocality: 'Municipio Maracaibo',
+      addressRegion: 'Estado Zulia',
+      postalCode: '4004',
+      addressCountry: 'VE'
+    },
+    geo: { latitude: 10.6544, longitude: -71.6398 },
+    phone: '+58-414-4708354',
+    openingHours: ['Mo-Fr 08:00-17:00'],
+    services: ['Almacenamiento de Archivos', 'Custodia Documental']
+  },
+  {
+    id: 'la-trinidad',
+    name: 'CloverFile - La Trinidad',
+    shortName: 'La Trinidad',
+    isHeadquarters: false,
+    address: {
+      streetAddress: 'Calle Paris, Edificio Clover',
+      addressLocality: 'La Trinidad',
+      addressRegion: 'Caracas',
+      postalCode: '1080',
+      addressCountry: 'VE'
+    },
+    geo: { latitude: 10.4396, longitude: -66.8511 },
+    phone: '+58-414-4708354',
+    openingHours: ['Mo-Fr 08:00-17:00'],
+    services: ['Sede Corporativa', 'Almacenamiento']
+  },
+  {
+    id: 'la-yaguara',
+    name: 'CloverFile - Almacen La Yaguara',
+    shortName: 'La Yaguara',
+    isHeadquarters: false,
+    address: {
+      streetAddress: 'Zona Industrial La Yaguara',
+      addressLocality: 'La Yaguara',
+      addressRegion: 'Caracas',
+      postalCode: '1070',
+      addressCountry: 'VE'
+    },
+    geo: { latitude: 10.4789, longitude: -66.9456 },
+    phone: '+58-414-4708354',
+    openingHours: ['Mo-Fr 08:00-17:00'],
+    services: ['Almacenamiento de Archivos', 'Custodia Documental']
+  },
+  {
+    id: 'puerto-cabello',
+    name: 'CloverFile - Almacen Puerto Cabello',
+    shortName: 'Puerto Cabello',
+    isHeadquarters: false,
+    address: {
+      streetAddress: 'Zona Portuaria',
+      addressLocality: 'Puerto Cabello',
+      addressRegion: 'Estado Carabobo',
+      postalCode: '2050',
+      addressCountry: 'VE'
+    },
+    geo: { latitude: 10.4731, longitude: -68.0119 },
+    phone: '+58-414-4708354',
+    openingHours: ['Mo-Fr 08:00-17:00'],
+    services: ['Almacenamiento de Archivos', 'Custodia Documental']
+  }
+];
+
+// LocalBusiness Schema for a single location
+export function getLocalBusinessSchema(locationId: string) {
+  const location = locations.find(l => l.id === locationId);
+  if (!location) return null;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${SITE_URL}/ubicaciones/${location.id}/#localbusiness`,
+    name: location.name,
+    image: LOGO_URL,
+    url: `${SITE_URL}/ubicaciones/${location.id}`,
+    telephone: location.phone,
+    email: location.email || 'atc.cloverfile@cloverve.com',
+    address: {
+      '@type': 'PostalAddress',
+      ...location.address
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: location.geo.latitude,
+      longitude: location.geo.longitude
+    },
+    priceRange: '$$',
+    parentOrganization: {
+      '@id': `${SITE_URL}/#organization`
+    }
+  };
+}
+
+// All LocalBusiness schemas combined
+export function getAllLocalBusinessSchemas() {
+  return locations.map(location => getLocalBusinessSchema(location.id));
+}
