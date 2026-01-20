@@ -1,87 +1,80 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import { getArticleBySlug, getRelatedArticles, formatDate } from '$lib/cms/articles';
+  import { getBlogPostBySlug, getRelatedBlogPosts, formatBlogDate, type BlogPostExtended } from '$lib/data/posts';
   import ArticleContent from '$lib/components/ArticleContent.svelte';
   import ShareButtons from '$lib/components/ShareButtons.svelte';
-  import RelatedArticles from '$lib/components/RelatedArticles.svelte';
   import SEO from '$lib/components/SEO.svelte';
   import { getArticleSchema, getBreadcrumbSchema } from '$lib/seo/schemas';
-  import type { Article, BlogPost } from '$lib/cms/types';
-  import { isBlogPost } from '$lib/cms/types';
 
   let slug = $derived($page.params.slug);
-  let article = $derived(getArticleBySlug(slug));
-  let relatedArticles = $derived(article ? getRelatedArticles(article, 3) : []);
+  let post = $derived(getBlogPostBySlug(slug));
+  let relatedPosts = $derived(post ? getRelatedBlogPosts(slug, 3) : []);
 
-  // Type guard for blog post specific fields
-  let blogPost = $derived(article && isBlogPost(article) ? article as BlogPost : null);
-
-  // Get locale (default to Spanish)
   const locale = 'es';
 
   // Generate JSON-LD for article
-  let jsonLd = $derived(article ? [
+  let jsonLd = $derived(post ? [
     getArticleSchema({
-      headline: article.title[locale],
-      description: article.excerpt[locale],
+      headline: post.title[locale],
+      description: post.excerpt[locale],
       url: `/blog/${slug}`,
-      image: article.featuredImage,
-      datePublished: article.publishedAt,
-      dateModified: article.updatedAt || article.publishedAt,
-      author: article.author,
-      section: article.category
+      image: post.featuredImage,
+      datePublished: post.publishedAt,
+      dateModified: post.updatedAt || post.publishedAt,
+      author: post.author,
+      section: post.category
     }),
     getBreadcrumbSchema([
       { name: 'Inicio', url: '/' },
-      { name: 'Blog', url: '/blog' },
-      { name: article.title[locale], url: `/blog/${slug}` }
+      { name: 'Para Ti', url: '/para-ti' },
+      { name: post.title[locale], url: `/blog/${slug}` }
     ])
   ] : []);
 </script>
 
-{#if article}
+{#if post}
   <SEO
-    title="{article.title[locale]} | Clover Venezuela"
-    description={article.excerpt[locale]}
-    image={article.featuredImage}
+    title="{post.metaTitle?.[locale] || post.title[locale]} | Clover Mudanzas"
+    description={post.metaDescription?.[locale] || post.excerpt[locale]}
+    image={post.featuredImage}
     type="article"
     article={{
-      publishedTime: article.publishedAt,
-      modifiedTime: article.updatedAt || article.publishedAt,
-      author: article.author,
-      section: article.category,
-      tags: article.tags
+      publishedTime: post.publishedAt,
+      modifiedTime: post.updatedAt || post.publishedAt,
+      author: post.author,
+      section: post.category,
+      tags: post.tags
     }}
     {jsonLd}
   />
 {:else}
   <SEO
-    title="Artículo no encontrado | Clover Venezuela"
-    description="El artículo que buscas no existe o ha sido eliminado."
+    title="Articulo no encontrado | Clover Mudanzas"
+    description="El articulo que buscas no existe o ha sido eliminado."
     noindex={true}
   />
 {/if}
 
-{#if article}
+{#if post}
   <!-- Hero Section with Featured Image -->
   <section class="article-hero">
-    <div class="hero-bg" style="background-image: url({article.featuredImage})"></div>
+    <div class="hero-bg" style="background-image: url({post.featuredImage})"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content container">
-      <a href="/blog" class="back-link">
+      <a href="/para-ti" class="back-link">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M19 12H5M12 19l-7-7 7-7"/>
         </svg>
         Volver al blog
       </a>
       <div class="article-meta-top">
-        <span class="article-category">{article.category === 'blog' ? 'Blog' : article.category === 'news' ? 'Noticias' : 'Historia'}</span>
-        {#if blogPost?.readTime}
-          <span class="read-time">{blogPost.readTime} min de lectura</span>
+        <span class="article-category">Blog</span>
+        {#if post.readTime}
+          <span class="read-time">{post.readTime} min de lectura</span>
         {/if}
       </div>
-      <h1>{article.title[locale]}</h1>
-      <p class="article-excerpt">{article.excerpt[locale]}</p>
+      <h1>{post.title[locale]}</h1>
+      <p class="article-excerpt">{post.excerpt[locale]}</p>
     </div>
   </section>
 
@@ -93,32 +86,32 @@
         <aside class="article-sidebar">
           <div class="author-card">
             <div class="author-avatar">
-              <span>{article.author.charAt(0)}</span>
+              <span>{post.author.charAt(0)}</span>
             </div>
             <div class="author-info">
               <span class="author-label">Escrito por</span>
-              <span class="author-name">{article.author}</span>
+              <span class="author-name">{post.author}</span>
             </div>
           </div>
 
           <div class="article-date">
             <span class="date-label">Publicado</span>
-            <time datetime={article.publishedAt}>{formatDate(article.publishedAt, locale)}</time>
+            <time datetime={post.publishedAt}>{formatBlogDate(post.publishedAt, locale)}</time>
           </div>
 
           <div class="sidebar-share">
             <ShareButtons
-              title={article.title[locale]}
-              description={article.excerpt[locale]}
+              title={post.title[locale]}
+              description={post.excerpt[locale]}
             />
           </div>
 
-          {#if article.tags.length > 0}
+          {#if post.tags.length > 0}
             <div class="article-tags">
               <span class="tags-label">Etiquetas</span>
               <div class="tags-list">
-                {#each article.tags as tag}
-                  <span class="tag">{tag}</span>
+                {#each post.tags as tag}
+                  <a href="/para-ti?tag={tag}" class="tag">{tag.replace(/-/g, ' ')}</a>
                 {/each}
               </div>
             </div>
@@ -127,34 +120,61 @@
 
         <!-- Main Content -->
         <div class="article-body">
-          <ArticleContent content={article.content[locale]} />
+          <ArticleContent content={post.content[locale]} />
         </div>
       </div>
 
       <!-- Bottom Share Buttons (mobile) -->
       <div class="mobile-share">
         <ShareButtons
-          title={article.title[locale]}
-          description={article.excerpt[locale]}
+          title={post.title[locale]}
+          description={post.excerpt[locale]}
         />
       </div>
     </div>
   </article>
 
   <!-- Related Articles -->
-  <RelatedArticles
-    articles={relatedArticles}
-    title="Articulos Relacionados"
-    {locale}
-  />
+  {#if relatedPosts.length > 0}
+    <section class="related-section section section--gray">
+      <div class="container">
+        <h2 class="related-title">Articulos Relacionados</h2>
+        <div class="related-grid">
+          {#each relatedPosts as relatedPost (relatedPost.id)}
+            <article class="related-card">
+              <a href="/blog/{relatedPost.slug}" class="related-link">
+                <div class="related-image">
+                  <img
+                    src={relatedPost.featuredImage || '/images/blog-placeholder.jpg'}
+                    alt={relatedPost.title[locale]}
+                    loading="lazy"
+                  />
+                </div>
+                <div class="related-content">
+                  <time datetime={relatedPost.publishedAt}>
+                    {formatBlogDate(relatedPost.publishedAt, locale)}
+                  </time>
+                  <h3>{relatedPost.title[locale]}</h3>
+                  <p>{relatedPost.excerpt[locale]}</p>
+                </div>
+              </a>
+            </article>
+          {/each}
+        </div>
+      </div>
+    </section>
+  {/if}
 
   <!-- CTA Section -->
   <section class="cta-section section">
     <div class="container">
       <div class="cta-content">
-        <h2>¿Necesitas soluciones logisticas?</h2>
-        <p>Contactanos y descubre como podemos ayudarte a optimizar tu cadena de suministro.</p>
-        <a href="/contacto" class="btn btn--primary">Contactar ahora</a>
+        <h2>Necesitas soluciones logisticas?</h2>
+        <p>Contactanos y descubre como podemos ayudarte con mudanzas, transporte y almacenamiento.</p>
+        <div class="cta-buttons">
+          <a href="/contacto" class="btn btn--primary">Contactar ahora</a>
+          <a href="/mudanzas" class="btn btn--outline">Ver servicios</a>
+        </div>
       </div>
     </div>
   </section>
@@ -166,7 +186,7 @@
       <div class="not-found-content">
         <h1>Articulo no encontrado</h1>
         <p>El articulo que buscas no existe o ha sido eliminado.</p>
-        <a href="/blog" class="btn btn--primary">Volver al blog</a>
+        <a href="/para-ti" class="btn btn--primary">Volver al blog</a>
       </div>
     </div>
   </section>
@@ -188,6 +208,7 @@
     inset: 0;
     background-size: cover;
     background-position: center;
+    background-color: var(--gray-800);
   }
 
   .hero-overlay {
@@ -384,6 +405,14 @@
     color: var(--gray-600);
     font-size: 0.8125rem;
     border-radius: var(--radius-sm);
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .tag:hover {
+    background: var(--clover-green);
+    color: var(--white);
   }
 
   /* Article Body */
@@ -402,6 +431,105 @@
     .mobile-share {
       display: none;
     }
+  }
+
+  /* Related Section */
+  .related-section {
+    padding: var(--space-4xl) 0;
+  }
+
+  .related-title {
+    margin-bottom: var(--space-2xl);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  @media (min-width: 640px) {
+    .related-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .related-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .related-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+  }
+
+  .related-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .related-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .related-image {
+    aspect-ratio: 16/10;
+    overflow: hidden;
+    background: var(--gray-200);
+  }
+
+  .related-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+  }
+
+  .related-card:hover .related-image img {
+    transform: scale(1.05);
+  }
+
+  .related-content {
+    padding: var(--space-lg);
+  }
+
+  .related-content time {
+    display: block;
+    margin-bottom: var(--space-sm);
+    font-size: 0.8125rem;
+    color: var(--gray-500);
+  }
+
+  .related-content h3 {
+    margin-bottom: var(--space-sm);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--gray-900);
+    transition: color var(--transition-fast);
+  }
+
+  .related-card:hover .related-content h3 {
+    color: var(--clover-green);
+  }
+
+  .related-content p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--gray-600);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   /* CTA Section */
@@ -425,6 +553,13 @@
   .cta-content p {
     margin-bottom: var(--space-xl);
     color: var(--gray-400);
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   /* Not Found */

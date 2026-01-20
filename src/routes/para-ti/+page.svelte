@@ -1,20 +1,17 @@
 <script lang="ts">
   import PageHero from '$lib/components/PageHero.svelte';
-  import ArticleCard from '$lib/components/ArticleCard.svelte';
   import SEO from '$lib/components/SEO.svelte';
-  import { getArticles, categoryLabels } from '$lib/cms/articles';
   import { getBreadcrumbSchema, getWebPageSchema } from '$lib/seo/schemas';
-  import type { ArticleCategory } from '$lib/cms/types';
+  import { getAllBlogPosts, getAllBlogTags, formatBlogDate, type BlogPostExtended } from '$lib/data/posts';
 
-  const seo = {
-    title: 'Para Ti | Blog CloverFile Venezuela - Gestion Documental y Tecnologia',
-    description: 'Articulos, noticias y consejos sobre gestion documental, digitalizacion, seguridad en la nube y soluciones tecnologicas para empresas venezolanas.'
-  };
+  // SEO configuration
+  const seoTitle = 'Para Ti | Blog de Logistica y Mudanzas | Clover Mudanzas';
+  const seoDescription = 'Articulos, guias y noticias sobre logistica, mudanzas internacionales, transporte maritimo y tendencias del sector. Conocimiento que mueve tu negocio.';
 
   const jsonLd = [
     getWebPageSchema({
-      name: seo.title,
-      description: seo.description,
+      name: seoTitle,
+      description: seoDescription,
       url: '/para-ti'
     }),
     getBreadcrumbSchema([
@@ -24,77 +21,119 @@
   ];
 
   // State
-  let activeCategory = $state<ArticleCategory | 'all'>('all');
-  let visibleCount = $state(9);
-  const pageSize = 9;
+  let selectedTag = $state<string | null>(null);
+  let visibleCount = $state(6);
+  const pageSize = 6;
 
-  // Categories for filter tabs
-  const categories: (ArticleCategory | 'all')[] = ['all', 'blog', 'news', 'story', 'case-study'];
+  // Get all posts and tags
+  const allPosts = getAllBlogPosts();
+  const allTags = getAllBlogTags();
 
-  // Filtered articles
-  let filteredArticles = $derived(() => {
-    const filter = activeCategory === 'all' ? undefined : { category: activeCategory as ArticleCategory };
-    return getArticles(filter);
-  });
+  // Filtered posts based on selected tag
+  let filteredPosts = $derived(
+    selectedTag
+      ? allPosts.filter(post => post.tags.includes(selectedTag))
+      : allPosts
+  );
 
-  // Visible articles based on load more
-  let visibleArticles = $derived(filteredArticles().slice(0, visibleCount));
+  // Visible posts based on pagination
+  let visiblePosts = $derived(filteredPosts.slice(0, visibleCount));
 
-  // Check if there are more articles to load
-  let hasMore = $derived(visibleCount < filteredArticles().length);
+  // Check if there are more posts to load
+  let hasMore = $derived(visibleCount < filteredPosts.length);
 
-  function setCategory(category: ArticleCategory | 'all') {
-    activeCategory = category;
-    visibleCount = pageSize; // Reset pagination when changing category
+  function selectTag(tag: string | null) {
+    selectedTag = tag;
+    visibleCount = pageSize;
   }
 
   function loadMore() {
     visibleCount += pageSize;
   }
+
+  const locale = 'es';
 </script>
 
 <SEO
-  title={seo.title}
-  description={seo.description}
+  title={seoTitle}
+  description={seoDescription}
   {jsonLd}
 />
 
 <PageHero
   subtitle="Blog"
-  title="Para Ti"
-  description="Noticias, articulos y recursos sobre gestion documental, digitalizacion y tecnologia empresarial en Venezuela."
+  title="+Para Ti"
+  description="Noticias, articulos y guias sobre logistica, mudanzas y transporte. Conocimiento que mueve tu negocio."
   dark={true}
 />
 
 <section class="blog-section section">
   <div class="container">
-    <!-- Category Filters -->
-    <div class="category-tabs">
-      {#each categories as category}
+    <!-- Tag Filters -->
+    <div class="tag-filters">
+      <button
+        class="tag-btn"
+        class:active={selectedTag === null}
+        onclick={() => selectTag(null)}
+      >
+        Todos
+      </button>
+      {#each allTags.slice(0, 12) as tag}
         <button
-          class="category-tab"
-          class:active={activeCategory === category}
-          onclick={() => setCategory(category)}
+          class="tag-btn"
+          class:active={selectedTag === tag}
+          onclick={() => selectTag(tag)}
         >
-          {categoryLabels[category].es}
+          {tag.replace(/-/g, ' ')}
         </button>
       {/each}
     </div>
 
     <!-- Results count -->
     <div class="results-info">
-      <span>{filteredArticles().length} articulo{filteredArticles().length !== 1 ? 's' : ''}</span>
+      <span>{filteredPosts.length} articulo{filteredPosts.length !== 1 ? 's' : ''}</span>
     </div>
 
-    <!-- Articles Grid -->
-    {#if visibleArticles.length > 0}
-      <div class="articles-grid">
-        {#each visibleArticles as article, index (article.id)}
-          <ArticleCard
-            {article}
-            variant={index === 0 && activeCategory === 'all' ? 'featured' : 'default'}
-            showCategory={activeCategory === 'all'}
-          />
+    <!-- Blog Grid -->
+    {#if visiblePosts.length > 0}
+      <div class="blog-grid">
+        {#each visiblePosts as post, index (post.id)}
+          <article class="blog-card" class:featured={index === 0 && !selectedTag}>
+            <a href="/blog/{post.slug}" class="blog-card-link">
+              <div class="blog-card-image">
+                <img
+                  src={post.featuredImage || '/images/blog-placeholder.jpg'}
+                  alt={post.title[locale]}
+                  loading="lazy"
+                />
+                {#if post.readTime}
+                  <span class="read-time">{post.readTime} min</span>
+                {/if}
+              </div>
+              <div class="blog-card-content">
+                <div class="blog-card-meta">
+                  <time datetime={post.publishedAt}>
+                    {formatBlogDate(post.publishedAt, locale)}
+                  </time>
+                  <span class="meta-separator">|</span>
+                  <span class="author">{post.author}</span>
+                </div>
+                <h2 class="blog-card-title">{post.title[locale]}</h2>
+                <p class="blog-card-excerpt">{post.excerpt[locale]}</p>
+                <div class="blog-card-tags">
+                  {#each post.tags.slice(0, 3) as tag}
+                    <span class="tag">{tag.replace(/-/g, ' ')}</span>
+                  {/each}
+                </div>
+                <span class="read-more">
+                  Leer articulo
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </div>
+            </a>
+          </article>
         {/each}
       </div>
 
@@ -111,7 +150,10 @@
       {/if}
     {:else}
       <div class="no-results">
-        <p>No hay articulos en esta categoria.</p>
+        <p>No hay articulos con esta etiqueta.</p>
+        <button class="btn btn--primary" onclick={() => selectTag(null)}>
+          Ver todos los articulos
+        </button>
       </div>
     {/if}
   </div>
@@ -125,38 +167,18 @@
       <p>Explora nuestros articulos por tema de interes</p>
     </div>
     <div class="topics-grid">
-      <a href="/para-ti?tag=digitalizacion" class="topic-card">
+      <button class="topic-card" onclick={() => selectTag('mudanza-internacional')}>
         <div class="topic-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-            <line x1="16" y1="13" x2="8" y2="13"/>
-            <line x1="16" y1="17" x2="8" y2="17"/>
-            <polyline points="10 9 9 9 8 9"/>
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
           </svg>
         </div>
-        <h3>Digitalizacion</h3>
-        <p>Transformacion digital de documentos</p>
-      </a>
-      <a href="/para-ti?tag=seguridad" class="topic-card">
-        <div class="topic-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          </svg>
-        </div>
-        <h3>Seguridad</h3>
-        <p>Proteccion de datos y ciberseguridad</p>
-      </a>
-      <a href="/para-ti?tag=nube" class="topic-card">
-        <div class="topic-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
-          </svg>
-        </div>
-        <h3>Cloud</h3>
-        <p>Soluciones de almacenamiento en la nube</p>
-      </a>
-      <a href="/para-ti?tag=logistica" class="topic-card">
+        <h3>Mudanza Internacional</h3>
+        <p>Requisitos y consejos para emigrar</p>
+      </button>
+      <button class="topic-card" onclick={() => selectTag('logistica')}>
         <div class="topic-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <rect x="1" y="3" width="15" height="13"/>
@@ -166,8 +188,33 @@
           </svg>
         </div>
         <h3>Logistica</h3>
-        <p>Gestion y optimizacion de procesos</p>
-      </a>
+        <p>Tendencias y estrategias del sector</p>
+      </button>
+      <button class="topic-card" onclick={() => selectTag('transporte-maritimo')}>
+        <div class="topic-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 20h20"/>
+            <path d="M5 17l-2 3"/>
+            <path d="M19 17l2 3"/>
+            <path d="M12 3v14"/>
+            <path d="M5 8l7-5 7 5"/>
+            <path d="M5 17h14"/>
+          </svg>
+        </div>
+        <h3>Transporte Maritimo</h3>
+        <p>Buques y comercio internacional</p>
+      </button>
+      <button class="topic-card" onclick={() => selectTag('tecnologia')}>
+        <div class="topic-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <h3>Tecnologia 4.0</h3>
+        <p>Automatizacion e innovacion</p>
+      </button>
     </div>
   </div>
 </section>
@@ -177,11 +224,25 @@
   <div class="container">
     <div class="newsletter-content">
       <h2>Mantente Informado</h2>
-      <p>Recibe las ultimas noticias y articulos sobre gestion documental directamente en tu correo.</p>
+      <p>Recibe las ultimas noticias y articulos sobre logistica y mudanzas directamente en tu correo.</p>
       <form class="newsletter-form" onsubmit={(e) => e.preventDefault()}>
         <input type="email" placeholder="Tu correo electronico" required />
         <button type="submit" class="btn btn--primary">Suscribirse</button>
       </form>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Necesitas asesoramiento para tu mudanza?</h2>
+      <p>Nuestro equipo de expertos esta listo para ayudarte con cualquier tipo de mudanza: residencial, corporativa o internacional.</p>
+      <div class="cta-buttons">
+        <a href="/contacto" class="btn btn--primary">Solicitar cotizacion</a>
+        <a href="/mudanzas" class="btn btn--outline-dark">Ver servicios</a>
+      </div>
     </div>
   </div>
 </section>
@@ -192,8 +253,8 @@
     padding-bottom: var(--space-4xl);
   }
 
-  /* Category Tabs */
-  .category-tabs {
+  /* Tag Filters */
+  .tag-filters {
     display: flex;
     gap: var(--space-sm);
     margin-bottom: var(--space-lg);
@@ -203,24 +264,25 @@
     justify-content: center;
   }
 
-  .category-tab {
-    padding: var(--space-sm) var(--space-lg);
-    font-size: 0.875rem;
+  .tag-btn {
+    padding: var(--space-xs) var(--space-md);
+    font-size: 0.8125rem;
     font-weight: 500;
     color: var(--gray-600);
     background: transparent;
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-full);
     transition: all var(--transition-fast);
+    text-transform: capitalize;
     cursor: pointer;
   }
 
-  .category-tab:hover {
+  .tag-btn:hover {
     border-color: var(--gray-400);
     color: var(--gray-800);
   }
 
-  .category-tab.active {
+  .tag-btn.active {
     background: var(--clover-green);
     border-color: var(--clover-green);
     color: var(--white);
@@ -237,30 +299,168 @@
     color: var(--gray-500);
   }
 
-  /* Articles Grid */
-  .articles-grid {
+  /* Blog Grid */
+  .blog-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--space-xl);
   }
 
   @media (min-width: 640px) {
-    .articles-grid {
+    .blog-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (min-width: 1024px) {
-    .articles-grid {
+    .blog-grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
-  /* Featured article spans full width on large screens */
+  /* Blog Card */
+  .blog-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+  }
+
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-card.featured {
+    grid-column: span 1;
+  }
+
   @media (min-width: 1024px) {
-    .articles-grid :global(article:first-child.featured) {
+    .blog-card.featured {
       grid-column: span 2;
     }
+
+    .blog-card.featured .blog-card-link {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .blog-card.featured .blog-card-image {
+      aspect-ratio: auto;
+      height: 100%;
+    }
+
+    .blog-card.featured .blog-card-title {
+      font-size: 1.5rem;
+    }
+  }
+
+  .blog-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .blog-card-image {
+    position: relative;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+    background: var(--gray-200);
+  }
+
+  .blog-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+  }
+
+  .blog-card:hover .blog-card-image img {
+    transform: scale(1.05);
+  }
+
+  .read-time {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    padding: var(--space-xs) var(--space-sm);
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+  }
+
+  .blog-card-content {
+    padding: var(--space-lg);
+  }
+
+  .blog-card-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    font-size: 0.8125rem;
+    color: var(--gray-500);
+  }
+
+  .meta-separator {
+    color: var(--gray-300);
+  }
+
+  .blog-card-title {
+    margin-bottom: var(--space-sm);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--gray-900);
+    transition: color var(--transition-fast);
+  }
+
+  .blog-card:hover .blog-card-title {
+    color: var(--clover-green);
+  }
+
+  .blog-card-excerpt {
+    margin-bottom: var(--space-md);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--gray-600);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .blog-card-tags {
+    display: flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-md);
+  }
+
+  .tag {
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--gray-100);
+    color: var(--gray-600);
+    font-size: 0.75rem;
+    border-radius: var(--radius-sm);
+    text-transform: capitalize;
+  }
+
+  .read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--clover-green);
+    transition: gap var(--transition-fast);
+  }
+
+  .blog-card:hover .read-more {
+    gap: var(--space-sm);
   }
 
   /* Load More */
@@ -270,6 +470,8 @@
   }
 
   .load-more button {
+    display: inline-flex;
+    align-items: center;
     gap: var(--space-sm);
   }
 
@@ -280,6 +482,7 @@
   }
 
   .no-results p {
+    margin-bottom: var(--space-lg);
     color: var(--gray-500);
     font-size: 1.125rem;
   }
@@ -326,6 +529,7 @@
     text-decoration: none;
     transition: all var(--transition-base);
     border: 1px solid var(--gray-200);
+    cursor: pointer;
   }
 
   .topic-card:hover {
@@ -412,5 +616,34 @@
 
   .newsletter-form button {
     white-space: nowrap;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    background: var(--gray-100);
+  }
+
+  .cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    margin-bottom: var(--space-md);
+    font-size: 1.75rem;
+    color: var(--gray-900);
+  }
+
+  .cta-content p {
+    margin-bottom: var(--space-xl);
+    color: var(--gray-600);
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
   }
 </style>
