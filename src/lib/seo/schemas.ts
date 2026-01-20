@@ -7,10 +7,10 @@ const LOGO_URL = `${SITE_URL}/images/1502852123.png`;
 export function getOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
+    '@type': 'Organization',
     '@id': `${SITE_URL}/#organization`,
     name: 'CloverFile',
-    alternateName: 'Clover File Venezuela',
+    alternateName: 'CloverFile Venezuela',
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
@@ -18,78 +18,48 @@ export function getOrganizationSchema() {
       width: 200,
       height: 60
     },
-    foundingDate: '1984',
-    description: 'Empresa lider en gestion documental en Venezuela. Mas de 40 anos de experiencia ofreciendo servicios de digitalizacion, software de gestion, automatizacion, almacenamiento en nube y custodia fisica de documentos.',
-    slogan: 'Seguridad, Tiempo, Espacio',
+    foundingDate: '1986',
+    description: 'CloverFile es lider en gestion documental integral en Venezuela. Mas de 35 anos de experiencia en almacenaje de archivos, automatizacion de flujos de trabajo y consultoria.',
+    slogan: 'Somos soluciones para ti',
     numberOfEmployees: {
       '@type': 'QuantitativeValue',
       minValue: 50,
       maxValue: 200
     },
-    areaServed: [
-      {
-        '@type': 'Country',
-        name: 'Venezuela'
-      }
-    ],
+    areaServed: {
+      '@type': 'Country',
+      name: 'Venezuela'
+    },
     contactPoint: [
       {
         '@type': 'ContactPoint',
-        telephone: '+58-212-8191152',
+        telephone: '+58-414-4708354',
         contactType: 'customer service',
         areaServed: 'VE',
-        availableLanguage: ['Spanish', 'English']
+        availableLanguage: ['Spanish']
+      },
+      {
+        '@type': 'ContactPoint',
+        email: 'atc.cloverfile@cloverve.com',
+        contactType: 'customer service'
       }
     ],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Av. Luis de Camoens, Centro Clover, P.3',
-      addressLocality: 'La Trinidad',
+      streetAddress: 'Avenida Venezuela, Torre El Saman, Piso 3, Oficina 3-1',
+      addressLocality: 'El Rosal, Municipio Chacao',
       addressRegion: 'Caracas',
       addressCountry: 'VE'
     },
     sameAs: [
-      'https://www.instagram.com/cloverfileve/',
-      'https://www.facebook.com/cloverfileve'
+      'https://www.instagram.com/cloverfilevzla/',
+      'https://www.facebook.com/profile.php?id=100092613104079',
+      'https://www.linkedin.com/company/clovervzla/'
     ],
     parentOrganization: {
       '@type': 'Organization',
-      name: 'Grupo Clover Venezuela',
+      name: 'Clover Internacional',
       url: 'https://www.cloverve.com'
-    },
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Servicios de Gestion Documental',
-      itemListElement: [
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Digitalizacion de Documentos'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Software de Gestion Documental'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Custodia Fisica de Documentos'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Almacenamiento en Nube'
-          }
-        }
-      ]
     }
   };
 }
@@ -97,34 +67,24 @@ export function getOrganizationSchema() {
 // Services list for CloverFile
 export const services = [
   {
-    name: 'Digitalizacion de Documentos',
-    description: 'Servicios profesionales de digitalizacion con equipos de alta gama. Escaneo de documentos, planos y libros con OCR integrado.',
-    url: '/servicios/digitalizacion'
+    name: 'Gestion Documental Integral',
+    description: 'Administracion completa de documentos fisicos y digitales con los mas altos estandares de seguridad.',
+    url: '/servicios/gestion-documental'
   },
   {
-    name: 'Software de Gestion Documental',
-    description: 'Plataformas integrales de gestion documental parametrizables y flexibles para entornos de alta exigencia.',
-    url: '/servicios/software-gestion'
+    name: 'Almacenaje de Archivos',
+    description: 'Instalaciones de almacenamiento seguro para documentos fisicos con control de acceso y monitoreo 24/7.',
+    url: '/servicios/almacenaje'
   },
   {
-    name: 'Automatizacion de Procesos',
-    description: 'Implementacion de flujos de trabajo digitales con tecnologias innovadoras para reducir trabajo manual.',
+    name: 'Automatizacion de Flujos',
+    description: 'Optimizacion de procesos documentales mediante tecnologia avanzada que mejora la eficiencia operativa.',
     url: '/servicios/automatizacion'
   },
   {
-    name: 'Almacenamiento en Nube',
-    description: 'Respaldo de datos en la nube con acceso 24/7 y capacidad adaptada a tus necesidades.',
-    url: '/servicios/nube'
-  },
-  {
-    name: 'Custodia Fisica',
-    description: 'Almacenamiento seguro de documentos fisicos en instalaciones con vigilancia 24/7 y control ambiental.',
-    url: '/servicios/custodia'
-  },
-  {
-    name: 'Organizacion e Inventario',
-    description: 'Asesoria experta en gestion documental, inventarios e indexacion de archivos fisicos y digitales.',
-    url: '/servicios/inventario'
+    name: 'Consultoria y Asesoria',
+    description: 'Expertos en gestion de informacion que le ayudan a disenar soluciones personalizadas para su empresa.',
+    url: '/servicios/consultoria'
   }
 ];
 
@@ -154,7 +114,7 @@ export function getServiceSchema(service: ServiceSchemaProps) {
       '@type': 'Country',
       name: service.areaServed || 'Venezuela'
     },
-    serviceType: 'Document Management Services'
+    serviceType: 'Document Management'
   };
 }
 
@@ -253,7 +213,7 @@ export function getWebSiteSchema() {
     '@id': `${SITE_URL}/#website`,
     url: SITE_URL,
     name: 'CloverFile',
-    description: 'Gestion documental digital y fisica en Venezuela. Mas de 40 anos de experiencia protegiendo la informacion de empresas.',
+    description: 'Gestion documental integral en Venezuela. Mas de 35 anos de experiencia.',
     publisher: {
       '@id': `${SITE_URL}/#organization`
     },
@@ -297,10 +257,10 @@ export function getContactPageSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    '@id': `${SITE_URL}/contactenos/#contactpage`,
-    url: `${SITE_URL}/contactenos`,
-    name: 'Contactenos - Clover Mudanzas Venezuela',
-    description: 'Contacta a Clover Mudanzas. Av. Luis de Camoens, Centro Clover, La Trinidad, Caracas. Tel: +58-212-8191100. Mudanzas nacionales e internacionales.',
+    '@id': `${SITE_URL}/contacto/#contactpage`,
+    url: `${SITE_URL}/contacto`,
+    name: 'Contacto - CloverFile Venezuela',
+    description: 'Contacta a CloverFile para soluciones de gestion documental. 8 ubicaciones estrategicas en Venezuela.',
     mainEntity: {
       '@id': `${SITE_URL}/#organization`
     }
@@ -312,141 +272,12 @@ export function getAboutPageSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    '@id': `${SITE_URL}/nosotros/#aboutpage`,
-    url: `${SITE_URL}/nosotros`,
-    name: 'Nosotros - Clover Mudanzas Venezuela',
-    description: 'Conoce Clover Mudanzas: mas de 60 anos de experiencia en mudanzas nacionales e internacionales. Pioneros en servicios logisticos integrados desde 1964.',
+    '@id': `${SITE_URL}/quienes-somos/#aboutpage`,
+    url: `${SITE_URL}/quienes-somos`,
+    name: 'Quienes Somos - CloverFile Venezuela',
+    description: 'Conozca CloverFile: mas de 35 anos de experiencia en gestion documental integral en Venezuela. Unidad de negocio de Clover Internacional.',
     mainEntity: {
       '@id': `${SITE_URL}/#organization`
-    }
-  };
-}
-
-// LocalBusiness Schema for location pages
-export function getLocalBusinessSchema(locationSlug: string) {
-  const locationData: Record<string, { name: string; address: string; city: string; phone: string }> = {
-    caracas: {
-      name: 'Clover Mudanzas Caracas',
-      address: 'Av. Luis de Camoens, Centro Clover, P.3, La Trinidad',
-      city: 'Caracas',
-      phone: '+58-212-8191100'
-    },
-    valencia: {
-      name: 'Clover Mudanzas Valencia',
-      address: 'Zona Industrial Valencia',
-      city: 'Valencia, Carabobo',
-      phone: '+58-212-8191100'
-    },
-    maracaibo: {
-      name: 'Clover Mudanzas Maracaibo',
-      address: 'Zona Industrial Maracaibo',
-      city: 'Maracaibo, Zulia',
-      phone: '+58-212-8191100'
-    },
-    'puerto-cabello': {
-      name: 'Clover Mudanzas Puerto Cabello',
-      address: 'Zona Portuaria Puerto Cabello',
-      city: 'Puerto Cabello, Carabobo',
-      phone: '+58-212-8191100'
-    },
-    barcelona: {
-      name: 'Clover Mudanzas Barcelona',
-      address: 'Zona Industrial Barcelona',
-      city: 'Barcelona, Anzoategui',
-      phone: '+58-212-8191100'
-    },
-    maiquetia: {
-      name: 'Clover Mudanzas Maiquetia',
-      address: 'Aeropuerto Internacional Simon Bolivar',
-      city: 'Maiquetia, Vargas',
-      phone: '+58-212-8191100'
-    }
-  };
-
-  const location = locationData[locationSlug] || locationData['caracas'];
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'MovingCompany',
-    '@id': `${SITE_URL}/ubicaciones/${locationSlug}/#localbusiness`,
-    name: location.name,
-    image: LOGO_URL,
-    url: `${SITE_URL}/ubicaciones/${locationSlug}`,
-    telephone: location.phone,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: location.address,
-      addressLocality: location.city,
-      addressCountry: 'VE'
-    },
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '08:00',
-      closes: '17:00'
-    },
-    priceRange: '$$',
-    parentOrganization: {
-      '@id': `${SITE_URL}/#organization`
-    }
-  };
-}
-
-// CloverFile Organization Schema
-export function getCloverFileOrganizationSchema() {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
-    '@id': `${SITE_URL}/#organization`,
-    name: 'CloverFile',
-    alternateName: 'Clover File Venezuela',
-    url: SITE_URL,
-    logo: {
-      '@type': 'ImageObject',
-      url: LOGO_URL,
-      width: 200,
-      height: 60
-    },
-    foundingDate: '1984',
-    description: 'Empresa de gestion documental con mas de 40 anos de experiencia en Venezuela. Parte del Grupo Clover, pioneros en servicios logisticos integrados.',
-    slogan: 'Seguridad, Tiempo, Espacio',
-    areaServed: [
-      {
-        '@type': 'Country',
-        name: 'Venezuela'
-      }
-    ],
-    contactPoint: [
-      {
-        '@type': 'ContactPoint',
-        telephone: '+58-212-8191152',
-        contactType: 'customer service',
-        areaServed: 'VE',
-        availableLanguage: ['Spanish', 'English']
-      }
-    ],
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Av. Luis de Camoens, Centro Clover, P.3',
-      addressLocality: 'La Trinidad',
-      addressRegion: 'Caracas',
-      addressCountry: 'VE'
-    },
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '08:00',
-      closes: '17:00'
-    },
-    sameAs: [
-      'https://www.instagram.com/cloverfileve/',
-      'https://www.facebook.com/cloverfileve',
-      'https://servicioscloverfile.com/'
-    ],
-    parentOrganization: {
-      '@type': 'Organization',
-      name: 'Grupo Clover Venezuela',
-      url: 'https://www.cloverve.com/'
     }
   };
 }

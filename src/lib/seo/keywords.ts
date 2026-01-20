@@ -1,4 +1,4 @@
-// SEO Keywords and Meta Data for Clover Mudanzas pages
+// SEO Keywords and Meta Data for CloverFile pages
 
 export interface PageSEO {
   title: string;
@@ -9,100 +9,78 @@ export interface PageSEO {
 
 export const pageSEO: Record<string, PageSEO> = {
   home: {
-    title: 'Clover Mudanzas - Mudanzas Nacionales e Internacionales | +60 Anos de Experiencia',
-    description: 'Servicios de mudanzas nacionales e internacionales en Venezuela. Embalaje profesional, traslado seguro de bienes personales y corporativos. Mas de 60 anos de experiencia.',
+    title: 'CloverFile | Gestion Documental Digital y Fisica en Venezuela',
+    description: 'Servicios de gestion documental en Venezuela. Digitalizacion, software de gestion, automatizacion, almacenamiento en nube y custodia fisica de documentos. +40 anos de experiencia. Seguridad, Tiempo, Espacio.',
     keywords: [
-      'mudanzas Venezuela',
-      'mudanzas internacionales Venezuela',
-      'mudanzas nacionales Venezuela',
-      'empresa de mudanzas Caracas',
-      'mudanzas corporativas',
-      'embalaje profesional Venezuela',
-      'traslado de bienes Venezuela'
+      'gestion documental Venezuela',
+      'digitalizacion de documentos Venezuela',
+      'almacenamiento de documentos',
+      'custodia de archivos',
+      'software gestion documental',
+      'escaneo de documentos',
+      'archivo digital Venezuela',
+      'CloverFile'
     ],
-    image: '/images/og-mudanzas.jpg'
+    image: '/images/1502852123.png'
   },
 
-  'mudanzas-nacionales': {
-    title: 'Mudanzas Nacionales Venezuela | Traslados a Todo el Pais',
-    description: 'Servicios de mudanzas nacionales en Venezuela. Embalaje, transporte y almacenaje de bienes personales y corporativos a cualquier destino nacional.',
+  'quienes-somos': {
+    title: 'Quienes Somos | CloverFile - Empresa de Gestion Documental',
+    description: 'Conoce CloverFile, empresa lider en gestion documental y custodia de archivos en Venezuela. Nuestra mision, vision y compromiso con la seguridad de tu informacion.',
     keywords: [
-      'mudanzas nacionales Venezuela',
-      'mudanzas Caracas',
-      'traslado nacional Venezuela',
-      'mudanzas residenciales Venezuela',
-      'mudanzas a todo el pais'
+      'empresa gestion documental',
+      'custodia de archivos',
+      'empresa archivo digital Venezuela',
+      'gestion de informacion empresarial',
+      'CloverFile Venezuela'
     ]
   },
 
-  'mudanzas-internacionales': {
-    title: 'Mudanzas Internacionales desde Venezuela | Servicio Puerta a Puerta',
-    description: 'Mudanzas internacionales desde Venezuela a cualquier destino. Gestion aduanal, embalaje de exportacion, seguro a todo riesgo. Servicio puerta a puerta.',
+  servicios: {
+    title: 'Servicios | CloverFile - Digitalizacion y Custodia de Archivos',
+    description: 'Servicios profesionales de digitalizacion de documentos, almacenamiento y custodia de archivos. Soluciones integrales para la gestion documental de tu empresa.',
     keywords: [
-      'mudanzas internacionales Venezuela',
-      'mudanzas desde Venezuela',
-      'mudanzas al exterior',
-      'relocation Venezuela',
-      'mudanzas puerta a puerta',
-      'mudanzas aereas Venezuela',
-      'mudanzas maritimas Venezuela'
+      'digitalizacion',
+      'almacenamiento documentos',
+      'custodia de archivos',
+      'servicios gestion documental',
+      'archivo digital empresarial',
+      'workflows documentales'
     ]
   },
 
-  'mudanzas-oficinas': {
-    title: 'Mudanzas de Oficinas Venezuela | Traslados Corporativos',
-    description: 'Servicios de mudanzas de oficinas y traslados corporativos en Venezuela. Minimo impacto en sus operaciones. Embalaje y traslado de mobiliario y equipos.',
+  'gestion-digital': {
+    title: 'Gestion Digital de Documentos | CloverFile Venezuela',
+    description: 'Servicios de digitalizacion de documentos, software de gestion documental, automatizacion de flujos de trabajo y almacenamiento en nube.',
     keywords: [
-      'mudanzas de oficinas Venezuela',
-      'mudanzas corporativas Caracas',
-      'traslado de oficinas',
-      'mudanzas empresariales',
-      'mudanzas comerciales Venezuela'
+      'gestion digital documentos Venezuela',
+      'digitalizacion de documentos',
+      'escaneo de documentos',
+      'software gestion documental',
+      'automatizacion workflows',
+      'almacenamiento en nube documentos'
     ]
   },
 
-  'clover-pack': {
-    title: 'Clover Pack | Embalaje Profesional para Mudanzas',
-    description: 'Servicios de embalaje profesional para mudanzas. Materiales de alta calidad, tecnicas especializadas para proteger sus pertenencias durante el traslado.',
+  'gestion-fisica': {
+    title: 'Gestion Fisica de Documentos | CloverFile Venezuela',
+    description: 'Custodia y almacenamiento seguro de documentos fisicos en Venezuela. Cajas de archivo, almacenes especializados y servicio de prestamos.',
     keywords: [
-      'embalaje mudanzas Venezuela',
-      'embalaje profesional',
-      'materiales de embalaje',
-      'proteccion de bienes mudanza',
-      'Clover Pack'
+      'gestion fisica documentos Venezuela',
+      'custodia de archivos',
+      'almacenamiento documentos fisicos',
+      'cajas de archivo',
+      'prestamo documentos'
     ]
   },
 
   contacto: {
-    title: 'Contacto | Clover Mudanzas - Solicite su Presupuesto',
-    description: 'Contacte a Clover Mudanzas para solicitar presupuesto sin compromiso. Mudanzas nacionales e internacionales. Tel: +58-212-8191152',
+    title: 'Contacto | CloverFile - Gestion Documental Venezuela',
+    description: 'Contacta a CloverFile para soluciones de gestion documental en Venezuela. Consultoria personalizada en digitalizacion, custodia y almacenamiento de archivos.',
     keywords: [
-      'contacto Clover Mudanzas',
-      'presupuesto mudanza Venezuela',
-      'cotizacion mudanza',
-      'telefono mudanzas Venezuela'
-    ]
-  },
-
-  nosotros: {
-    title: 'Nosotros | Clover Mudanzas - +60 Anos de Experiencia',
-    description: 'Conozca Clover Mudanzas: mas de 60 anos de experiencia en mudanzas nacionales e internacionales. Parte del Grupo Clover Venezuela.',
-    keywords: [
-      'historia Clover Mudanzas',
-      'sobre nosotros mudanzas',
-      'empresa mudanzas Venezuela',
-      'Grupo Clover'
-    ]
-  },
-
-  blog: {
-    title: 'Blog | Clover Mudanzas - Consejos y Guias para tu Mudanza',
-    description: 'Blog de consejos para mudanzas. Guias practicas, tips de embalaje y todo lo que necesitas saber para una mudanza exitosa.',
-    keywords: [
-      'blog mudanzas',
-      'consejos mudanza',
-      'tips embalaje',
-      'guia mudanza internacional'
+      'contacto gestion documental',
+      'consultoria archivo digital',
+      'CloverFile contacto'
     ]
   },
 
@@ -113,183 +91,181 @@ export const pageSEO: Record<string, PageSEO> = {
       'blog gestion documental',
       'articulos digitalizacion',
       'noticias tecnologia Venezuela',
-      'consejos almacenamiento nube',
-      'gestion de archivos empresariales',
-      'seguridad documental',
-      'WMS almacenes Venezuela'
+      'consejos almacenamiento nube'
     ]
-  },
+  }
+};
 
-  'gestion-digital': {
-    title: 'Gestion Digital de Documentos | Clover File Venezuela',
-    description: 'Servicios de digitalizacion de documentos, software de gestion documental, automatizacion de flujos de trabajo y almacenamiento en nube. Transformamos tu archivo fisico en digital.',
+// Service-specific SEO
+export const serviceSEO: Record<string, PageSEO> = {
+  digitalizacion: {
+    title: 'Digitalizacion de Documentos | CloverFile Venezuela',
+    description: 'Servicios profesionales de digitalizacion de documentos en Venezuela. Convertimos sus archivos fisicos en documentos digitales seguros y accesibles.',
     keywords: [
-      'gestion digital documentos Venezuela',
-      'digitalizacion de documentos',
+      'digitalizacion documentos Venezuela',
       'escaneo de documentos',
-      'software gestion documental',
-      'automatizacion workflows',
-      'almacenamiento en nube documentos',
-      'OCR reconocimiento texto',
-      'archivo digital empresarial',
-      'digitalizacion planos libros',
-      'flujos de trabajo documental'
+      'conversion digital archivos'
     ]
   },
 
-  'gestion-fisica': {
-    title: 'Gestion Fisica de Documentos | Clover File Venezuela',
-    description: 'Custodia y almacenamiento seguro de documentos fisicos en Venezuela. Cajas de archivo, almacenes especializados, boveda de medios magneticos y servicio de prestamos.',
+  software: {
+    title: 'Software de Gestion Documental | CloverFile Venezuela',
+    description: 'Plataformas integrales de gestion documental parametrizables y flexibles. Acceso por perfiles, busqueda avanzada y reportes automaticos.',
     keywords: [
-      'gestion fisica documentos Venezuela',
-      'custodia de archivos',
-      'almacenamiento documentos fisicos',
-      'cajas de archivo',
-      'boveda medios magneticos',
-      'prestamo documentos',
-      'inventario documental',
-      'traslado de documentos',
-      'archivo empresarial',
-      'custodia segura documentos'
+      'software gestion documental Venezuela',
+      'plataforma documental',
+      'sistema gestion archivos'
     ]
   },
 
-  almacen: {
-    title: 'Almacenamiento Logistico | Clover Venezuela - 70,000+ m2',
-    description: 'Servicios de almacenamiento en Venezuela con mas de 70,000 m2 de capacidad. Cadena de frio, picking & packing, cross docking y gestion de inventarios WMS.',
+  automatizacion: {
+    title: 'Automatizacion de Procesos | CloverFile Venezuela',
+    description: 'Implementacion de flujos de trabajo digitales con tecnologias innovadoras para reducir trabajo manual y evitar errores humanos.',
     keywords: [
-      'almacenamiento Venezuela',
-      'almacen logistico',
-      'cadena de frio',
-      'picking packing',
-      'cross docking',
-      'WMS Venezuela',
-      'gestion inventarios'
+      'automatizacion procesos Venezuela',
+      'workflows documentales',
+      'flujos de trabajo digital'
+    ]
+  },
+
+  nube: {
+    title: 'Almacenamiento en Nube | CloverFile Venezuela',
+    description: 'Respaldo de datos en la nube con acceso 24/7. Encriptacion segura y backup automatico con capacidad adaptada a tus necesidades.',
+    keywords: [
+      'almacenamiento nube Venezuela',
+      'backup documental',
+      'respaldo datos empresarial'
+    ]
+  },
+
+  custodia: {
+    title: 'Custodia Fisica de Documentos | CloverFile Venezuela',
+    description: 'Almacenamiento seguro de documentos fisicos en instalaciones con vigilancia 24/7 y control ambiental. Mas de 4 millones de cajas bajo custodia.',
+    keywords: [
+      'custodia de archivos Venezuela',
+      'almacenamiento seguro documentos',
+      'boveda de archivos'
+    ]
+  },
+
+  inventario: {
+    title: 'Organizacion e Inventario | CloverFile Venezuela',
+    description: 'Asesoria experta en gestion documental, inventarios e indexacion de archivos fisicos y digitales. Recuperacion inmediata de informacion.',
+    keywords: [
+      'inventario archivos Venezuela',
+      'organizacion documentos',
+      'indexacion archivos'
+    ]
+  },
+
+  traslado: {
+    title: 'Traslado de Documentos | CloverFile Venezuela',
+    description: 'Trasladamos tu patrimonio documental y dispositivos de almacenamiento con protocolos de seguridad. Vehiculos propios con GPS y alcance nacional.',
+    keywords: [
+      'traslado documentos Venezuela',
+      'transporte archivos',
+      'mudanza documental'
     ]
   }
 };
 
-// Location-specific SEO (for ubicaciones page)
-export const locationSEO: Record<string, PageSEO> = {
-  caracas: {
-    title: 'Mudanzas en Caracas | Clover Mudanzas Venezuela',
-    description: 'Servicios de mudanzas en Caracas. Mudanzas residenciales y corporativas en La Trinidad, Chacao, Altamira, Las Mercedes y toda el area metropolitana.',
-    keywords: [
-      'mudanzas Caracas',
-      'mudanzas La Trinidad',
-      'empresa mudanzas Caracas',
-      'mudanzas residenciales Caracas'
-    ]
-  },
-  valencia: {
-    title: 'Mudanzas en Valencia | Clover Mudanzas Carabobo',
-    description: 'Servicios de mudanzas en Valencia, Estado Carabobo. Mudanzas residenciales y empresariales en la zona centro-occidental de Venezuela.',
-    keywords: [
-      'mudanzas Valencia Venezuela',
-      'mudanzas Carabobo',
-      'empresa mudanzas Valencia'
-    ]
-  },
-  maracaibo: {
-    title: 'Mudanzas en Maracaibo | Clover Mudanzas Zulia',
-    description: 'Servicios de mudanzas en Maracaibo, Estado Zulia. Mudanzas locales, nacionales e internacionales desde el occidente del pais.',
-    keywords: [
-      'mudanzas Maracaibo',
-      'mudanzas Zulia',
-      'empresa mudanzas Maracaibo'
-    ]
-  },
-  'puerto-cabello': {
-    title: 'Mudanzas Puerto Cabello | Clover Mudanzas',
-    description: 'Servicios de mudanzas y embalaje en Puerto Cabello. Conexion portuaria para mudanzas internacionales.',
-    keywords: [
-      'mudanzas Puerto Cabello',
-      'mudanzas portuarias Venezuela'
-    ]
-  },
-  barcelona: {
-    title: 'Mudanzas en Barcelona | Clover Mudanzas Anzoategui',
-    description: 'Servicios de mudanzas en Barcelona y Puerto La Cruz, Estado Anzoategui. Mudanzas para el oriente venezolano.',
-    keywords: [
-      'mudanzas Barcelona Venezuela',
-      'mudanzas Anzoategui',
-      'mudanzas Puerto La Cruz'
-    ]
-  },
-  maiquetia: {
-    title: 'Mudanzas Aereas Maiquetia | Clover Mudanzas',
-    description: 'Servicios de mudanzas aereas desde el Aeropuerto de Maiquetia. Conexion internacional rapida para sus pertenencias.',
-    keywords: [
-      'mudanzas aereas Venezuela',
-      'mudanzas Maiquetia',
-      'carga aerea mudanzas'
-    ]
-  }
-};
-
-// Service-specific FAQs
+// FAQ content for service pages
 export const serviceFAQs: Record<string, Array<{ question: string; answer: string }>> = {
-  'mudanzas-nacionales': [
+  digitalizacion: [
     {
-      question: 'Que incluye el servicio de mudanza nacional?',
-      answer: 'Nuestro servicio incluye: embalaje profesional de todos sus bienes, carga y descarga, transporte seguro, almacenaje temporal si es necesario, e instalacion en el destino final.'
+      question: 'Que tipos de documentos pueden digitalizar?',
+      answer: 'Digitalizamos todo tipo de documentos: contratos, facturas, expedientes, planos, libros contables, documentos legales, archivos historicos y cualquier documento en formato fisico que requiera ser convertido a formato digital.'
     },
     {
-      question: 'A que destinos realizan mudanzas nacionales?',
-      answer: 'Realizamos mudanzas a cualquier destino dentro de Venezuela, incluyendo Caracas, Valencia, Maracaibo, Barquisimeto, Barcelona, Puerto La Cruz, Merida, y todas las ciudades del pais.'
+      question: 'Como garantizan la calidad de la digitalizacion?',
+      answer: 'Utilizamos equipos de escaneo de alta resolucion y software especializado para garantizar la maxima calidad. Cada documento pasa por un proceso de control de calidad antes de ser entregado.'
     },
     {
-      question: 'Cuanto tiempo toma una mudanza nacional?',
-      answer: 'El tiempo depende de la distancia y el volumen. Mudanzas dentro de la misma ciudad pueden completarse en 1-2 dias. Mudanzas a otras ciudades pueden tomar de 3-7 dias incluyendo embalaje y traslado.'
+      question: 'Que formatos de archivo entregan?',
+      answer: 'Entregamos los documentos digitalizados en el formato que mejor se adapte a sus necesidades: PDF, TIFF, JPEG, PNG, entre otros. Tambien ofrecemos documentos con OCR para busqueda de texto.'
     }
   ],
 
-  'mudanzas-internacionales': [
+  custodia: [
     {
-      question: 'Que necesito para hacer una mudanza internacional?',
-      answer: 'Necesitara: pasaporte vigente, visa o permiso de residencia del pais destino, inventario detallado de bienes, y documentos que acrediten propiedad de items de alto valor. Nosotros gestionamos toda la documentacion aduanal.'
+      question: 'Que medidas de seguridad tienen para la custodia de archivos?',
+      answer: 'Contamos con instalaciones con control de acceso biometrico, videovigilancia 24/7, sistemas contra incendios, control de humedad y temperatura, y protocolos estrictos de seguridad para el personal autorizado.'
     },
     {
-      question: 'Cuanto tiempo toma una mudanza internacional?',
-      answer: 'Por via maritima: 4-8 semanas dependiendo del destino. Por via aerea: 1-2 semanas. Incluye tiempo de embalaje, transito y despacho aduanal en origen y destino.'
+      question: 'Como puedo acceder a mis documentos en custodia?',
+      answer: 'Puede solicitar acceso a sus documentos a traves de nuestra plataforma digital o contactando a nuestro equipo. Entregamos los documentos fisicos o copias digitales segun su preferencia, con tiempos de respuesta garantizados.'
     },
     {
-      question: 'Ofrecen seguro para mudanzas internacionales?',
-      answer: 'Si, ofrecemos seguro a todo riesgo que cubre sus bienes durante todo el proceso: embalaje, transporte, almacenaje y entrega. El seguro protege contra danos, perdida y robo.'
-    },
-    {
-      question: 'Que paises manejan para mudanzas internacionales?',
-      answer: 'Realizamos mudanzas a cualquier destino mundial. Los destinos mas frecuentes incluyen: Estados Unidos, Espana, Panama, Colombia, Chile, Argentina, Portugal, y otros paises de America y Europa.'
+      question: 'Ofrecen destruccion certificada de documentos?',
+      answer: 'Si, ofrecemos servicios de destruccion certificada de documentos al finalizar su periodo de retencion, con certificados de destruccion que cumplen con las normativas legales vigentes.'
     }
   ],
 
-  'mudanzas-oficinas': [
+  nube: [
     {
-      question: 'Como minimizan el impacto en las operaciones de la empresa?',
-      answer: 'Planificamos cuidadosamente cada fase, trabajamos en horarios extendidos o fines de semana, y coordinamos la mudanza por etapas para minimizar el tiempo de inactividad de su empresa.'
+      question: 'Que tan seguro es el almacenamiento digital?',
+      answer: 'Utilizamos encriptacion de nivel empresarial, servidores redundantes, backups automaticos y cumplimos con los mas altos estandares de seguridad de la informacion para proteger sus documentos digitales.'
     },
     {
-      question: 'Manejan equipos de computacion y tecnologia?',
-      answer: 'Si, contamos con experiencia en el traslado de equipos de TI, servidores, y tecnologia. Utilizamos embalaje especializado y personal capacitado para el manejo de equipos sensibles.'
+      question: 'Puedo acceder a mis documentos desde cualquier lugar?',
+      answer: 'Si, nuestra plataforma permite acceso seguro a sus documentos desde cualquier dispositivo con conexion a internet, con autenticacion de multiples factores para mayor seguridad.'
     },
     {
-      question: 'Ofrecen servicio de instalacion en el nuevo espacio?',
-      answer: 'Si, nuestro servicio incluye la instalacion de mobiliario y equipos en la nueva ubicacion, siguiendo el plano de distribucion acordado con su empresa.'
+      question: 'Que capacidad de almacenamiento ofrecen?',
+      answer: 'Ofrecemos planes escalables que se adaptan a las necesidades de su empresa, desde pequenos archivos hasta grandes volumenes de documentos, con posibilidad de crecimiento segun sus requerimientos.'
     }
   ],
 
-  'clover-pack': [
+  automatizacion: [
     {
-      question: 'Que materiales utilizan para el embalaje?',
-      answer: 'Utilizamos materiales de alta calidad: cajas reforzadas de diferentes tamanos, papel kraft, burbujas de aire, foam, esquineros, cinta de embalaje industrial, y materiales especiales para items fragiles.'
+      question: 'Que procesos se pueden automatizar?',
+      answer: 'Se pueden automatizar procesos como aprobacion de documentos, flujos de facturacion, gestion de contratos, onboarding de empleados, solicitudes internas y cualquier proceso que involucre documentos y aprobaciones.'
     },
     {
-      question: 'Ofrecen embalaje para articulos especiales?',
-      answer: 'Si, tenemos experiencia en embalaje de obras de arte, pianos, antiguedades, cristaleria fina, electrodomesticos grandes, y cualquier articulo que requiera cuidado especial.'
+      question: 'Se integra con otros sistemas empresariales?',
+      answer: 'Si, nuestras soluciones de workflows se integran con sistemas ERP, CRM, correo electronico y otras herramientas empresariales para crear flujos de trabajo unificados.'
     },
     {
-      question: 'El embalaje cumple con normas internacionales?',
-      answer: 'Si, nuestro embalaje para mudanzas internacionales cumple con todas las normas de exportacion, incluyendo tratamiento fitosanitario de madera (NIMF-15) cuando es requerido.'
+      question: 'Cuanto tiempo toma implementar un workflow?',
+      answer: 'El tiempo de implementacion varia segun la complejidad del proceso, pero tipicamente un workflow basico puede estar operativo en 2-4 semanas, incluyendo configuracion, pruebas y capacitacion.'
+    }
+  ],
+
+  'gestion-digital': [
+    {
+      question: 'Que tipos de documentos pueden digitalizar?',
+      answer: 'Digitalizamos todo tipo de documentos: contratos, facturas, expedientes, planos, libros contables, documentos legales, archivos historicos y cualquier documento en formato fisico que requiera ser convertido a formato digital.'
+    },
+    {
+      question: 'Como garantizan la calidad de la digitalizacion?',
+      answer: 'Utilizamos equipos de escaneo de alta resolucion y software especializado para garantizar la maxima calidad. Cada documento pasa por un proceso de control de calidad antes de ser entregado.'
+    },
+    {
+      question: 'Que formatos de archivo entregan?',
+      answer: 'Entregamos los documentos digitalizados en el formato que mejor se adapte a sus necesidades: PDF, TIFF, JPEG, PNG, entre otros. Tambien ofrecemos documentos con OCR para busqueda de texto.'
+    },
+    {
+      question: 'Ofrecen almacenamiento en la nube?',
+      answer: 'Si, respaldamos tus datos en nuestro servicio de Nube, brindando acceso 24 x 7 a la informacion, con capacidad de almacenamiento adaptada a tus necesidades y costos accesibles.'
+    }
+  ],
+
+  'gestion-fisica': [
+    {
+      question: 'Que medidas de seguridad tienen para la custodia de archivos?',
+      answer: 'Contamos con instalaciones con control de acceso biometrico, videovigilancia CCTV 24/7, sistemas contra incendios, control de humedad y temperatura, cerco electrico y protocolos estrictos de seguridad.'
+    },
+    {
+      question: 'Como puedo acceder a mis documentos en custodia?',
+      answer: 'Puede solicitar acceso a sus documentos a traves de nuestro sistema computarizado disponible 24 horas. Entregamos los documentos fisicos o copias digitales segun su preferencia, con tiempos de respuesta garantizados.'
+    },
+    {
+      question: 'Que caracteristicas tienen las cajas de archivo?',
+      answer: 'Nuestras cajas son de carton corrugado doble pared de alta calidad (41x25x32 cm), protegen contra cambios de temperatura y humedad, soportan hasta 25kg, permiten apilamiento de 5 cajas y tienen vida util de 10 anos.'
+    },
+    {
+      question: 'Ofrecen servicio de traslado de documentos?',
+      answer: 'Si, trasladamos tu patrimonio documental con vehiculos propios vigilados con GPS, adaptados al tipo de material, con alcance nacional y protocolos que garantizan la seguridad y trazabilidad.'
     }
   ]
 };

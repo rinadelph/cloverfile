@@ -86,11 +86,7 @@
           <ul>
             {#each company as item}
               <li>
-                <a
-                  href={item.href}
-                  target={item.external ? '_blank' : undefined}
-                  rel={item.external ? 'noopener' : undefined}
-                >
+                <a href={item.href}>
                   {item.label}
                 </a>
               </li>
@@ -116,11 +112,11 @@
 
   <div class="footer-bottom">
     <div class="container">
-      <p>&copy; {new Date().getFullYear()} {t('footer.copyright')}</p>
+      <p>&copy; {new Date().getFullYear()} {t('footer.copyright', currentLocale)}</p>
       <div class="footer-legal-links">
-        <a href="/terms-of-services">{t('footer.termsAndConditions')}</a>
+        <a href="/terms-of-services">{t('footer.termsAndConditions', currentLocale)}</a>
         <span class="separator">|</span>
-        <a href="/privacy-policy">{t('footer.privacyPolicy')}</a>
+        <a href="/privacy-policy">{t('footer.privacyPolicy', currentLocale)}</a>
       </div>
     </div>
   </div>
